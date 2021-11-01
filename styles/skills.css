@@ -470,7 +470,7 @@ th {
 }
 
 .collapsible::after {
-    content: "\25BC";
+    content: "\25BE";
     float: right;
     transform: scale(1.5);
 }
@@ -480,7 +480,7 @@ th {
 }
 
 .collapsibleActive::after {
-    content: "\25B2";
+    content: "\25B4";
 }
 
 .active,
