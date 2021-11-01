@@ -392,8 +392,12 @@ body {
 
 .planTable > table {
     padding: 3%;
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     width: 80vw;
+}
+
+.planTable > table img {
+    width: 7%;
 }
 
 .planTable > table > tbody {
@@ -403,4 +407,28 @@ body {
 .planTable > table > tbody > tr > td:nth-child(1),
 .planTable > table > thead th:nth-child(1) {
     text-align: left;
+    width: 30vw;
+}
+
+td,
+th {
+    padding: 1%;
+}
+
+.buyNow {
+    width: 210px;
+    height: 60px;
+    padding: 3%;
+    background-image: linear-gradient(to right, #f05a28, #ec008c);
+    color: white;
+    font-size: 17px;
+    white-space: normal;
+    cursor: pointer;
+    border: none;
+
+    transition: all 3s linear;
+}
+
+.buyNow:hover {
+    animation: 3s linear 0s infinite colorChange;
 }
