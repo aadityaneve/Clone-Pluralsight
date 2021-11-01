@@ -315,3 +315,92 @@ body {
     text-align: center;
     margin: auto;
 }
+
+.comment {
+    padding: 8% 0% 0% 9%;
+    display: flex;
+    width: 80vw;
+    margin: auto;
+    gap: 5%;
+}
+
+.comment > div:nth-child(1),
+.comment > div:nth-child(2) {
+    flex-basis: 40vw;
+}
+
+.plansAndPricingDiv {
+    padding-top: 5%;
+    background-color: #181818;
+    width: 80vw;
+    margin: auto;
+}
+
+.plansAndPricingDiv > h4 {
+    color: #e40084;
+    text-align: center;
+}
+.plansAndPricingDiv > h1 {
+    text-align: center;
+}
+
+.priceCards {
+    padding-top: 5%;
+    display: flex;
+    gap: 5%;
+    text-align: center;
+}
+
+.priceCard {
+    background-color: #222222;
+    flex-basis: 26.6%;
+    padding: 3%;
+}
+
+.getStartedBtn {
+    width: 210px;
+    height: 60px;
+    padding: 3%;
+    background-image: linear-gradient(to right, #f05a28, #ec008c);
+    color: white;
+    font-size: 17px;
+    white-space: normal;
+    cursor: pointer;
+    border: none;
+
+    transition: all 3s linear;
+}
+
+.getStartedBtn:hover {
+    animation: 3s linear 0s infinite colorChange;
+}
+
+.checkMark {
+    width: 8px;
+    height: 20px;
+    border: solid #ec008c;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg) translateX(-50%);
+    position: relative;
+    left: 50%;
+}
+
+.planTable {
+    width: 80vw;
+    margin: auto;
+}
+
+.planTable > table {
+    padding: 3%;
+    border: 1px solid yellow;
+    width: 80vw;
+}
+
+.planTable > table > tbody {
+    text-align: center;
+}
+
+.planTable > table > tbody > tr > td:nth-child(1),
+.planTable > table > thead th:nth-child(1) {
+    text-align: left;
+}
