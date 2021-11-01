@@ -442,7 +442,7 @@ th {
 }
 
 .collapsibleBtns {
-    display: flex; 
+    display: flex;
     flex-direction: column;
 }
 
@@ -496,4 +496,17 @@ th {
     transition: max-height 1s ease-out;
     background-color: black;
     color: white;
+}
+
+.endPage {
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.endPage > div:nth-child(1),
+.endPage > div:nth-child(2) {
+    flex-basis: 25vw;
 }
