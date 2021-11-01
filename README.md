@@ -1,1 +1,1 @@
-# Clone-PluralSight
+# Clone-Pluralsight
