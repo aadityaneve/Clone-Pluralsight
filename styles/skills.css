@@ -432,3 +432,68 @@ th {
 .buyNow:hover {
     animation: 3s linear 0s infinite colorChange;
 }
+
+.collapsiblesDiv {
+    display: flex;
+    width: 80vw;
+    margin: auto;
+    padding: 10%;
+    justify-content: space-around;
+}
+
+.collapsibleBtns {
+    display: flex; 
+    flex-direction: column;
+}
+
+.collapsibleBtns > button {
+    margin-top: 5%;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 5% solid yellow;
+    border-left: 0;
+    color: white;
+    background-color: black;
+}
+
+/* Css for collapsible div */
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.collapsible::after {
+    content: "\25BC";
+    float: right;
+    transform: scale(1.5);
+}
+
+.collapsibleActive {
+    background-color: #555555;
+}
+
+.collapsibleActive::after {
+    content: "\25B2";
+}
+
+.active,
+.collapsible:hover {
+    background-color: #555;
+}
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 1s ease-out;
+    background-color: black;
+    color: white;
+}
