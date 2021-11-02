@@ -326,10 +326,41 @@
         </div>
       </div>
     </div>
+    
+    <div class="browse-content">
+      <h1>Browse</h1>
+      <div class="search-sort">
+        <input type="text" id="browse-input" placeholder="What do you want to learn?">
+        <span id ='close'>x</span>
+        <img id="search-btn" src="https://img.icons8.com/windows/32/ffffff/search--v1.png"/>
+          <button onclick="dropdown()" id="sort-by">
+            <div>
+              <div> Sort by </div>
+              <div>
+                <img src="../images/up-and-down-arrow.png" alt="">
+              </div>
+            </div>
+          </button>
+          <ul class="dropdown-menu">
+            <ul class="droparrow"></ul>
+            <li>
+              <label for="" class="first">Highest rated</label>
+            </li>
+            <li>
+              <label for="" class="second">Newest</label>
+            </li>
+            <li>
+              <label for="" class="third">Course A &#8594; Z</label>
+            </li>
+            <li>
+              <label for="" class="fourth">Course Z &#8594; A</label>
+            </li>
+          </ul>
+      </div>
+    </div>
   </body>
 </html>
-<!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+
 <script src="../scripts/courses.js">
-  
 
 </script>
