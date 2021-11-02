@@ -27,3 +27,9 @@ function dropdown() {
         dd_menu.style.display = "";
     }
 }
+
+let cl = document.getElementById("close");
+let search_value = document.getElementById("browse-input");
+cl.onclick = ()=>{
+    search_value.value = null;
+}
