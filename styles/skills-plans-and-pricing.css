@@ -2,6 +2,10 @@
     font-family: "Prompt", sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     letter-spacing: 0.1em;
     background-color: #181818;
