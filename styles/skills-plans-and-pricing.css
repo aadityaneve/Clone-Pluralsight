@@ -10,7 +10,7 @@ body {
 }
 
 .topDiv {
-    padding: 5% 0% 5% 0%;
+    padding: 4% 0% 0% 0%;
 
     display: flex;
     flex-direction: column;
@@ -24,6 +24,15 @@ body {
     font-size: 3.2rem;
 }
 
+.individualAndTeamBtns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.individualAndTeamBtns > div {
+    margin: 1%;
+}
 
 /* button group 1 */
 .buttonGroup1 {
@@ -31,12 +40,12 @@ body {
     justify-content: space-around;
 
     background-color: black;
-    border: 2px solid gray;
-    position: absolute;
+    border: 1px solid gray;
+    /* position: absolute; */
     width: 415px;
     height: 70px;
-    top: 40%;
-    left: 40%;
+    /* top: 40%;
+    left: 40%; */
     border-radius: 50px;
 
     transition: all 0.5s ease-in-out;
@@ -91,16 +100,15 @@ body {
 }
 /* button group 1 end */
 
-
 /* button group 2 */
 .buttonGroup2 {
     display: flex;
     align-items: center;
     gap: 15px;
 
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    /* position: absolute; */
+    /* top: 50%;
+    left: 50%; */
     transform: translate(-50, -50);
 }
 
@@ -110,7 +118,7 @@ body {
     background: #363636;
     border-radius: 30px;
     padding: 3px;
-    
+
     transition: all 0.5s ease-in-out;
 }
 
@@ -131,3 +139,64 @@ body {
     margin-left: 45px;
 }
 /* button group 2 end */
+
+.pricingCards {
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+
+    text-align: center;
+}
+
+.pricingCards > .standardPricingCard > h4 {
+    margin: 8.5% 0% 8.5% 0%;
+}
+
+.standardPricingCard,
+.premiumPricingCard {
+    flex-basis: 20vw;
+}
+
+.premiumPricingCard {
+    margin: -40px;
+}
+
+.premiumPricingCard > .opportunityLabel {
+    background-color: #f7a614;
+    color: black;
+}
+
+.pricingCardBtn {
+    width: 270px;
+    height: 50px;
+    padding: 1%;
+    background-image: linear-gradient(to right, #f05a28, #ec008c);
+    color: white;
+    font-size: 17px;
+    white-space: normal;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.pricingCardBtn::before {
+    background-image: linear-gradient(to right, #f05a28, #ec008c);
+    transition: 3s;
+}
+
+.pricingCardBtn:hover {
+    animation: colorChange 3s linear infinite;
+}
+
+@keyframes colorChange {
+    0% {
+        background: #f05a28;
+    }
+    50% {
+        background: #ec008c;
+    }
+    100% {
+        background: #f05a28;
+    }
+}
