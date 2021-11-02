@@ -229,3 +229,95 @@ body {
 .compareCourseLibrary > div:nth-child(2) > div:nth-child(2) {
     flex-basis: 25vw;
 }
+
+.coreTable,
+.assessmentsTable,
+.premiumTable,
+.analyticsTable,
+.strategicTable,
+.professionalServicesTable {
+    margin-top: 5%;
+}
+
+table {
+    width: 70vw;
+    margin: auto;
+}
+
+table tr td:nth-child(n + 2):nth-child(-n + 5) {
+    border-right: thin solid #333333;
+}
+
+table tr {
+    line-height: 50px;
+    border-top: 0px;
+    border-left: 0px;
+    border-bottom: 0px;
+}
+
+table th {
+    text-align: left;
+}
+
+table td {
+    margin: auto;
+}
+
+table tr:nth-child(odd) {
+    background-color: #212121;
+}
+
+.pinkCheckMark {
+    margin: auto;
+    width: 8px;
+    height: 20px;
+    border: solid #ec008c;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg) translateX(-50%);
+}
+
+.orangeCheckMark {
+    margin: auto;
+    width: 8px;
+    height: 20px;
+    border: solid #F7A614;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg) translateX(-50%);
+}
+
+.coreTable
+    > table
+    > tbody
+    > tr:nth-child(1)
+    > td:nth-child(n + 2):nth-child(-n + 6) {
+    text-align: center;
+    font-weight: 700;
+}
+.coreTable
+    > table
+    > tbody
+    > tr:nth-child(2)
+    > td:nth-child(n + 2):nth-child(-n + 6) {
+    text-align: center;
+    font-weight: 700;
+}
+.coreTable
+    > table
+    > tbody
+    > tr:nth-child(3)
+    > td:nth-child(n + 2):nth-child(-n + 6) {
+    text-align: center;
+    font-weight: 700;
+}
+
+table td > img {
+    text-align: center;
+}
+
+table img {
+    width: 22px;
+}
+
+.textAlignCenter {
+    text-align: center;
+}
