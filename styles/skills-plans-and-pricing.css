@@ -397,3 +397,16 @@ table img {
     background-color: black;
 }
 
+.endPage {
+    width: 50vw;
+    margin: auto;
+    text-align: center;
+}
+
+.brandBar {
+    width: 70vw;
+    margin: 3% auto auto auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
