@@ -1,0 +1,154 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #181818;
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    /* font-family: 'Prompt', sans-serif; */
+  }
+
+  .skill-box {
+    margin-top: 50px;
+    background: url("https://www.pluralsight.com/content/dam/pluralsight2/browse/backgrounds/bg-hero.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .skill-logo {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .skill-logo > img {
+    height: 20px;
+  }
+
+  .content-box {
+    width: 600px;
+    margin-bottom: 50px;
+  }
+
+  .content-box > h1 {
+    letter-spacing: 1px;
+    font-size: 36px;
+    font-weight: 700;
+  }
+
+  .cards-main-content {
+    margin-left: 15px;
+  }
+
+  .cards-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #4f4f4f;
+  }
+
+  .cards-main li {
+    margin: 0 30px 0 0;
+    list-style: none;
+    font-size: 21px;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .non-selected {
+    color: #aaaaaa;
+    font-weight: 500;
+  }
+
+  .selected {
+    padding-bottom: 10px;
+    color: #ffffff;
+    font-weight: 700;
+    border-width: 3px;
+    border-style: solid;
+    border-image: linear-gradient(to right, #e80c88 0%, #f15b2c 100%);
+    border-image-slice: 0 0 7 0;
+  }
+
+  #cards {
+    width: 350px;
+    height: 250px;
+    margin: 20px;
+    background-color: #222222;
+    box-shadow: 6px 6px 0.5px 0.5px rgba(18, 18, 18, 0.3);
+    /* padding: 10px; */
+  }
+
+  .short-dis {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  ul,
+  li {
+    list-style: none;
+  }
+
+  .short-dis > h3 {
+    margin: 0;
+  }
+
+  .short-dis > div {
+    color: #ababab;
+  }
+
+  .image {
+    width: 350px;
+    height: 100px;
+    object-fit: cover;
+  }
+
+  .active {
+    display: flex;
+    max-width: 1150px;
+    overflow-x:scroll;
+  }
+
+  .cards-ul-flex {
+    display: flex;
+    text-align: left;
+    align-items: center;
+    margin: 15px 0;
+    padding: 0;
+  }
+
+  .cards-ul-flex > li {
+    list-style: none;
+    font-size: 15px;
+    margin: 0 10px 0 0;
+  }
+
+  .cards-ul-flex > img {
+    width: 10px;
+    margin: 0 20px 0 10px;
+  }
+
+  .non-active {
+    display: none;
+  }
+  .cs-hidden{
+    margin: 0;
+    padding: 0;
+  }
+  .item-a{
+    margin: 0;
+    padding: 0;
+  }
+  .cS-hidden {
+    height: 1px;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    overflow: hidden;
+}
