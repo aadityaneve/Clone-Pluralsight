@@ -42,20 +42,29 @@ monthlyYearlyBtn.addEventListener("click", () => {
 
 
 // Individual button click event listener
-individualBtn.addEventListener("click", () => {
+function slideRight() {    
     showCards(monthlyYearlyBtn, MonthlyYearlyBtn);
     showCards(pricingCardsDiv, IndividualPricingCards);
     buttonGroup1.classList.toggle("active");
-});
+
+    individualBtn.removeEventListener("click", slideRight,true);
+    teamBtn.addEventListener("click", slideLeft, true);
+}
+individualBtn.addEventListener("click", slideRight, true);
 
 
 // Team button click event listener
-teamBtn.addEventListener("click", () => {
+function slideLeft() {
     monthlyYearlyBtn.innerHTML = null;
     showCards(pricingCardsDiv, TeamPricingCards);
     buttonGroup1.classList.toggle("active");
+    
+    teamBtn.removeEventListener("click", slideLeft,true);
+    individualBtn.addEventListener("click", slideRight, true);    
+    
     counter = 0;
-});
+}
+teamBtn.addEventListener("click", slideLeft, true);
 
 
 // showCards will accept div element and component to show
