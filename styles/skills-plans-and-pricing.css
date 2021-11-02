@@ -280,7 +280,7 @@ table tr:nth-child(odd) {
     margin: auto;
     width: 8px;
     height: 20px;
-    border: solid #F7A614;
+    border: solid #f7a614;
     border-width: 0 2px 2px 0;
     transform: rotate(45deg) translateX(-50%);
 }
@@ -320,4 +320,16 @@ table img {
 
 .textAlignCenter {
     text-align: center;
+}
+
+.colorOrange {
+    color: #f7a614;
+}
+
+.colorBlue {
+    color: #0084bd;
+}
+
+.colorPink {
+    color: #ec008c;
 }
