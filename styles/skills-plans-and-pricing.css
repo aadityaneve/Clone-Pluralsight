@@ -41,11 +41,8 @@ body {
 
     background-color: black;
     border: 1px solid gray;
-    /* position: absolute; */
     width: 415px;
     height: 70px;
-    /* top: 40%;
-    left: 40%; */
     border-radius: 50px;
 
     transition: all 0.5s ease-in-out;
@@ -106,9 +103,6 @@ body {
     align-items: center;
     gap: 15px;
 
-    /* position: absolute; */
-    /* top: 50%;
-    left: 50%; */
     transform: translate(-50, -50);
 }
 
@@ -178,7 +172,7 @@ body {
 }
 
 .bgPink {
-    color: #EC008C;
+    color: #ec008c;
 }
 
 .pricingCardBtn {
@@ -213,4 +207,25 @@ body {
     100% {
         background: #f05a28;
     }
+}
+
+.compareCourseLibrary {
+    padding-top: 4%;
+    width: 80vw;
+    margin: auto;
+    text-align: center;
+}
+
+.compareCourseLibrary > div:nth-child(2) {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+}
+
+.compareCourseLibrary > div:nth-child(2) > div:nth-child(1) {
+    flex-basis: 25vw;
+}
+
+.compareCourseLibrary > div:nth-child(2) > div:nth-child(2) {
+    flex-basis: 25vw;
 }
