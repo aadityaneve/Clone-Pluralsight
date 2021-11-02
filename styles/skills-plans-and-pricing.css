@@ -1,0 +1,133 @@
+* {
+    font-family: "Prompt", sans-serif;
+}
+
+body {
+    letter-spacing: 0.1em;
+    background-color: #181818;
+    color: white;
+    width: 99vw;
+}
+
+.topDiv {
+    padding: 5% 0% 5% 0%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 99vw;
+    margin: auto;
+}
+
+.topDiv > h1 {
+    font-weight: 900;
+    font-size: 3.2rem;
+}
+
+
+/* button group 1 */
+.buttonGroup1 {
+    display: flex;
+    justify-content: space-around;
+
+    background-color: black;
+    border: 2px solid gray;
+    position: absolute;
+    width: 415px;
+    height: 70px;
+    top: 40%;
+    left: 40%;
+    border-radius: 50px;
+
+    transition: all 0.5s ease-in-out;
+}
+
+.individualBtn {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    color: gray;
+    font-size: 15px;
+    font-weight: 900;
+
+    cursor: pointer;
+}
+
+.innerOval {
+    background-color: #4e4c4c;
+
+    position: absolute;
+    margin-right: 207.75px;
+    width: 207.5px;
+    height: 70px;
+
+    border-radius: 50px;
+    opacity: 0.6;
+    cursor: pointer;
+
+    transition: all 0.5s ease-in-out;
+}
+
+.buttonGroup1.active {
+    background: #363636;
+}
+
+.buttonGroup1.active > .innerOval {
+    margin-left: 411px;
+}
+
+.teamBtn {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    color: gray;
+    font-size: 15px;
+    font-weight: 900;
+
+    cursor: pointer;
+}
+/* button group 1 end */
+
+
+/* button group 2 */
+.buttonGroup2 {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50, -50);
+}
+
+.toggleBtn {
+    width: 70px;
+    height: 25px;
+    background: #363636;
+    border-radius: 30px;
+    padding: 3px;
+    
+    transition: all 0.5s ease-in-out;
+}
+
+.toggleBtn > .innerCircle {
+    width: 30px;
+    height: 25px;
+    background: white;
+    border-radius: 50%;
+
+    transition: all 0.5s ease-in-out;
+}
+
+.toggleBtn.active {
+    background: #363636;
+}
+
+.toggleBtn.active > .innerCircle {
+    margin-left: 45px;
+}
+/* button group 2 end */

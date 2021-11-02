@@ -1,16 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plans & Pricing</title>
-</head>
-<body>
-    
-    <div class="topBar">
-        <img src="https://www.pluralsight.com/content/dam/pluralsight2/product/v2/logos/logo-skills.png" alt="">
-    </div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Prompt:wght@500&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="../styles/skills-plans-and-pricing.css" />
+        <title>Plans & Pricing</title>
+    </head>
+    <body>
+        <nav style="margin: 0%; padding: 2.5%; border: 1px solid yellow"></nav>
 
-</body>
+        <div class="topDiv">
+            <img
+                src="https://www.pluralsight.com/content/dam/pluralsight2/product/v2/logos/logo-skills.png"
+                alt=""
+            />
+            <h1>Plans & pricing</h1>
+        </div>
+
+        <div class="individualAndTeamBtns">
+            <div class="buttonGroup1" onclick="this.classList.toggle('active')">
+                <div class="individualBtn">INDIVIDUAL</div>
+                <div class="innerOval"></div>
+                <div class="teamBtn">TEAM</div>
+            </div>
+
+            <div class="buttonGroup2">
+                <p>Monthly</p>
+                <div
+                    class="toggleBtn"
+                    onclick="this.classList.toggle('active')"
+                >
+                    <div class="innerCircle"></div>
+                </div>
+                <p>Yearly</p>
+            </div>
+
+            <div class="pricingCards"></div>
+        </div>
+
+        
+
+    </body>
 </html>
