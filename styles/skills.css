@@ -441,6 +441,10 @@ th {
     animation: 3s linear 0s infinite colorChange;
 }
 
+.colorPink {
+    color: #ec008c;
+}
+
 .collapsiblesDiv {
     display: flex;
     width: 80vw;
@@ -455,7 +459,6 @@ th {
 }
 
 .collapsibleBtns > button {
-    margin-top: 5%;
     border-top: 0;
     border-right: 0;
     border-bottom: 5% solid yellow;
@@ -470,17 +473,17 @@ th {
     color: white;
     cursor: pointer;
     padding: 18px;
-    width: 100%;
+    width: 40vw;
     border: none;
     text-align: left;
     outline: none;
     font-size: 15px;
+    transition: all 0.5s ease-in-out;
 }
 
 .collapsible::after {
     content: "\25BE";
     float: right;
-    transform: scale(1.5);
 }
 
 .collapsibleActive {
@@ -497,14 +500,13 @@ th {
 }
 
 .content {
+    width: 38vw;
     padding: 0 18px;
     display: none;
     overflow: hidden;
-    max-height: 0;
-    transition: max-height 1s ease-out;
     background-color: black;
-    color: white;
 }
+
 
 .endPage {
     width: 80vw;

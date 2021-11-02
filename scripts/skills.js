@@ -1,15 +1,13 @@
 // Click event for Collapsibles
-let buttons = document.querySelectorAll(".collapsible");
-console.log(buttons)
-buttons.forEach((button) => {
-    button.addEventListener("click", () => {
-        const content = button.nextElementSibling;
-
-        button.classList.toggle("collapsibleActive");
-        if (button.classList.contains("collapsibleActive")) {
-            content.style.maxHeight = content.scrollHeight + "350px";
-        }else {
-            content.style.maxHeight = "0px";
+var collapsibles = document.getElementsByClassName("collapsible");
+for (let i = 0; i < collapsibles.length; i++) {
+    collapsibles[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+            content.style.display = "none";
+        } else {
+            content.style.display = "block";
         }
     });
-});
+}
