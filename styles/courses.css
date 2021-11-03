@@ -191,6 +191,7 @@ li {
   color: #ffffff;
   font-weight: bold;
   margin-bottom:10px;
+  cursor: pointer;
 }
 #sort-by > div {
   display: flex;
@@ -222,18 +223,22 @@ li {
 .dropdown-menu > li {
   padding: 7px 0px;
 }
-.dropdown-menu > li > label {
+.dropdown-menu > li > button {
+  border: none;
+  outline: none;
+  background-color:#222222;
+  color:#ffffff;
   text-align: left;
-  margin: 8px auto 8px 0px;
+  font-size: 15px;
   cursor: pointer;
 }
 
-.dropdown-menu > li > label:hover {
+.dropdown-menu > li > button:hover {
   color: #e80c88;
 }
 .filter-data{
   display: grid;
-  grid-template-columns: 25% 75%;
+  grid-template-columns: 25% 70%;
   gap: 5%;
 }
 .skill {
@@ -249,5 +254,14 @@ li {
 }
 #courses_data{
   display: flex;
+  flex-direction:column;
   gap: 5px;
+}
+#courses_data > div{
+  border-bottom: 1px solid #4f4f4f;
+  /* margin-right: 10px; */
+}
+#star{
+  /* height:10px; */
+  width: 60px;
 }
