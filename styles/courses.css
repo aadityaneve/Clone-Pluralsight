@@ -231,3 +231,23 @@ li {
 .dropdown-menu > li > label:hover {
   color: #e80c88;
 }
+.filter-data{
+  display: grid;
+  grid-template-columns: 25% 75%;
+  gap: 5%;
+}
+.skill {
+  border-bottom: 1px solid #4f4f4f;
+}
+.group {
+  margin: 5px auto;
+  padding: 2px;
+  font-size:20px;
+}
+.subject {
+  border-bottom: 1px solid #4f4f4f;
+}
+#courses_data{
+  display: flex;
+  gap: 5px;
+}

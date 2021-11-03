@@ -19,6 +19,108 @@ function trend() {
   non_active_content.setAttribute("class", "active");
 }
 
+
+const courses = [
+  {
+    type: "Configuring, Compiling, and Debugging TypeScript Projects",
+    name: "Web development",
+    status: "Beginner",
+    rat: 51,
+    time: "2h 7m",
+    by:"by Daniel Stern"
+  },
+  {
+    type: "JavaScript Arrays and Collections",
+    name: "Web development",
+    status: "Beginner",
+    rat: 201,
+    time: "1h 57m ",
+    by:"by Jeff Batt"
+  },
+  {
+    type: "Creating Asynchronous TypeScript Code",
+    name: "Web development",
+    status: "Beginner",
+    rat: 92,
+    time: "1h 50m ",
+    by:"by John Papa"
+  },
+  {
+    type: "Managing Big Data with AWS Storage Options",
+    name: "Software development",
+    status: "Advanced",
+    rat: 11,
+    time: "1h 38m ",
+    by:"by Nertil Poci"
+  },
+  {
+    type: "Working with Django Models",
+    name: "Software development",
+    status: "Intermediate",
+    rat: 19,
+    time: "2h 33m ",
+    by:"by Reindert-Jan Ekker"
+  },
+  {
+    type: "Credential Access with Responder",
+    name: "Information & cyber security",
+    status: "Advanced",
+    rat: 12,
+    time: "20m ",
+    by:"by Ricardo Reimao"
+  },
+  {
+    type: "Results and Reporting for CompTIA PenTest+",
+    name: "Information & cyber security",
+    status: "Advanced",
+    rat: 18,
+    time: "1h 16m ",
+    by:"by Dale Meredith"
+  },
+  {
+    type: "Autodesk Vault Professional Installation and Setup",
+    name: "Manufacturing & design",
+    status: "Advanced",
+    rat: 12,
+    time: "2h 25m ",
+    by:"by Neil Cross"
+  },
+  {
+    type: "Creating Data Integrations with SharePoint Framework",
+    name: "It ops",
+    status: "Intermediate",
+    rat: 10,
+    time: "1h 40m ",
+    by:"by JS Padoan"
+  },
+  {
+    type: "Designing SSIS Integration Solutions",
+    name: "Data professional",
+    status: "Beginner",
+    rat: 24,
+    time: "1h 20m",
+    by:"by Don Robins"
+  },
+  {
+    type: "Exploring Product Business Foundations",
+    name: "Business professional",
+    status: "Intermediate",
+    rat: 15,
+    time: "2h 33m ",
+    by:"by Michael Krasowski"
+  },
+  {
+    type: "Earning and Retaining Your PMP® Certification Product Business Foundations",
+    name: "Business professional",
+    status: "Beginner",
+    rat: 22,
+    time: "3h 30m ",
+    by:"by Tommy van Schaik",
+  },
+];
+
+// dropdown open-close
+
 function dropdown() {
     let dd_menu = document.querySelector(".dropdown-menu");
     if(dd_menu.style.display == ""){
@@ -28,8 +130,64 @@ function dropdown() {
     }
 }
 
+
+// inputvalue clear function
+
 let cl = document.getElementById("close");
 let search_value = document.getElementById("browse-input");
 cl.onclick = ()=>{
     search_value.value = null;
+}
+
+
+// skill filter function 
+
+function skills() {
+  let Begin = document.getElementById("Beginner");
+  let Inter = document.getElementById("Intermediate");
+  let Advan = document.getElementById("Advanced");
+
+  console.log(Begin.checked,Inter.checked,Advan.checked);
+  
+  
+}
+
+
+let data_div = document.getElementById("courses_data")
+
+function courseAppend(d){
+
+  let data1 = d;
+
+  data_div.innerHTML = null;
+
+  data1.forEach(function (el) {
+    let div = document.createElement("div");
+
+    let type = document.createElement("h4");
+    type.innerHTML = el.type;
+    let wname = document.createElement("p");
+    wname.innerHTML = el.by;
+    let ul = document.createElement("ul");
+    ul.setAttribute("class","cards-ul-flex")
+    let time = document.createElement("li");
+    time.innerHTML = el.time;
+    let status = document.createElement("li");
+    status.innerHTML = el.status;
+    let rat = document.createElement("li");
+    rat.innerHTML = el.rat;
+    let img = document.createElement("img");
+    img.src =
+      "https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/course/level.png";
+    let s_img = document.createElement("img");
+    s_img.src =
+      "https://www.nicepng.com/png/full/88-886368_five-yellow-stars-5-stars-black-background.png";
+    let c_img = document.createElement("img");
+    c_img.src =
+      " https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/course/clock.png";
+    
+    ul.append(time, c_img, status, img, s_img, rat)
+    div.append(type, wname,ul);
+    data_div.append(div);
+  });
 }
