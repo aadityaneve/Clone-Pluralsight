@@ -1,3 +1,6 @@
+
+let data_div = document.getElementById("courses_data");
+
 let new_selected = document.getElementById("new-selected");
 let trending = document.getElementById("trending");
 let active_content = document.getElementById("active-content");
@@ -174,6 +177,7 @@ let cl = document.getElementById("close");
 let search_value = document.getElementById("browse-input");
 cl.onclick = () => {
   search_value.value = null;
+  courseAppend(courses);
 };
 
 // skill filter function
@@ -232,14 +236,31 @@ function skills() {
   }
 }
 
-let data_div = document.getElementById("courses_data");
+function coursesFilter(a) {
 
-function courseAppend(d) {
-  let data1 = d;
+ let data = courses.filter((el)=>{
+    if(el.name == a) {
+      return el;
+    }
+  })
+  courseAppend(data);
+}
 
+function search(){
+  let value = document.getElementById("browse-input").value.toLowerCase();
+  let data = courses.filter((el)=>{
+    if(el.type.toLowerCase().includes(value)){
+      return el;
+    }
+  })
+  courseAppend(data);
+}
+
+function courseAppend(data) {
+  
   data_div.innerHTML = null;
 
-  data1.forEach(function (el) {
+  data.forEach(function (el) {
     let div = document.createElement("div");
 
     let type = document.createElement("h4");
@@ -267,6 +288,8 @@ function courseAppend(d) {
 
     ul.append(time, c_img, status, img, s_img, rat);
     div.append(type, wname, ul);
-    data_div.append(div);
+    courses_data.append(div);
   });
 }
+
+courseAppend(courses);

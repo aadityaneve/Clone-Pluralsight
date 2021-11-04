@@ -112,8 +112,29 @@ li {
 
 .active {
   display: flex;
-  max-width: 1150px;
-  overflow-x: scroll;
+  max-width: 95vw;
+  margin: auto;
+  /* overflow-x: scroll; */
+}
+.upperCards{
+  width: 350px;
+}
+.slick-prev {
+  left: 15px;
+  z-index: 1;
+}
+.slick-next {
+  right: 15px;
+}
+.slick-next:before, .slick-prev:before {
+  font-size:25px;
+}
+#cards{
+  width: 90%;
+}
+.short-dis>h3{
+  font-size:17px;
+  width: 250px;
 }
 
 .cards-ul-flex {
@@ -138,20 +159,12 @@ li {
 .non-active {
   display: none;
 }
-.cs-hidden {
-  margin: 0;
-  padding: 0;
-}
+
 .item-a {
   margin: 0;
   padding: 0;
 }
-.cS-hidden {
-  height: 1px;
-  opacity: 0;
-  filter: alpha(opacity=0);
-  overflow: hidden;
-}
+
 .browse-content {
   padding: 20px;
 }
@@ -190,7 +203,7 @@ li {
   border: 2px solid #ffffff;
   color: #ffffff;
   font-weight: bold;
-  margin-bottom:10px;
+  margin-bottom: 10px;
   cursor: pointer;
 }
 #sort-by > div {
@@ -205,14 +218,14 @@ li {
   list-style: none;
   right: 40px;
   width: 150px;
-  display:none;
+  display: none;
 }
 .dropdown-menu > .droparrow::before {
   position: absolute;
   content: "";
   height: 20px;
   width: 20px;
-  background-color:#222222;
+  background-color: #222222;
   right: 35px;
   top: -10px;
   transform: rotate(45deg);
@@ -226,8 +239,8 @@ li {
 .dropdown-menu > li > button {
   border: none;
   outline: none;
-  background-color:#222222;
-  color:#ffffff;
+  background-color: #222222;
+  color: #ffffff;
   text-align: left;
   font-size: 15px;
   cursor: pointer;
@@ -236,7 +249,7 @@ li {
 .dropdown-menu > li > button:hover {
   color: #e80c88;
 }
-.filter-data{
+.filter-data {
   display: grid;
   grid-template-columns: 25% 70%;
   gap: 5%;
@@ -247,21 +260,21 @@ li {
 .group {
   margin: 5px auto;
   padding: 2px;
-  font-size:20px;
+  font-size: 20px;
 }
 .subject {
   border-bottom: 1px solid #4f4f4f;
 }
-#courses_data{
+#courses_data {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   gap: 5px;
 }
-#courses_data > div{
+#courses_data > div {
   border-bottom: 1px solid #4f4f4f;
   /* margin-right: 10px; */
 }
-#star{
+#star {
   /* height:10px; */
   width: 60px;
 }
