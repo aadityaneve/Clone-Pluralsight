@@ -1,0 +1,227 @@
+body {
+    font-family: PS TT Commons Roman,Gotham SSm A,Gotham SSm B,Arial,sans-serif;
+    margin: 0;
+    background-color: #000000;
+    color: hsla(0,0%,100%,.95);
+}
+#top_error {
+    display: none;
+}
+.alert.error {
+    background-color: #d21c09;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.alert {
+    min-height: 30px;
+    color: #fff;
+    padding: 8px 40px;
+    text-align: center;
+}
+.validation-error {
+    background-color:  #d21c09;
+    align-items: center;
+    justify-content: center;
+    flex: 9.5;
+    margin-top: .5%;
+}
+.alert .close {
+    font-size: 28px;
+    color: hsla(0,0%,100%,.5);
+    cursor: pointer;
+    background-color: #d21c09;
+}
+#container {
+    display: flex;
+    flex-direction: row;
+}
+#block1 {
+    display: flex;
+    flex: auto;
+    flex: 4;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #0d0f12;
+}
+.space {
+    height: 48px;
+}
+.signin, .signin #blk1_cont {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.signin {
+    flex-direction: column;
+    flex: auto;
+    justify-content: center;
+    padding-bottom: 12px;
+}
+.signin #blk1_cont {
+    flex-direction: column;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10%;
+    width: 100%;
+
+}
+.logo img {
+    width: 303px;
+    max-width: 80%;
+}
+
+.signInForm label {
+    font-size: 16px;
+}
+.signin-inp {
+    color: hsla(0,0%,100%,.95);
+    background: #0d0f12;
+    border: 1px solid hsla(0,0%,100%,.3);
+    overflow: visible;
+    border-radius: 2px;
+    height: 20px;
+    padding: 8px 16px;
+    width: 90%;
+    margin-top: 1.5%;
+    margin-bottom: 25px;
+}
+.psds-text-input__label {
+color: hsla(0,0%,100%,.95);
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.signin_btn {
+    background: #005685;
+    cursor: pointer;
+    margin-bottom: 48px;
+    color: hsla(0,0%,100%,.95);
+    font-size: 16px;
+    letter-spacing: .01em;
+    padding: 8px 16px;
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+}
+.signin_btn:hover {
+    background-color:#2ea0d6 ;
+}
+.links {
+    width: 80%;
+    text-align: center;
+}
+.links >div, .signin_link {
+    color: #2ea0d6;
+    margin-bottom: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+a:hover, .links >div:hover {
+  color: #005685;
+  text-decoration: underline;
+  }
+
+  .bar {
+    width: 57%;
+    border: none;
+    height: 2px;
+    background-color: hsla(0,0%,100%,.15);
+}
+#create-account-link {
+    
+    width: 57%;
+    margin-bottom: 24px;
+    border-radius: 4px;
+    margin-top: 2.5%;
+    text-align: center;
+    padding: 10px 0px ;
+    color: hsla(0,0%,100%,.95);
+    background: rgba(138,153,168,.25);
+    text-decoration: none;
+    font-size: 16px;
+    margin-bottom: 90px;
+}
+#create-account-link:hover {
+background-color: #333333;
+}
+#footer {
+    color: hsla(0,0%,100%,.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 12px;
+    flex: 1;
+    max-width: 100%;
+    margin-bottom: 5px;
+}
+#footer >div {
+    display: flex;
+    width: 60%;
+    margin: auto;
+   
+}
+#footer >div >div:nth-child(1) ,
+#footer >div >div:nth-child(4)
+{
+ text-decoration: underline;
+}
+#block2 {
+    position: relative;
+    flex: 6;
+    display: block;
+}
+.blk2_cont {
+    background-image: url(https://www.pluralsight.com/content/dam/pluralsight2/login/bg-gtm-2020.png);
+    background-position: right center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+#build_skills_img {
+    width: 80%;
+    margin: 23% auto 4% 10.5%;
+}
+.try_free {
+    margin-bottom: 0px;
+    padding: 12px 80px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.3s all;
+    border-radius: 2px;
+    background: linear-gradient(to right,#F05A28,#EC008C,#F05A28);
+    color: #fff;
+    text-decoration: none;
+    margin: auto 10.5%;
+}
+.better_img {
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    max-width: 150px;
+}
+@media (max-width: 768px){
+    #block1 {
+        flex: 1;
+    }
+    #block2 {
+        display: none;
+    }
+   
+}
+@media (max-width: 600px){
+   .bar, #create-account-link {
+       width: 77%;
+   }
+}
