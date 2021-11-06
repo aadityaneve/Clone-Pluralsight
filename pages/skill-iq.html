@@ -89,7 +89,16 @@
     <!-- video-box end  -->
 
     <!-- last box start  -->
-
+    
+    <div class="middel">
+      <p>Take a free assessment to get your Skill IQ today</p>
+    </div>
+    <div class="vari">
+      <h4>All</h4>
+      <div id="push">
+        
+      </div>
+    </div>
     <div class="lastbox">
         <div>
             <h1>Identify your knowledge gaps and strengths with Skill IQ</h1>
@@ -100,3 +109,43 @@
     </div>
   </body>
 </html>
+<script>
+  let push = document.getElementById("push");
+
+  async function data(){
+    let res = await fetch("../scripts/run_results.json");
+
+    let d = await res.json();
+    parot(d.all);
+  }
+  data();
+
+  function parot(d){
+  
+    d.forEach((el)=>{
+      let main_div = document.createElement("div");
+      main_div.setAttribute("class","main-div")
+
+      let img_div = document.createElement("div");
+      let img = document.createElement("img");
+      img.src =el.image;
+      img_div.append(img);
+
+      let name_div = document.createElement("div");
+      name_div.setAttribute("class","name-div")
+      let name = document.createElement("h5");
+      name.textContent = el.name;
+
+      let courses = document.createElement("p");
+      courses.textContent = el.courses;
+
+      let hours = document.createElement("p");
+      hours.textContent = el.hours;
+      name_div.append(name,courses,hours);
+
+      main_div.append(img_div,name_div);
+
+      push.append(main_div);
+    })
+  }
+</script>
