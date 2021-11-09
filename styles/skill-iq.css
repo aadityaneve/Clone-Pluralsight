@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #181818;
+  color: #ffffff;
+  /* font-family: "Roboto", sans-serif; */
+  font-family: "Prompt", sans-serif;
+}
+
+.skill-container {
+  margin-top: 5%;
+  width: 100%;
+  height: 90vh;
+  background-image: url("https://www.pluralsight.com/content/pluralsight/en/product/skill-iq/jcr:content/main/generic_block1_copy/image-res.img.8dc810b3-280a-4e19-b6a6-61a59ca11c5c.jpg");
+  background-position: center;
+  background-size: cover;
+  box-sizing: border-box;
+  padding: 100px 0;
+}
+
+.skill-details {
+  padding: 0 15px;
+  width: 60%;
+}
+
+.skill-details > h1 {
+  font-size: 60px;
+  margin: 0;
+  line-height: 1.2em;
+}
+.skill-details p {
+  font-size: 20px;
+  margin: 10px 0 30px 0;
+}
+.skill-details div {
+  display: flex;
+  gap: 5%;
+}
+.btn1 {
+  cursor: pointer;
+  padding: 15px;
+  width: 260px;
+  height: 50px;
+  font-weight: 800;
+  color: #ffffff;
+  background-image: linear-gradient(to right, #e80c88 0%, #f15b2c 100%);
+  border: none;
+  border-radius: 2px;
+}
+.btn2 {
+  cursor: pointer;
+  display: flex;
+  width: 260px;
+  height: 50px;
+  padding: 5px;
+  font-weight: 700;
+  box-sizing: border-box;
+  background-color: transparent;
+  border: none;
+  justify-content: space-around;
+  color: #ffffff;
+}
+.btn2 > img {
+  width: 18%;
+}
+.video-box {
+  display: flex;
+  flex-direction: row;
+  height: 550px;
+  box-sizing: border-box;
+}
+.video-box > div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 40%;
+  height: 100%;
+
+  padding: 150px 15px;
+  justify-content: space-around;
+}
+.video-box > div:nth-child(1) > h2 {
+  font-size: 40px;
+  line-height: 1.2em;
+}
+.video-box > div:nth-child(2) {
+  display: flex;
+  box-sizing: border-box;
+  width: 57%;
+  height: 100%;
+}
+
+.lastbox {
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+}
+.lastbox > div:nth-child(1) {
+  line-height: 2.2em;
+  box-sizing: border-box;
+  font-size: 18px;
+  width: 65%;
+  padding-left: 15px;
+  padding-right: 50px;
+}
+.lastbox > div:nth-child(2) {
+  box-sizing: border-box;
+  /* padding-left: 150px; */
+  width: 25%;
+}
+.lastbox > button {
+  cursor: pointer;
+  padding: 15px;
+  width: 260px;
+  height: 50px;
+  font-weight: 800;
+  color: #ffffff;
+  background-image: linear-gradient(to right, #e80c88 0%, #f15b2c 100%);
+  border: none;
+  border-radius: 2px;
+}
+
+.middel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  /* border: 2px solid blue; */
+  box-sizing: border-box;
+}
+.middel p {
+  font-size: 30px;
+  display: block;
+  /* margin: 40px auto; */
+  padding-top:120px;
+  padding-bottom:70px;
+}
+
+.vari{
+    background-color: #000000;
+    box-sizing: border-box;
+    /* border: 2px solid #e80c88; */
+}
+
+.vari h4{
+    margin: auto;
+    padding-bottom: 10px;
+    width: 70%;
+    text-align: center;
+    border-bottom: 1px solid #4f4f4f;
+    box-sizing: border-box;
+}
+#push{
+    display: grid;
+    width: 70%;
+    grid-template-columns: 50% 50%;
+    margin: auto;
+    /* border: 1px solid #e80c88; */
+    gap: 0 20px;
+    box-sizing: border-box;
+}
+.main-div{
+    display:flex;
+    padding:10px;
+    background-color: #181818;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  
+}
+
+.name-div{
+    padding-right: 20%;
+}
+.name-div > p {
+    display: inline-block;
+    padding: 10px;
+}
