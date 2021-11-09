@@ -274,7 +274,13 @@ li {
   margin: 5px auto;
   padding: 2px;
   font-size: 20px;
+  cursor: pointer;
 }
+
+.group > label {
+  cursor: pointer;
+}
+
 .subject {
   border-bottom: 1px solid #4f4f4f;
 }
@@ -287,6 +293,7 @@ li {
   border-bottom: 1px solid #4f4f4f;
   margin-bottom: 5px;
   cursor: pointer;
+  padding: 5px;
   /* margin-right: 10px; */
 }
 

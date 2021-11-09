@@ -23,13 +23,15 @@ trending.addEventListener("click", () => {
   non_active_content.setAttribute("class", "displayBlock");
 });
 
+
 setTimeout(() => {
     // trending.setAttribute("class", "selected");
     // new_selected.setAttribute("class", "non-selected");
   
     active_content.setAttribute("class", "displayBlock");
     non_active_content.setAttribute("class", "displayNone");
-}, 500);
+}, 1000);
+
 
 // function newThisMonth() {
   
