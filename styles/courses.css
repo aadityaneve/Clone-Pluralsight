@@ -114,12 +114,18 @@ li {
   object-fit: cover;
 }
 
-.upperactive{
+.displayBlock{
   display: block;
 }
-.uppernonactive{
+
+.displayNone{
   display: none;
 }
+
+/* .upperactive > div:nth-child(2){
+  border: 2px solid yellow;
+} */
+
 .active {
   display: flex;
   max-width: 95vw;
@@ -279,8 +285,15 @@ li {
 }
 #courses_data > div {
   border-bottom: 1px solid #4f4f4f;
+  margin-bottom: 5px;
+  cursor: pointer;
   /* margin-right: 10px; */
 }
+
+#courses_data > div:hover {
+  background-color: rgb(92, 92, 92);
+}
+
 #star {
   /* height:10px; */
   width: 60px;
