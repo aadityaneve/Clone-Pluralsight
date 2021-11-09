@@ -114,12 +114,18 @@ li {
   object-fit: cover;
 }
 
-.upperactive{
+.displayBlock{
   display: block;
 }
-.uppernonactive{
+
+.displayNone{
   display: none;
 }
+
+/* .upperactive > div:nth-child(2){
+  border: 2px solid yellow;
+} */
+
 .active {
   display: flex;
   max-width: 95vw;
@@ -292,6 +298,11 @@ li {
   margin: 5px auto;
   padding: 2px;
   font-size: 20px;
+  cursor: pointer;
+}
+
+.group > label {
+  cursor: pointer;
 }
 
 .subject {

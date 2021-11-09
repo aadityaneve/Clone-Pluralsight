@@ -4,24 +4,44 @@ let data_div = document.getElementById("courses_data");
 
 let new_selected = document.getElementById("new-selected");
 let trending = document.getElementById("trending");
+
 let active_content = document.getElementById("ac");
 let non_active_content = document.getElementById("nonac");
-new_selected.addEventListener("click", newThisMonth);
-trending.addEventListener("click", trend);
 
-function newThisMonth() {
+new_selected.addEventListener("click", () => {
   new_selected.setAttribute("class", "selected");
   trending.setAttribute("class", "non-selected");
-  active_content.setAttribute("class", "upperactive");
-  non_active_content.setAttribute("class", "uppernonactive");
-}
 
-function trend() {
+  active_content.setAttribute("class", "displayBlock");
+  non_active_content.setAttribute("class", "displayNone");
+});
+
+trending.addEventListener("click", () => {
   trending.setAttribute("class", "selected");
   new_selected.setAttribute("class", "non-selected");
-  active_content.setAttribute("class", "uppernonactive");
-  non_active_content.setAttribute("class", "upperactive");
-}
+
+  active_content.setAttribute("class", "displayNone");
+  non_active_content.setAttribute("class", "displayBlock");
+});
+
+
+setTimeout(() => {
+    // trending.setAttribute("class", "selected");
+    // new_selected.setAttribute("class", "non-selected");
+  
+    active_content.setAttribute("class", "displayBlock");
+    non_active_content.setAttribute("class", "displayNone");
+}, 1000);
+
+
+// function newThisMonth() {
+  
+// }
+
+// function trend() {
+ 
+// }
+
 /*
 const courses = [
   {
@@ -311,6 +331,10 @@ function search(){
     courseAppend(d);
   })
 }
+
+
+
+
 
 function courseAppend(data) {
   
