@@ -1,5 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@400&family=Source+Sans+Pro&display=swap");
+* {
+    font-family: "Prompt", sans-serif;
+}
+
+p {
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+h1 {
+    line-height: 1.3em;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: helvetica neue,Helvetica,Roboto,Arial,sans-serif;
     background: #111;
     color: white;
 }
@@ -25,6 +42,10 @@ body {
 }
 .spacer {
     height: 40px;
+}
+.material-icons {
+padding: 0%;
+margin: 0%; 
 }
 #subs_row {
 width: 90%;
@@ -71,17 +92,13 @@ color: #eee !important;
 .learn_link > button >div {
     display: inline-block;
     font-size: 20px;
-    padding: 15px 0px 0px 15px;
+    vertical-align: top;
 }
 a {
     text-decoration: none;   
     color: #fff; 
     width: 80%;
     padding: 15px 0px 0px 15px;
-}
-.arrow {
-    color: #e40084;
-    padding-left: 0px;
 }
 .arrow:hover {
     margin-left: 8px;
@@ -111,12 +128,15 @@ button {
     border: none;
     color: #fff;
     cursor: pointer;
-}
+    padding: 0px;
 }
 .learn_link:hover {
-    font-size: 17px;
-    line-height: 1.4;
     cursor: pointer;
+}
+.arrow {
+    padding: 0%;
+    margin: 0%;
+    color: #e40084;
 }
 @media (max-width: 768px){
     #sub_blk {
