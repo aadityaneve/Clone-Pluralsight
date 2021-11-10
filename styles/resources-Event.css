@@ -1,0 +1,207 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Prompt", sans-serif;
+}
+p {
+    font-family: "Source Sans Pro", sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #181818;
+}
+#navbar{
+    background-color: #212121;
+    position: sticky;
+    top: 0;
+    padding: 45px;
+    z-index: 1;
+}
+#topHeadng{
+    background-color: #000;
+    color: white;
+    padding: 74px 0px 265px 20px;
+    font-size: 60px;
+    font-weight: 700;
+}
+#topIMgDiv{
+    background-image: url("https://www.pluralsight.com/content/pluralsight/en/events/jcr:content/main/generic_block_1608290365/parsys/animation_wrapper/parsys/generic_block/parsys/columns/column-parsys-1/generic_block/image-res.img.582ba76f-dbb0-45e2-b666-931a1b9fdac8.jpg");
+    height: 385px;
+    position: relative;
+    bottom: 240px;
+    margin: 0px 15px;
+}
+#topImgInnrDiv{
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 385px;
+}
+#topImgInnrDiv>p:nth-child(1){
+    color: #e40084;
+    padding: 52px 0px 0px 34px;
+    font-size: 17px;
+    font-weight: 600;
+}
+border
+#topImgInnrDiv>p:nth-child(2){
+    color: white;
+    padding: 22px 0px 0px 34px;
+    font-size: 40px;
+    font-weight: 700;
+}
+#topImgInnrDiv>p:nth-child(3){
+    padding: 20px 0px 0px 34px;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(221, 220, 220);
+}
+#imgBtn {
+    margin: 20px 0px 0px 34px;
+    padding: 15px 30px;
+    color: white;
+    background-image: linear-gradient(to right, #F05A28, #F05A28, #EC008C);
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+#imgBtn::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to right,#EC008C,#EC008C,#F05A28);
+    z-index: -1;
+    transition: opacity 0.5s linear;
+    opacity: 0;
+}
+
+#imgBtn:hover::before {
+    opacity: 1;
+}
+
+.UpcEvnt{
+    position: relative;
+    bottom: 150px;
+}
+.UpcEvnt>div{
+    /* border: 1px solid red; */
+    display: inline-block;
+}
+.UpcEvnt>div:nth-child(2){
+    margin-left: 30px;
+    width: 70%;
+    vertical-align: top;
+    color: white;
+}
+.UpEvFilDiv{
+    width: 24%;
+    color: white;
+    padding: 0px 0px 0px 30px;
+}
+.UpEvFilDiv>p:nth-child(1){
+    font-size: 36px;
+    font-weight: 700;
+}
+.UpEvFilDiv>p:nth-child(2){
+    margin: 55px 0px 15px 0px;
+    font-size: 22px;
+    font-weight: 600;
+}
+.UpEvInfoDivCmn{
+    display: grid;
+    grid-template-columns: 31.8% 31.8% 31.8%;
+    grid-gap: 3%;
+}
+.opt1C,.opt2C{
+    padding: 10px 0px;
+    width: 100%;
+    margin-top: 20px;
+    background-color: transparent;
+    color: rgb(221, 220, 220);
+    border: none;
+    border-bottom: 1px solid rgb(221, 220, 220);
+    font-size: 16px;
+}
+
+.opt1C>option,.opt2C>option{
+    background-color: #222;
+}
+.infoEndDiv{
+    background-color: #222;
+    height: 360px;
+    padding: 0px 26px 0px 26px;
+    border-radius: 6px;
+    box-shadow: 2px 20px 30px -15px rgb(0 0 0 / 80%);
+    cursor: pointer;
+}
+.Einfo1Div{
+    background-color: #f7a614;
+    display: inline-block;
+    border-radius: 42px;
+    padding: 3px 16px;
+    color: black;
+    font-weight: 600;
+    margin: 20px 0px 0px 0px;
+}
+.Einfo2Div{
+    font-size: 22px;
+    line-height: 28px;
+    margin: 20px 0px 0px 0px;
+}
+.Einfo3Div{
+    color: rgb(204, 203, 203);
+    margin: 10px 0px 0px 0px;
+}
+.EvIconDiv{
+    margin: 10px 0px 7px 0px;
+}
+.infoIconSize{
+    font-size: 3px;
+    /* color: red; */
+}
+.icon2Spc{
+    margin-left: 20px;
+}
+.eventDelTxt{
+    vertical-align: top;
+    padding-left: 5px;
+    color: rgb(172, 171, 171);
+    font-size: 13px;
+}
+.infoDateDiv{
+    position: relative;
+    top: 58px;
+}
+.infoLstDiv{
+    position: relative;
+    top: 84px;
+}
+.lrnmrTxt{
+    font-size: 18px;
+}
+.lrnMore{
+    color: #ec008c;
+    font-size: 14px;
+}
+.titlTxtCont{
+    height: 160px;
+}
+#eventSpc{
+    margin-bottom: 40px;
+}
+#UpcEvntID{
+    margin-top: 200px;
+}
+.showMoreEvnt{
+    color: #ec008c;
+    cursor: pointer;
+}
+
