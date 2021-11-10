@@ -144,11 +144,11 @@
         justify-content: flex-start;
         align-items: center;
         padding: 30px 0;
-    }
-    #photo img {
+      }
+      #photo img {
         border-radius: 50%;
-    }
-    #about {
+      }
+      #about {
         box-sizing: border-box;
         width: 70%;
         padding: 30px;
@@ -175,25 +175,10 @@
 
     <div id="full-box">
       <div id="full-div">
-        <div>
-          <h1>Introduction to Protractor</h1>
-          <div>
-            <img
-              src="https://www.nicepng.com/png/full/88-886368_five-yellow-stars-5-stars-black-background.png"
-              alt=""
-            />
-            <p>by Nate Taylor</p>
-          </div>
-          <p class="short-dis">
-            Protractor is an automated testing framework for testing AngularJS
-            applications in the browser. This course will walk through the
-            basics of Protractor while discussing how Protractor can fit into a
-            development workflow.
-          </p>
-          <button>START A FREE 10-DAY TRIAL</button>
-        </div>
+        
       </div>
     </div>
+
     <div id="middel-box">
       <div id="left">
         <h3>Course info</h3>
@@ -275,20 +260,68 @@
         </div>
       </div>
       <div id="about">
-          <h3>About The author</h3>
-          <p>Nate's first program was written in QBasic on an 8086 clone his dad built. Since then he's written applications in C++, .NET, and Node.js. 
-          </p>
+        <h3>About The author</h3>
+        <p>
+          Nate's first program was written in QBasic on an 8086 clone his dad
+          built. Since then he's written applications in C++, .NET, and Node.js.
+        </p>
       </div>
     </div>
   </body>
 </html>
 
 <script>
-  let course = JSON.parse(localStorage.getItem("course"));
-  console.log("course:", course);
-  
-  function append(){
+  function append() {
+    let course = JSON.parse(localStorage.getItem("course"));
+    
+    let full_div = document.getElementById("full-div");
+    let left = document.getElementById("left");
+    let right = document.getElementById("right");
+    let photo = document.getElementById("photo");
+    let about = document.getElementById("about");
+
+    // upperBox start here 
+
+    let fullInnerDiv = document.createElement("div");
+    let title = document.createElement("h1");
+    title.textContent = course.title;
+
+    let img_div = document.createElement("div");
+
+    let image = document.createElement("img");
+    image.src = "https://www.nicepng.com/png/full/88-886368_five-yellow-stars-5-stars-black-background.png";
+    
+    let by = document.createElement("p");
+    by.textContent = "by "+ course.by;
+
+    img_div.append(image,by);
+     
+    let short_dis = document.createElement("p")
+    short_dis.setAttribute("class","short-dis")
+    short_dis.textContent = course.shortDiscription;
+
+    let btn = document.createElement("button")
+    btn.textContent = "START A FREE 10-DAY TRIAL";
+
+    fullInnerDiv.append(title,img_div,short_dis,btn)
+
+    full_div.append(fullInnerDiv);
+    // upperBox end here 
+
+    // middel-box start here
+
+    let h3_cou = document.createElement("h3");
+    h3_cou.textContent = "Course info";
+
+    let line1 = document.createElement("div");
+
+    let div1 = document.createElement("div");
+    let rating = document.createElement("p");
+    rating.textContent = "Rating";
+    div1.append(rating);
+
+    let div2 = document.createElement("div");
 
   }
-//   append();
+append();
 </script>
