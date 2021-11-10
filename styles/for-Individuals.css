@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@400&family=Source+Sans+Pro&display=swap");
+
+* {
+    font-family: "Prompt", sans-serif;
+}
+
+p {
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+h1 {
+    line-height: 1.3em;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: white;
+    background-color: black;
+    font-family: "PS Commons Bold";
+    width: 80%;
+    margin: auto;
+}
+#head_p1 {
+    margin-top: 120px;
+    display: grid;
+    grid-template-columns: 47% 47%;
+    grid-gap: 5%;
+    /* border: 1px solid red; */
+    padding: 5px;
+}
+#for_Individuals {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    font-weight: bold;
+}
+h1 {
+    /* border: 1px solid red; */
+    font-size: 56px;
+    font-weight: bolder;
+}
+h3 {
+    letter-spacing: 1px;
+    font-size: 20px;
+    line-height: 24px;
+}
+button {
+    /* border: 1px solid red; */
+    width: 160px;
+    height: 50px;
+    border-radius: 2px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #ef3a4e;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+#See_Plans {
+    /* border: 1px solid red; */
+    text-align: center;
+    /* vertical-align: middle; */
+    margin-top: 100px;
+    font-size: 24px;
+    padding: 20px;
+    background-color: #ed2167;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+#plans {
+    font-weight: bold;
+}
+#trending {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 40px 0px 20px 5px;
+    letter-spacing: 1px;
+}
+#trending_course {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 3%;
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 320px;
+    padding: 5px;
+    background-color: #181818;
+}
+#course {
+    background-color: rgb(43, 40, 40);
+    height: 320px;
+}
+
+#Course_Img {
+    width: 100%;
+    height: 70%;
+}
+
+/* #short_des {
+    margin-left: px;
+} */
+
+#course_clr {
+    color: #e60780;
+    margin: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+h2 {
+    margin: 5px;
+}
+#Author {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    font-size: 12px;
+    margin: 5px;
+    letter-spacing: 1px;
+    color: #e4e2ce;
+}
+
+#More_Course {
+    /* border: 1px solid red; */
+    /* height: 40px; */
+    margin-top: 20px;
+    padding: 10px;
+    text-align: left;
+    background-color: rgb(43, 40, 40);
+}
+/* i {
+    color: white;
+} */
+#body_part {
+    background-color: #222222;
+    border-radius: 10px;
+}
+#description {
+    display: grid;
+    grid-template-columns: 30% 65%;
+    grid-gap: 5%;
+    margin-top: 100px;
+    /* border: 1px solid red; */
+    padding-top: 100px;
+    padding-left: 150px;
+    padding-right: 75px;
+}
+#description h1 {
+    font-size: 40px;
+}
+#description h5 {
+    color: #e60780;
+    /* border: 1px solid red; */
+    font-size: 16px;
+    margin-top: 0px;
+    letter-spacing: 1px;
+}
+#description p {
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+#description a {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+#body_part #learners_ref {
+    display: grid;
+    text-align: center;
+    margin-top: 80px;
+    /* border: 1px solid red; */
+}
+
+#learners_ref #learners_Company {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    /* border: 1px solid red; */
+    vertical-align: middle;
+    margin-top: 25px;
+    padding: 10px 200px;
+    text-align: center;
+    align-content: center;
+}
+/* #learners_ref img {
+    width:100%
+} */
+
+#img_text {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    /* border: 1px solid red; */
+    grid-gap: 5%;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+#img_text h5 {
+    color: #e60780;
+    font-size: 18px;
+}
+#img_text h1 {
+    font-size: 44px;
+    font-weight: bolder;
+}
+#img_text p {
+    letter-spacing: 1px;
+    font-size: 20px;
+}
