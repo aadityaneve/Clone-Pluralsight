@@ -227,10 +227,10 @@ event2Div.forEach(element => {
     div1.className="infoEndDiv";
     div1.id=`infoDiv${element.num}`;
     div1.onmouseenter=function(){
-        document.getElementById(`AroTran${element.num}`).style.marginLeft="5px";
+        document.getElementById(`AroTran2${element.num}`).style.marginLeft="5px";
     }
     div1.onmouseleave=function(){
-        document.getElementById(`AroTran${element.num}`).style.marginLeft="0px";
+        document.getElementById(`AroTran2${element.num}`).style.marginLeft="0px";
     }
     let divcont=document.createElement("div");
     divcont.className="titlTxtCont";
@@ -281,7 +281,7 @@ event2Div.forEach(element => {
 
     let span8=document.createElement("span");
     span8.className="lrnMore";
-    span8.id=`AroTran${element.num}`;
+    span8.id=`AroTran2${element.num}`;
     span8.innerText=">";
 
     div4.append(span7,span8);
