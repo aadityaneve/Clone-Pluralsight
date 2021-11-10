@@ -587,3 +587,7 @@ th {
 .skillsForIndividualBtn:hover {
     border: 2px solid white;
 }
+
+button {
+    cursor: pointer;
+}
