@@ -6,7 +6,7 @@
 }
 
 p {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
 }
 
 h1 {
@@ -402,6 +402,16 @@ body {
     width: 8px;
     height: 20px;
     border: solid #ec008c;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg) translateX(-50%);
+    position: relative;
+    left: 50%;
+}
+
+.yellowCheckMark {
+    width: 8px;
+    height: 20px;
+    border: solid #ffd825;
     border-width: 0 2px 2px 0;
     transform: rotate(45deg) translateX(-50%);
     position: relative;
