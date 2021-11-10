@@ -1,14 +1,32 @@
-*{
-  margin: 0;
-  padding: 0;
+
+
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@400&family=Source+Sans+Pro&display=swap");
+
+* {
+    font-family: "Prompt", sans-serif;
+    letter-spacing: 1px;
+    margin: 0;padding: 0;
+}
+
+p {
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+h1 {
+    line-height: 1.3em;
+    
+}
+
+html {
+    scroll-behavior: smooth;
 }
 body {
   padding: 0;
   margin: 0;
   background-color: #181818;
   color: #ffffff;
-  font-family: "Roboto", sans-serif;
-  /* font-family: 'Prompt', sans-serif; */
+  
 }
 
 .skill-box {
@@ -322,8 +340,12 @@ li {
   /* margin-right: 10px; */
 }
 
+#courses_data > div:hover {
+  background-color: rgb(92, 92, 92);
+}
+
 #courses_data h4 {
-  padding:2px auto;
+ margin: 5px auto;
 }
 #star {
   /* height:10px; */

@@ -1,14 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Course Details</title>
-    </head>
-    <body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course Details</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Prompt:wght@400&family=Source+Sans+Pro&display=swap");
 
-        
+      * {
+        font-family: "Prompt", sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #ffffff;
+        letter-spacing: 1px;
+      }
+      body {
+        background-color: #000000;
+      }
+      body > div {
+        margin: 4px;
+      }
+      p {
+        font-family: "Source Sans Pro", sans-serif;
+      }
 
-    </body>
+      h1 {
+        line-height: 1.3em;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+      #full-box {
+        margin-top: 100px;
+        width: 100%;
+        height: 90vh;
+        background-image: url("https://pluralsight.imgix.net/course-images/protractor-introduction-v1.jpg?w=1078");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      #full-div {
+        background: rgba(0, 0, 0, 0.7);
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+      }
+      #full-div h1 {
+        font-size: 50px;
+      }
+      #full-div button {
+        margin: 20px 0;
+        cursor: pointer;
+        padding: 15px;
+        width: 260px;
+        height: 50px;
+        font-weight: 800;
+        color: #ffffff;
+        background-image: linear-gradient(to right, #e80c88 0%, #f15b2c 100%);
+        border: none;
+        border-radius: 2px;
+      }
+      #full-div > div:nth-child(1) {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        padding: 10% 30px;
+      }
+      #full-div > div > div {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 20px 10px;
+        height: 30px;
+      }
+      #full-div > div > div > img {
+        margin: auto 10px auto 0;
+        height: 60%;
+      }
+      .short-dis {
+        width: 60%;
+        font-size: 20px;
+      }
+      #middel-box {
+        display: flex;
+        /* border: 2px solid aqua; */
+        width: 100%;
+        height: 300px;
+        box-sizing: border-box;
+        background-color: #181818;
+      }
+      #middel-box > div:nth-child(1) {
+        width: 30%;
+        height: 100%;
+        box-sizing: border-box;
+        /* border: 2px solid #f15b2c; */
+        padding: 30px;
+      }
+      #middel-box > div:nth-child(2) {
+        width: 70%;
+        height: 100%;
+        box-sizing: border-box;
+        /* border: 2px solid #f15b2c; */
+        padding: 30px;
+      }
+      #middel-box > div > div {
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: space-between;
+        padding: 10px 0;
+        border-bottom: 3px solid #000000;
+        box-sizing: border-box;
+      }
+
+      #middel-box > div > div > div {
+        height: 20px;
+      }
+      #middel-box > div > div > div p {
+        display: inline-block;
+      }
+      #middel-box img {
+        height: 100%;
+      }
+      #left > h3 {
+        padding: 20px 0;
+      }
+      #right > h3 {
+        padding: 20px 0;
+      }
+      #author {
+        display: flex;
+        /* border: 2px solid #335665; */
+        box-sizing: border-box;
+        background-color: #181818;
+      }
+      #photo {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        box-sizing: border-box;
+        /* border: 2px solid #f15b2c; */
+        justify-content: flex-start;
+        align-items: center;
+        padding: 30px 0;
+    }
+    #photo img {
+        border-radius: 50%;
+    }
+    #about {
+        box-sizing: border-box;
+        width: 70%;
+        padding: 30px;
+        /* border: 2px solid #f15b2c; */
+      }
+      #about > h3 {
+        padding: 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navbar here start -->
+    <nav
+      style="
+        margin: 0%;
+        width: 100vw;
+        padding: 2.5%;
+        border: 1px solid yellow;
+        position: fixed;
+        top: 0;
+      "
+    ></nav>
+    <!-- nvbar end here -->
+
+    <div id="full-box">
+      <div id="full-div">
+        <div>
+          <h1>Introduction to Protractor</h1>
+          <div>
+            <img
+              src="https://www.nicepng.com/png/full/88-886368_five-yellow-stars-5-stars-black-background.png"
+              alt=""
+            />
+            <p>by Nate Taylor</p>
+          </div>
+          <p class="short-dis">
+            Protractor is an automated testing framework for testing AngularJS
+            applications in the browser. This course will walk through the
+            basics of Protractor while discussing how Protractor can fit into a
+            development workflow.
+          </p>
+          <button>START A FREE 10-DAY TRIAL</button>
+        </div>
+      </div>
+    </div>
+    <div id="middel-box">
+      <div id="left">
+        <h3>Course info</h3>
+        <div>
+          <div>
+            <p>Rating</p>
+          </div>
+          <div>
+            <img
+              src="https://www.nicepng.com/png/full/88-886368_five-yellow-stars-5-stars-black-background.png"
+              alt=""
+            />
+            <p>(132)</p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <p>Level</p>
+          </div>
+          <div>
+            <p>Beginner</p>
+            <img
+              src="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/course/level.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div>
+          <div>
+            <p>Updated</p>
+          </div>
+          <div>
+            <p>Nov 5, 2021</p>
+            <img
+              src="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/course/calendar.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div>
+          <div>
+            <p>Duration</p>
+          </div>
+          <div>
+            <p>1h 21m</p>
+            <img
+              src="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/course/clock.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div id="right">
+        <h3>Description</h3>
+        <p>
+          Protractor is an automated testing framework for testing AngularJS
+          applications in the browser. It simulates a user interacting with the
+          website by filling out forms, clicking on elements, and navigating
+          from page to page. In this course, we'll look at the Protractor
+          basics, for example, how to write a simple test. We'll also take a
+          look at a lot of the features that Protractor uses to interact with
+          Angular. We'll discuss how Protractor can fit into a normal
+          development workflow and how it can be used by a team. We'll end by
+          looking at some ways to make sure our Protractor tests are
+          maintainable and easy to read.
+        </p>
+      </div>
+    </div>
+    <div id="author">
+      <div id="photo">
+        <div>
+          <img
+            src="https://pluralsight.imgix.net/author/lg/nate-taylor-v2.jpg?w=100"
+            alt=""
+          />
+        </div>
+        <div>
+          <p>Nate Taylor</p>
+        </div>
+      </div>
+      <div id="about">
+          <h3>About The author</h3>
+          <p>Nate's first program was written in QBasic on an 8086 clone his dad built. Since then he's written applications in C++, .NET, and Node.js. 
+          </p>
+      </div>
+    </div>
+  </body>
 </html>
+
+<script>
+  let course = JSON.parse(localStorage.getItem("course"));
+  console.log("course:", course);
+  
+  function append(){
+
+  }
+//   append();
+</script>

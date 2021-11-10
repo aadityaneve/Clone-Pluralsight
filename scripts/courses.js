@@ -145,13 +145,11 @@ const courses = [
 
 async function moon(){
   let res = await fetch("../scripts/courses.json");
-  let d = await res.json();  
+  let d = await res.json();
   let data = d.all;  
  return data;
 }
-moon().then((d) => {
-  console.log(d)
-})
+
 
 
 
@@ -172,21 +170,24 @@ function dropdown() {
 
 // dropdown fliters function calling
 
-function dropDownFilter(v) {
+async function dropDownFilter(v) {
+  let data = await moon();
+  
+  // console.log('all_data:', data)
 
   if (v == "highest") {
-    moon().then((data) => {
+   
       data.sort((a, b) => {
         return b.rating - a.rating;
       });
       courseAppend(data);
-    })
+  
   }else if(v == "newest") {
-    moon().then((data) => {
+    
       courseAppend(data);
-    })
+   
   }else if(v == "atoz"){
-    moon().then((data) => {
+   
      
       data.sort((a,b)=>{
           if ( a.title < b.title ){
@@ -199,9 +200,9 @@ function dropDownFilter(v) {
         })
       
         courseAppend(data);
-    })
+  
   }else if(v == "ztoa"){
-    moon().then((data) => {
+   
   
       data.sort((a,b)=>{
         if ( a.title < b.title ){
@@ -213,7 +214,7 @@ function dropDownFilter(v) {
         return 0;
       })
       courseAppend(data);
-    })
+   
   }
 }
 
@@ -231,7 +232,8 @@ cl.onclick = () => {
 
 // skill filter function
 
-function skills() {
+async function skills() {
+  let data = await moon();
   let Begin = document.getElementById("Beginner");
   let Inter = document.getElementById("Intermediate");
   let Advan = document.getElementById("Advanced");
@@ -239,12 +241,12 @@ function skills() {
   // console.log(Begin.checked, Inter.checked, Advan.checked);
 
   if(Begin.checked && Inter.checked && Advan.checked){
-    moon().then((data) => {
+   
       courseAppend(data);
       
-    })
+   
   }else if(Begin.checked && Inter.checked){
-    moon().then((data) => {
+   
       
       let d = data.filter((el)=>{
         if(el.level == "Beginner" || el.level == "Intermediate"){
@@ -253,9 +255,9 @@ function skills() {
       })
       courseAppend(d);
   
-    })
+    
   }else if(Begin.checked && Advanced.checked){
-    moon().then((data) => {
+    
       let d = data.filter((el)=>{
         if(el.level == "Beginner" || el.level == "Advanced"){
           return el;
@@ -263,19 +265,18 @@ function skills() {
       })
       courseAppend(d);
   
-    })
+    
   }else if(Advanced.checked && Inter.checked){
-    moon().then((data) => {
+   
       let d = data.filter((el)=>{
         if(el.level == "Advanced" || el.level == "Intermediate"){
           return el;
         }
       })
       courseAppend(d);
-      
-    })
+  
   }else if(Begin.checked){
-    moon().then((data) => {
+    
   
       let d = data.filter((el)=>{
         if(el.level == "Beginner"){
@@ -283,9 +284,8 @@ function skills() {
         }
       })
       courseAppend(d);
-    })
+   
   }else if(Inter.checked){
-    moon().then((data) => {
   
       let d = data.filter((el)=>{
         if(el.level == "Intermediate"){
@@ -293,17 +293,16 @@ function skills() {
         }
       })
       courseAppend(d);
-    })
+ 
   }else if(Advan.checked){
-    moon().then((data) => {
-  
+   
       let d = data.filter((el)=>{
         if(el.level == "Advanced"){
           return el;
         }
       })
       courseAppend(d);
-    })
+    
   }
 }
 
