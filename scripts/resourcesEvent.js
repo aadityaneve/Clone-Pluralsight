@@ -6,6 +6,7 @@ var eventDiv=[
         date:"Nov 18,21",
         time:"1:00 PM GMT",
         regn:"EMEA",
+        num:"1"
     },
     {
         TopTitl:"Briefings & Workshops",
@@ -14,6 +15,7 @@ var eventDiv=[
         date:"Nov 18,21",
         time:"1:00 PM GMT",
         regn:"All Regions",
+        num:"2"
     },
     {
         TopTitl:"Product & Tech Demo",
@@ -22,6 +24,7 @@ var eventDiv=[
         date:"Nov 18,21",
         time:"1:00 PM GMT",
         regn:"All Regions",
+        num:"3"
     },
     {
         TopTitl:"In Platform Conferences, Product & Tech Demo",
@@ -30,12 +33,21 @@ var eventDiv=[
         date:"Nov 18,21",
         time:"1:00 PM GMT",
         regn:"Americas",
+        num:"4"
     }
 ];
+var chkREp=0;
 
 eventDiv.forEach(element => {
+    chkREp++;
     let div1=document.createElement("div");
     div1.className="infoEndDiv";
+    div1.onmouseenter=function(){
+        document.getElementById(`AroTran${element.num}`).style.marginLeft="5px";
+    }
+    div1.onmouseleave=function(){
+        document.getElementById(`AroTran${element.num}`).style.marginLeft="0px";
+    }
     let divcont=document.createElement("div");
     divcont.className="titlTxtCont";
     let p1=document.createElement('p');
@@ -85,6 +97,7 @@ eventDiv.forEach(element => {
 
     let span8=document.createElement("span");
     span8.className="lrnMore";
+    span8.id=`AroTran${element.num}`;
     span8.innerText=">";
 
     div4.append(span7,span8);
@@ -101,6 +114,7 @@ var event2Div=[
         date:"Nov 18,21",
         time:"1:00 PM GMT",
         regn:"EMEA",
+        num:"1"
     },
     {
         TopTitl:"Briefings & Workshops",
@@ -109,6 +123,7 @@ var event2Div=[
         date:"Nov 18,21",
         time:"1:00 PM GMT",
         regn:"All Regions",
+        num:"2"
     },
     {
         TopTitl:"Webinars",
@@ -117,6 +132,7 @@ var event2Div=[
         date:"Nov 18,21",
         time:"1:00 PM GMT",
         regn:"All Regions",
+        num:"3"
     },
     {
         TopTitl:"Webinars",
@@ -125,6 +141,7 @@ var event2Div=[
         date:"Nov 18,21",
         time:"1:00 PM GMT",
         regn:"Americas",
+        num:"4"
     },
     {
         TopTitl:"Webinars",
@@ -133,6 +150,7 @@ var event2Div=[
         date:"Nov 18,21",
         time:"1:00 PM GMT",
         regn:"Americas",
+        num:"5"
     },
     {
         TopTitl:"Webinars",
@@ -141,6 +159,7 @@ var event2Div=[
         date:"Nov 18,21",
         time:"1:00 PM GMT",
         regn:"Americas",
+        num:"6"
     },
     {
         TopTitl:"Webinars",
@@ -149,14 +168,16 @@ var event2Div=[
         date:"Nov 18,21",
         time:"1:00 PM GMT",
         regn:"Americas",
+        num:"7"
     },
     {
         TopTitl:"Webinars",
-        SubTitl:"Cybersecurity street smarts: One number...",
+        SubTitl:"Cybersecurity street smarts: One number and a pair of dice",
         Sumry:"Build an incident response plan and align your team to it. Start by focusing on the one number...",
         date:"Nov 18,21",
         time:"1:00 PM GMT",
         regn:"Americas",
+        num:"8"
     },
     {
         TopTitl:"Webinars",
@@ -165,6 +186,7 @@ var event2Div=[
         date:"Nov 18,21",
         time:"1:00 PM GMT",
         regn:"Americas",
+        num:"9"
     },
     {
         TopTitl:"Webinars",
@@ -173,6 +195,7 @@ var event2Div=[
         date:"Nov 18,21",
         time:"1:00 PM GMT",
         regn:"All Regions",
+        num:"10"
     },
     {
         TopTitl:"Webinars",
@@ -181,6 +204,7 @@ var event2Div=[
         date:"Nov 18,21",
         time:"1:00 PM GMT",
         regn:"Americas",
+        num:"11"
     },
     {
         TopTitl:"Webinars",
@@ -189,19 +213,25 @@ var event2Div=[
         date:"Nov 18,21",
         time:"1:00 PM GMT",
         regn:"Americas",
+        num:"12"
     }
 ]
 
-let chkCount=0,divNum=0;
+let chkCount=0;
 event2Div.forEach(element => {
-    divNum++;
     chkCount++;
     let div1=document.createElement("div");
     if(chkCount>6){
         div1.style.display="none";
     }
     div1.className="infoEndDiv";
-    div1.id=`infoDiv${divNum}`;
+    div1.id=`infoDiv${element.num}`;
+    div1.onmouseenter=function(){
+        document.getElementById(`AroTran${element.num}`).style.marginLeft="5px";
+    }
+    div1.onmouseleave=function(){
+        document.getElementById(`AroTran${element.num}`).style.marginLeft="0px";
+    }
     let divcont=document.createElement("div");
     divcont.className="titlTxtCont";
     let p1=document.createElement('p');
@@ -251,6 +281,7 @@ event2Div.forEach(element => {
 
     let span8=document.createElement("span");
     span8.className="lrnMore";
+    span8.id=`AroTran${element.num}`;
     span8.innerText=">";
 
     div4.append(span7,span8);

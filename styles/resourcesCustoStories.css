@@ -284,4 +284,22 @@ body{
     font-size: 18px;
     margin: 20px 0px 0px 25px;
     border: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+#buttomDv>div:nth-child(2) button::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to right,#EC008C,#EC008C,#F05A28);
+    z-index: -1;
+    transition: opacity 0.5s linear;
+    opacity: 0;
+}
+#buttomDv>div:nth-child(2) button:hover::before {
+    opacity: 1;
 }

@@ -57,15 +57,36 @@ border
     font-weight: 600;
     color: rgb(221, 220, 220);
 }
-#imgBtn{
+#imgBtn {
     margin: 20px 0px 0px 34px;
     padding: 15px 30px;
     color: white;
-    background-image: linear-gradient(to right,#F05A28,#EC008C,#F05A28);
+    background-image: linear-gradient(to right, #F05A28, #F05A28, #EC008C);
     border: none;
     font-size: 16px;
     font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
 }
+
+#imgBtn::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to right,#EC008C,#EC008C,#F05A28);
+    z-index: -1;
+    transition: opacity 0.5s linear;
+    opacity: 0;
+}
+
+#imgBtn:hover::before {
+    opacity: 1;
+}
+
 .UpcEvnt{
     position: relative;
     bottom: 150px;
@@ -119,6 +140,7 @@ border
     padding: 0px 26px 0px 26px;
     border-radius: 6px;
     box-shadow: 2px 20px 30px -15px rgb(0 0 0 / 80%);
+    cursor: pointer;
 }
 .Einfo1Div{
     background-color: #f7a614;
