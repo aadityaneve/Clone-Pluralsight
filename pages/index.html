@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+
+    /* navbar */
+    #container {
+        background-color: rgb(51, 90, 11);
+        color: rgb(240, 240, 240);
+
+    }
+
+    #nav {
+        height: 90px;
+        background-color: #212121;
+        display: flex;
+        color: white;
+        align-items: center;
+        padding: 20px 60px;
+        box-sizing: border-box;
+    }
+
+    #nav>div {
+        height: 100%;
+    }
+
+    #nav>div:nth-child(1) {
+        width: 20%;
+        height: 80%;
+    }
+
+    #nav>div:nth-child(1) img {
+
+        height: 100%;
+    }
+
+    #nav>div:nth-child(2) {
+        width: 50%;
+    }
+
+    #nav ul {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        gap: 10%;
+        height: 100%;
+
+    }
+
+    #nav ul li {
+        list-style-type: none;
+        font-weight: bold;
+
+    }
+
+    #nav>div:nth-child(3) {
+        width: 30%;
+        display: flex;
+        gap: 5%;
+        align-items: center;
+        justify-content: right;
+    }
+
+    #nav>div:nth-child(3)>div {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        font-size: 15px;
+
+
+    }
+
+    #nav>div:nth-child(3)>div img {
+        height: 40%;
+        filter: invert();
+
+
+    }
+
+    #nav>div:nth-child(3)>div button {
+        color: white;
+        border: 1px solid white;
+        background-color: #212121;
+        padding: 10px 30px;
+        font-weight: bold;
+        font-size: 15px;
+
+
+    }
+
+    /* navbar */
+
+    /* header */
+    #image {
+        background: url("https://www.pluralsight.com/content/pluralsight/en/jcr:content/main/generic_block_copy_c_1058486430/image-res.img.493fb6af-a344-4666-a2a0-6a96a118facd.jpg") center center/cover;
+        height: 500px;
+        position: relative;
+    }
+
+    #image>div {
+        width: 40%;
+        position: absolute;
+        left: 60%;
+        top: 45%;
+        transform: translate(-50%, -50%);
+    }
+
+    #image h1 {
+        font-size: 3.5em;
+
+    }
+
+    #image p {
+        font-size: 1.3em;
+
+    }
+
+    #image button {
+        height: 56px;
+        width: 40%;
+        font-weight: bold;
+        font-size: 1.1em;
+        margin: 5% 0;
+        color: white;
+        border: 2px solid white;
+
+    }
+
+    #image>div>button:nth-child(3) {
+
+        background-color: rgba(0, 0, 0, 1);
+        border: 1px solid rgb(0, 0, 0);
+
+    }
+
+    #image>div>button:nth-child(4) {
+
+        background-color: rgba(0, 0, 0, 0.0);
+        border: 1px solid white;
+        margin-left: 1%;
+
+    }
+
+    /* header */
+
+    /* box-1 */
+    #box-1 {
+        height: 600px;
+        background-color: #000000;
+        display: flex;
+        padding: 100px;
+        box-sizing: border-box;
+    }
+
+    #box-1>div:nth-child(1) {
+        height: 100%;
+        width: 60%;
+        display: flex;
+        gap: 30px;
+        row-gap: 30px;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    #box-1>div:nth-child(1)>div {
+        height: 45%;
+        width: 45%;
+        background-color: #222222;
+        border-radius: 10px;
+    }
+
+    #box-1>div:nth-child(2) {
+        color: white;
+        width: 40%;
+        height: 100%;
+    }
+
+    #box-1>div:nth-child(2) h3 {
+        margin: 25px 0;
+    }
+
+    #box-1>div:nth-child(2) h3:nth-child(1) {
+        margin: 25px 0;
+        color: #e40084;
+    }
+
+    #box-1>div:nth-child(2) h1 {
+        margin: 25px 0;
+        font-weight: 900;
+
+    }
+
+    #box-1>div:nth-child(2) p {
+        margin: 25px 0;
+        font-weight: 500;
+
+
+    }
+
+    #box-1>div>div {
+        display: flex;
+    }
+
+    #box-1>div>div>div:nth-child(1) {
+        width: 70%;
+        padding: 20px;
+        box-sizing: border-box;
+
+    }
+
+    #box-1>div>div>div:nth-child(1) h3:nth-child(1) {
+        color: #e40084;
+    }
+
+    #box-1>div>div>div:nth-child(1) h2 {
+        margin-top: 10px;
+        font-weight: 100;
+    }
+
+    #box-1>div>div>div:nth-child(1) p {
+        margin-bottom: 20px;
+    }
+
+    #box-1>div>div>div:nth-child(1) span {
+        color: #aaaaaa;
+    }
+
+    #box-1>div>div>div:nth-child(2) {
+        width: 30%;
+    }
+
+    #box-1>div>div>div:nth-child(2) img {
+        width: 100%;
+    }
+
+    /* box-1 */
+
+
+    /* box-2 */
+    #box-2 {
+        height: 1400px;
+        background-color: #181818;
+        padding: 100px 80px;
+        box-sizing: border-box;
+    }
+
+    #box-2>div:nth-child(1) {
+        height: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    #box-2>div:nth-child(1) h3 {
+        color: #e40084;
+    }
+
+    #box-2>div:nth-child(1) h1 {
+        font-size: 2.3em;
+    }
+
+    #box-2>div:nth-child(2) {
+        height: 90%;
+        display: flex;
+        box-sizing: border-box;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    #box-2>div:nth-child(2)>div {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    #box-2>div:nth-child(2)>div:nth-child(1) div {
+        height: 100%;
+        width: 50%;
+        background-color: #222222;
+
+    }
+
+    #box-2>div:nth-child(2)>div img {
+        height: 20px;
+    }
+
+    #box-2>div:nth-child(2)>div h1 {
+        margin: 20px 0;
+        font-size: 2.2em;
+    }
+
+    #box-2>div:nth-child(2)>div p {
+        font-size: 1.2em;
+        color: rgb(230, 230, 230);
+    }
+
+    #box-2>div:nth-child(2)>div h3 {
+        margin: 20px 0;
+    }
+
+    #box-2>div:nth-child(2)>div:nth-child(1) div:nth-child(2) img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+
+    #box-2>div:nth-child(2)>div:nth-child(1) div:nth-child(1) {
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        padding: 70px 30px;
+        box-sizing: border-box;
+    }
+
+    #box-2>div:nth-child(2)>div:nth-child(2) div {
+        padding: 50px 30px;
+        height: 100%;
+        width: 32%;
+        background-color: #222222;
+        box-sizing: border-box;
+        border-radius: 15px;
+
+    }
+
+    /* box-2 */
+
+    /* box-3 */
+    #box-3 {
+        height: 1700px;
+        background-color: #000000;
+    }
+
+    #box-3>div:nth-child(1) {
+        /* border: 2px solid red; */
+        /* display: flex; */
+        height: 35%;
+        padding: 90px 80px;
+        box-sizing: border-box;
+    }
+
+    .head {
+        /* margin: 10px 0; */
+        /* height: 10%; */
+
+    }
+
+    .head h3 {
+        color: #e40084;
+    }
+
+    .head h1 {
+        margin: 20px 0;
+    }
+
+    #model {
+        display: flex;
+        /* background-color: rosybrown; */
+        height: 90%;
+        justify-content: space-between;
+    }
+
+    #model>div {
+        height: 100%;
+        width: 24%;
+        /* background-color: seagreen; */
+        /* border: 1px solid white; */
+    }
+
+    #model>div img {
+        /* height: 100%; */
+        width: 100%;
+        /* background-color: seagreen; */
+        border-radius: 10px;
+    }
+
+    #model>div h3 {
+        /* height: 100%; */
+        color: #ffba0e;
+        margin: 10px 0;
+        height: 50px;
+    }
+
+    #model>div p {
+        /* height: 100%; */
+
+        margin: 10px 0;
+        /* height: 20px; */
+    }
+
+    #box-image {
+        height: 30%;
+        width: 100%;
+        background-color: yellow;
+        display: flex;
+
+    }
+
+    #box-image>div:nth-child(1) {
+        height: 100%;
+        width: 60%;
+
+    }
+
+    #box-image>div:nth-child(1) img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center center;
+
+    }
+
+    #box-image>div:nth-child(2) {
+        height: 100%;
+        width: 40%;
+        background: linear-gradient(100.37deg, rgb(236, 0, 139) 0%, rgb(241, 90, 34) 100%);
+        height: 100%;
+    }
+
+    /* twit */
+    #twit {
+        height: 35%;
+        padding: 90px 80px;
+        box-sizing: border-box;
+    }
+
+    #twit>div {
+        /* border: 2px solid red; */
+    }
+
+    #twit>div:nth-child(1) {
+        /* border: 2px solid red; */
+        height: 35%;
+        display: flex;
+        /* justify-content: space-evenly; */
+        gap: 20%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #parent_slide {
+
+        display: flex;
+        justify-content: space-between;
+        height: 65%;
+        align-items: center;
+        color: black;
+    }
+
+    #parent_slide button {
+        height: max-content;
+        font-size: 5em;
+        color: white;
+        background-color: rgba(207, 15, 15, .0);
+        border: none;
+        cursor: pointer;
+    }
+
+    #parent_slide>div {
+        width: 28%;
+        height: 100%;
+        background-color: #ffffff;
+        /* border: 2px solid rgb(0, 255, 21); */
+        /* font-size: 5em; */
+        border-radius: 8px;
+        /* padding: 15px; */
+        box-sizing: border-box;
+    }
+
+    #parent_slide>div>div:nth-child(1) {
+
+        /* border: 2px solid rgb(0, 255, 21); */
+        display: flex;
+        gap: 2%;
+        cursor: pointer;
+        margin: 4%;
+    }
+
+    #parent_slide>div>div:nth-child(2) {
+        margin: 4%;
+
+        /* border: 2px solid rgb(47, 0, 255); */
+        gap: 2%;
+        cursor: pointer;
+    }
+
+    #parent_slide>div>div:nth-child(2) a {
+        text-decoration: none;
+        color: #e40084;
+    }
+
+    /* twit */
+
+    /* box-3 */
+</style>
+
+<body>
+    <div id="container">
+        <!-- nav -->
+        <div id="nav">
+            <div><img src="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/global/header/PS_logo.png"
+                    alt="">
+            </div>
+            <div>
+                <ul>
+                    <li>Platform</li>
+                    <li>Products</li>
+                    <li>Resourses</li>
+                    <li>For Individuals</li>
+                </ul>
+            </div>
+            <div>
+                <div>
+                    <img src="https://cdn-icons-png.flaticon.com/128/622/622669.png" alt="">
+                </div>
+                <div>
+                    <p>Sign in</p>
+                </div>
+                <div>
+                    <button>TRY FOR FREE</button>
+                </div>
+            </div>
+        </div>
+        <!-- nav -->
+
+        <!-- header -->
+
+        <div id="image">
+            <div>
+                <h1>Build better teams</h1>
+                <p>Your customers won’t settle and neither should you. With Pluralsight, technology teams know more and
+                    work better together. Develop the skills you need for your top priorities. Improve workflows with
+                    actionable data. Build better—every time.</p>
+                <button>VIEW PLANS</button>
+                <button>TRY FOR FREE</button>
+            </div>
+        </div>
+        <!-- header -->
+
+        <!-- box-1 -->
+        <div id="box-1">
+            <div>
+                <div>
+                    <div>
+                        <h3>PATH</h3>
+                        <h2>JavaScript</h2>
+                        <p>11 <span>courses</span></p>
+                        <h3>Take a look</h3>
+                    </div>
+                    <div>
+                        <img src="https://pluralsight2.imgix.net/paths/images/javascript-542e10ea6e.png" alt="">
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h3>PATH</h3>
+                        <h2>Angular</h2>
+                        <p>14 <span>courses</span></p>
+                        <h3>Take a look</h3>
+                    </div>
+                    <div>
+                        <img src="https://pluralsight.imgix.net/paths/path-icons/angular-14a0f6532f.png" alt="">
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h3>PATH</h3>
+                        <h2>Core Python</h2>
+                        <p>12 <span>courses</span></p>
+                        <h3>Take a look</h3>
+                    </div>
+                    <div>
+                        <img src="https://pluralsight.imgix.net/paths/python-7be70baaac.png" alt="">
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h3>PATH</h3>
+                        <h2>C#</h2>
+                        <p>19 <span>courses</span></p>
+                        <h3>Take a look</h3>
+                    </div>
+                    <div>
+                        <img src="https://pluralsight.imgix.net/paths/path-icons/csharp-e7b8fcd4ce.png?" alt="">
+                    </div>
+                </div>
+
+            </div>
+            <div>
+                <h3>TRENDING TECHNOLOGIES</h3>
+                <h1>Popular topics <br> to learn now</h1>
+                <p>Not sure what technologies to focus on? The Technology Index ranks 850+ technologies by their
+                    relative popularity. See what’s topping the charts and get recommended courses to skill up.</p>
+                <h3>View the index </h3>
+            </div>
+        </div>
+        <!-- box-1 -->
+
+        <!-- box-2 -->
+        <div id="box-2">
+            <div>
+                <h3>SEE WHAT'S NEW</h3>
+                <h1>Our latest features</h1>
+            </div>
+            <div>
+                <div>
+                    <div>
+                        <img src="https://www.pluralsight.com/content/dam/pluralsight2/product/v2/logos/logo-skills.png"
+                            alt="">
+                        <h1>Create better cloud outcomes with hands-on experience</h1>
+                        <p>Your teams need the right skills and a place to practice to ensure they’re ready to deliver
+                            on your cloud objectives. Labs enable learners to get hands-on practice in a provisioned
+                            cloud environment in AWS, Azure and Google Cloud (Google Cloud powered by Quiklabs).</p>
+                        <h3>Learn more</h3>
+                    </div>
+                    <div>
+                        <img src="https://www.pluralsight.com/content/dam/pluralsight2/homepage/Cloud-labs-image2x.png"
+                            alt="">
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="https://www.pluralsight.com/content/dam/pluralsight2/homepage/certification-prep.png"
+                            alt="">
+                        <h1>Empower your teams to grow their skills and their careers</h1>
+                        <p>Prepare your team for certification exams with our expert authored content and practice
+                            exams.</p>
+                        <h3>Learn more</h3>
+                    </div>
+                    <div>
+                        <img src="https://www.pluralsight.com/content/dam/pluralsight2/homepage/delivery-module.png"
+                            alt="">
+                        <h1>Make lasting workflow improvements with insights from your Jira data</h1>
+                        <p>Go beyond Jira data and get visibility into what’s happening within your user stories, tasks
+                            and bugs. Flow’s delivery module helps you better understand how your team is working and
+                            can make lasting improvements to your workflow.</p>
+                        <h3>Learn more</h3>
+                    </div>
+                    <div>
+                        <img src="https://www.pluralsight.com/content/dam/pluralsight2/homepage/sandboxes.png" alt="">
+                        <h1>Utilize a space for unrestricted exploration</h1>
+                        <p>Sandboxes gives your team a safe environment to practice what they're learning from
+                            expert-authored courses.</p>
+                        <h3>Learn more</h3>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- box-2 -->
+
+        <!-- box-3 -->
+        <div id="box-3">
+            <div>
+                <div class="head">
+                    <h3>KEEP UP TO DATE</h3>
+                    <h1>Discover more about Pluralsight</h1>
+                </div>
+
+                <div id="model">
+
+                    <div>
+                        <img src="https://www.pluralsight.com/content/dam/pluralsight2/homepage/momentInTime-compareOnlineCourseProviders.png"
+                            alt="">
+                        <h3>COMPARE ONLINE COURSE PROVIDERS</h3>
+                        <p>Unbiased reviews to help you make the right decision for your team</p>
+                    </div>
+                    <div>
+                        <img src="https://www.pluralsight.com/content/dam/pluralsight2/homepage/momentInTime-whichProductForYou.png"
+                            alt="">
+                        <h3>WHICH TECH SKILL DEVELOPMENT PRODUCT IS RIGHT FOR YOU?
+                        </h3>
+                        <p>Reduce decision fatigue with helpful data based on your peers’ experiences</p>
+                    </div>
+                    <div>
+                        <img src="https://www.pluralsight.com/content/pluralsight/en/jcr:content/main/generic_block_135160/parsys/columns/column-parsys-1/flex_block/parsys/flex_open_block/parsys/image/image-res.img.34c07a38-9cfe-43e1-8c28-d63316b1d13c.jpg"
+                            alt="">
+                        <h3>WHAT IS PLURALSIGHT SKILLS?</h3>
+                        <p>Discover the fastest, most effective path to developing technology skills.</p>
+                    </div>
+                    <div>
+                        <img src="https://www.pluralsight.com/content/pluralsight/en/jcr:content/main/generic_block_135160/parsys/columns/column-parsys-1/flex_block/parsys/flex_open_block_copy_1875049544/parsys/image/image-res.img.9121be6d-ee05-4805-a8ee-cf60f81c7cb5.jpg"
+                            alt="">
+                        <h3>CREATE YOUR FREE ACCOUNT</h3>
+                        <p>Build new tech skills on us with free access to 50+ expert-led courses, assessments and more.
+                        </p>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div id="box-image">
+                <div>
+                    <img src="https://www.pluralsight.com/content/pluralsight/en/jcr:content/main/targeted_section/targeted-parsys-customer-types-2/generic_block_143764/parsys/columns/column-parsys-1/generic_block/image-res.img.83fc7ec0-c122-4a0c-a37d-2a0f37f13a40.png"
+                        alt="">
+                </div>
+                <div>
+                    <img src="https://www.pluralsight.com/content/pluralsight/en/jcr:content/main/targeted_section/targeted-parsys-customer-types-2/generic_block_143764/parsys/columns/column-parsys-2/generic_block/parsys/column_control/column-parsys-1/image/image-res.img.ddbafc80-5598-4de9-8e25-db37cb221d3f.png"
+                        alt="">
+                    <h1>Winning the talent war with a scalable tech skills platform</h1>
+                    <p>Evolving a 20-year-old company, increasing innovation and accelerating time to delivery requires
+                        fresh skills. See how VMware’s globally dispersed teams use Pluralsight to leverage the latest
+                        developments in technology as they find new ways to serve customers.</p>
+                    <button>HOW THEY'RE SKILLING UP</button>
+                </div>
+            </div>
+            <!-- box-4 -->
+            <div id="twit">
+                <div>
+                    <h3>FOLLOW US</h3>
+                    <h1>Share your skills</h1>
+                </div>
+                <div id="parent_slide"></div>
+            </div>
+            <!-- box-4 -->
+        </div>
+        <!-- box-3 -->
+
+
+    </div>
+</body>
+
+</html>
+<script>
+    let parent_slide = document.getElementById('parent_slide')
+
+    var obj = [
+        {
+            name: "Martin Therkelsen",
+            id: "Mracket",
+            img: "https://pbs.twimg.com/profile_images/1448520867168784385/dCBGUked_bigger.jpg",
+            details: `Yesterday I passed the AZ-104 exam. <a target="_blank" href="https://www.twitter.com/pluralsight" tabindex="0">@pluralsight</a> courses are great to help prepare for these exams. <a target="_blank" href="https://www.twitter.com/hashtag/citrixctp?src=hash" tabindex="0">#citrixctp</a> <a target="_blank" href="https://www.twitter.com/hashtag/azure?src=hash" tabindex="0">#azure</a>`
+        },
+        {
+            name: "William Masci",
+            id: "bill_ver3",
+            img: "https://pbs.twimg.com/profile_images/1308211174429749248/ugAopGfO_bigger.jpg",
+            details: `Just passed the <a target="_blank" href="https://www.twitter.com/hashtag/Cisco?src=hash" tabindex="0">#Cisco</a> DEVASC 200-901 exam! Tough exam, but it was a great experience. I'm excited to be part of the <a target="_blank" href="https://www.twitter.com/hashtag/DevNet?src=hash" tabindex="0">#DevNet</a> Class of 2020! Also big thanks to <a target="_blank" href="https://www.twitter.com/nickrusso42518" tabindex="0">@nickrusso42518</a> for his amazing study plan and <a target="_blank" href="https://www.twitter.com/pluralsight" tabindex="0">@pluralsight</a> course. I highly recommend it if you're studying for DEVASC`
+        },
+        {
+            name: "Judy",
+            id: "judy_seyram",
+            img: "https://pbs.twimg.com/profile_images/1289580947009155072/uegFC50F_bigger.jpg",
+            details: `The best thing that happened to me in 2020 was <a target="_blank" href="https://www.twitter.com/hashtag/GADS2020?src=hash" tabindex="0">#GADS2020</a> which introduced me to <a target="_blank" href="https://www.twitter.com/pluralsight" tabindex="0">@pluralsight</a> . My interest in IT and programming peaked when i joined the program and now i believe this is the career path i want to take.<a target="_blank" href="https://www.twitter.com/hashtag/womenintech?src=hash" tabindex="0">#womenintech</a> <a target="_blank" href="https://www.twitter.com/hashtag/WomenWhoCode?src=hash" tabindex="0">#WomenWhoCode</a> <a target="_blank" href="https://www.twitter.com/hashtag/Andela?src=hash" tabindex="0">#Andela</a> <a target="_blank" href="https://www.twitter.com/hashtag/Pluralsight?src=hash" tabindex="0">#Pluralsight</a> <a target="_blank" href="https://www.twitter.com/hashtag/GADS?src=hash" tabindex="0">#GADS</a> <a target="_blank" href="https://t.co/oYchlj6V5W" tabindex="0">https://t.co/oYchlj6V5W</a>`
+        },
+        {
+            name: "Martin Therkelsen",
+            id: "Mracket",
+            img: "https://pbs.twimg.com/profile_images/1341497846168694786/Ls0jopTm_bigger.jpg",
+            details: `Yesterday I passed the AZ-104 exam. <a target="_blank" href="https://www.twitter.com/pluralsight" tabindex="0">@pluralsight</a> courses are great to help prepare for these exams. <a target="_blank" href="https://www.twitter.com/hashtag/citrixctp?src=hash" tabindex="0">#citrixctp</a> <a target="_blank" href="https://www.twitter.com/hashtag/azure?src=hash" tabindex="0">#azure</a>`
+        },
+        {
+            name: "Martin Therkelsen",
+            id: "Mracket",
+            img: "https://pbs.twimg.com/profile_images/1370412190503739399/JS8236eg_bigger.jpg",
+            details: `Yesterday I passed the AZ-104 exam. <a target="_blank" href="https://www.twitter.com/pluralsight" tabindex="0">@pluralsight</a> courses are great to help prepare for these exams. <a target="_blank" href="https://www.twitter.com/hashtag/citrixctp?src=hash" tabindex="0">#citrixctp</a> <a target="_blank" href="https://www.twitter.com/hashtag/azure?src=hash" tabindex="0">#azure</a>`
+        },
+        {
+            name: "Martin Therkelsen",
+            id: "Mracket",
+            img: "https://pbs.twimg.com/profile_images/1319270197702782979/TbWPouzl_bigger.jpg",
+            details: `Yesterday I passed the AZ-104 exam. <a target="_blank" href="https://www.twitter.com/pluralsight" tabindex="0">@pluralsight</a> courses are great to help prepare for these exams. <a target="_blank" href="https://www.twitter.com/hashtag/citrixctp?src=hash" tabindex="0">#citrixctp</a> <a target="_blank" href="https://www.twitter.com/hashtag/azure?src=hash" tabindex="0">#azure</a>`
+        },
+
+
+    ]
+
+    let btn_left = document.createElement('button')
+    btn_left.innerText = '<'
+    parent_slide.append(btn_left)
+    obj.forEach(product => {
+        console.log(product.name)
+        let div = document.createElement('div')
+        div.style.display = 'none'
+        let name = document.createElement('p')
+        name.innerText = product.name
+        let id = document.createElement('p')
+        id.innerText = '@' + product.id
+        let div_name = document.createElement('div')
+
+        let img = document.createElement('img')
+        img.src = product.img
+        let div_img = document.createElement('div')
+        let info = document.createElement('div')
+        info.onclick = function () {
+            window.location.href = `https://twitter.com/${product.id}`
+        }
+
+        let details = document.createElement('div')
+        details.innerHTML = product.details
+        div_name.append(name, id)
+        div_img.append(img)
+        info.append(div_img, div_name)
+        div.append(info, details)
+        parent_slide.append(div)
+    });
+    let btn_right = document.createElement('button')
+    btn_right.innerText = '>'
+    parent_slide.append(btn_right)
+
+    let divs = document.querySelectorAll("#parent_slide>div")
+    console.log(divs)
+    var left = 0
+    var right = 3
+    function slide() {
+        for (let i = left; i < right; i++) {
+            divs[i].style.display = 'block'
+        }
+    }
+    slide()
+    btn_right.onclick = function () {
+        if (right < divs.length) {
+
+            divs[left].style.display = 'none'
+            left++
+            right++
+            slide()
+        }
+    }
+    btn_left.onclick = function () {
+        if (left > 0) {
+
+            right--
+            divs[right].style.display = 'none'
+            left--
+            slide()
+        }
+    }
+
+</script>
