@@ -9,11 +9,23 @@
 </head>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@400&family=Source+Sans+Pro&display=swap');
 
     * {
         margin: 0;
         padding: 0;
+        /* font-family: 'Source Sans Pro', sans-serif; */
+        font-family: 'Prompt', sans-serif;
+        /* line-height: 1.1em; */
+    }
+
+    h1 {
+        line-height: 1.3em;
+    }
+
+    p {
         font-family: 'Source Sans Pro', sans-serif;
+
     }
 
     /* navbar */
@@ -63,7 +75,33 @@
     #nav ul li {
         list-style-type: none;
         font-weight: bold;
+        cursor: pointer;
+        border-bottom: 6px solid #212121;
+      
 
+        padding: 30px 0;
+        /* box-sizing: border-box; */
+    }
+    .pop_on{
+        list-style-type: none;
+        font-weight: bold;
+        cursor: pointer;
+        border-bottom: 6px solid ;
+        /* border-image-slice: 1;
+        border-image: 2px solid linear-gradient(180deg, #f15b2a 0%, #ec008c 100%); */
+        border-image: linear-gradient(to right, #e80c88 0%, #f15b2c 100%);
+        border-image-slice: 0 0 7 0;
+
+        padding: 30px 0;
+    }
+    .pop_out{
+        list-style-type: none;
+        font-weight: bold;
+        cursor: pointer;
+        border-bottom: 6px solid #212121;
+      
+
+        padding: 30px 0;
     }
 
     #nav>div:nth-child(3) {
@@ -112,7 +150,7 @@
     }
 
     #image>div {
-        width: 40%;
+        width: 45%;
         position: absolute;
         left: 60%;
         top: 45%;
@@ -121,6 +159,7 @@
 
     #image h1 {
         font-size: 3.5em;
+
 
     }
 
@@ -507,9 +546,186 @@
     /* twit */
 
     /* box-3 */
+
+    /* popups */
+    #platform {
+        position: absolute;
+        top: 90px;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, .8);
+        z-index: 4;
+        /* display: none; */
+        color: white;
+    }
+
+    #platform>div {
+        width: 80%;
+        height: 400px;
+        background-image: linear-gradient(#171717, #000000);
+        /* background-color: #151515; */
+
+        margin: auto;
+        padding: 3%;
+        box-sizing: border-box;
+        display: flex;
+
+    }
+
+
+    .box {
+        width: 25%;
+        height: 100%;
+        border-right: 1px solid rgb(131, 131, 131);
+
+        /* padding: 3%; */
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .box>div {
+        /* border: 2px solid blue; */
+        box-sizing: border-box;
+        display: flex;
+        gap: 10%;
+    }
+
+    #platform p {
+        font-weight: bold;
+
+    }
+
+    .box>div span {
+        background: linear-gradient(100.37deg, rgb(236, 0, 139) 0%, rgb(241, 90, 34) 100%);
+        border-radius: 2px;
+        padding: 0 5%;
+
+    }
+
+    #platform>div>div:nth-child(2) {
+        width: 75%;
+        height: 100%;
+        /* border: 1px solid rgb(131, 131, 131); */
+
+        padding: 0 2%;
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #platform>div>div:nth-child(2)>div:nth-child(1) {
+        width: 30%;
+        height: 75%;
+        /* border: 2px solid red; */
+        border: none;
+
+    }
+
+    #platform h4 {
+        color: rgb(192, 192, 192);
+        font-weight: 100;
+    }
+
+    #platform>div>div:nth-child(2)>div:nth-child(2) {
+        width: 65%;
+        height: 75%;
+        /* border: 2px solid red; */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #platform>div>div:nth-child(2)>div:nth-child(2)>div {
+        width: 47%;
+        height: 29%;
+        /* border: 2px solid red; */
+        box-sizing: border-box;
+        background-color: #222222;
+        border-radius: 10px;
+    }
+
+    #platform>div>div:nth-child(2)>div:nth-child(3) {
+        width: 100%;
+        height: 15%;
+        /* border: 2px solid red; */
+        display: flex;
+        gap: 5%;
+    }
+
+
+    /* popups */
 </style>
 
 <body>
+    <!-- pop ip -->
+    <div id="platform">
+        <div>
+            <div class="box">
+                <h4>WAYS TO UPSKILL</h4>
+                <div>
+                    <img src="https://www.pluralsight.com/content/dam/pluralsight2/experiment-fragment/navigation/dashboard.png"
+                        alt="">
+                    <p>Courses</p>
+                </div>
+                <div>
+                    <img src="https://www.pluralsight.com/content/dam/pluralsight2/experiment-fragment/navigation/iq.png"
+                        alt="">
+                    <p>Skill assessments</p>
+                </div>
+                <div>
+                    <img src="https://www.pluralsight.com/content/dam/pluralsight2/experiment-fragment/navigation/cloud.png"
+                        alt="">
+                    <p>Labs</p> <span>NEW</span>
+                </div>
+                <div>
+                    <img src="https://www.pluralsight.com/content/dam/pluralsight2/experiment-fragment/navigation/hand.png"
+                        alt="">
+                    <p>Hands-on learning</p>
+                </div>
+                <div>
+                    <img src="https://www.pluralsight.com/content/dam/pluralsight2/experiment-fragment/navigation/certifications.png"
+                        alt="">
+                    <p>certification prep</p>
+                </div>
+                <div>
+                    <img src="https://www.pluralsight.com/content/dam/pluralsight2/experiment-fragment/navigation/analytics.png"
+                        alt="">
+                    <p>Team efficiency</p>
+                </div>
+
+            </div>
+            <div>
+                <div class="box">
+                    <h4>SKILLS FOR</h4>
+                    <p>Software development</p>
+                    <p>IT ops</p>
+                    <p>Info & cyber security</p>
+                    <p>Cloud computing</p>
+                    <p>Machine learning / AI</p>
+                    <p>Data professional</p>
+                </div>
+                <div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div>
+                    <p>See our entire course library</p>
+                    <p>Check out the Technology Index</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- pop ip -->
+
+
+
     <div id="container">
         <!-- nav -->
         <div id="nav">
@@ -518,10 +734,11 @@
             </div>
             <div>
                 <ul>
-                    <li>Platform</li>
-                    <li>Products</li>
-                    <li>Resourses</li>
-                    <li>For Individuals</li>
+                    <!-- &#9652 -->
+                    <li id="plat">Platform <span>&#9662</span></li>
+                    <li>Products <span>&#9662</span></li>
+                    <li>Resourses <span>&#9662</span></li>
+                    <li>For Individuals <span>&#9662</span></li>
                 </ul>
             </div>
             <div>
@@ -529,7 +746,7 @@
                     <img src="https://cdn-icons-png.flaticon.com/128/622/622669.png" alt="">
                 </div>
                 <div>
-                    <p>Sign in</p>
+                    <p>Sign in <span>&#9662</span></p>
                 </div>
                 <div>
                     <button>TRY FOR FREE</button>
@@ -542,7 +759,7 @@
 
         <div id="image">
             <div>
-                <h1>Build better teams</h1>
+                <h1>Build better <span id="rotate"> teams</span></h1>
                 <p>Your customers won’t settle and neither should you. With Pluralsight, technology teams know more and
                     work better together. Develop the skills you need for your top priorities. Improve workflows with
                     actionable data. Build better—every time.</p>
@@ -740,6 +957,15 @@
 
 </html>
 <script>
+
+    let rot = document.getElementById('rotate')
+    let c = 0
+    let arr = ['skill', 'products', 'worksflows', 'process', "team"]
+    setInterval(() => {
+        rot.innerText = arr[c % arr.length]
+        c++
+    }, 1000);
+
     let parent_slide = document.getElementById('parent_slide')
 
     var obj = [
@@ -786,6 +1012,7 @@
     let btn_left = document.createElement('button')
     btn_left.innerText = '<'
     parent_slide.append(btn_left)
+
     obj.forEach(product => {
         console.log(product.name)
         let div = document.createElement('div')
@@ -820,11 +1047,13 @@
     console.log(divs)
     var left = 0
     var right = 3
+
     function slide() {
         for (let i = left; i < right; i++) {
             divs[i].style.display = 'block'
         }
     }
+
     slide()
     btn_right.onclick = function () {
         if (right < divs.length) {
@@ -844,5 +1073,19 @@
             slide()
         }
     }
+    let plat = document.getElementById('plat')
+    let platform = document.getElementById('platform')
 
+    plat.onclick = function () {
+        if (platform.style.display == 'block') {
+
+            platform.style.display = 'none'
+            plat.setAttribute('class','pop_out')
+        }
+        else {
+
+            platform.style.display = 'block'
+            plat.setAttribute('class','pop_on')
+        }
+    }
 </script>
