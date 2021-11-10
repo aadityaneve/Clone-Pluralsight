@@ -1,0 +1,614 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@400&family=Source+Sans+Pro&display=swap");
+
+* {
+    font-family: "Prompt", sans-serif;
+}
+
+p {
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+h1 {
+    line-height: 1.3em;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    letter-spacing: 0.1em;
+    background-color: #181818;
+    color: white;
+    width: 99vw;
+}
+
+.topDiv {
+    background-image: url("https://www.pluralsight.com/content/pluralsight/en/pricing/free-trial/jcr:content/main/generic_block/image-res.img.eca98c8c-0ae1-41a2-a142-f0516473a2e5.jpg");
+    padding: 4% 0% 0% 0%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 99vw;
+    margin: auto;
+    text-align: center;
+}
+
+.heading > h1 {
+    font-weight: 900;
+    font-size: 3.5rem;
+    margin-bottom: 0px;
+}
+
+.parentDiv {
+    border: 1px solid white;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    width: 250px;
+
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* vertical-align: center; */
+}
+
+.sliderBarDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 90px;
+    width: 40%;
+}
+
+.sliderPercentages {
+    position: absolute;
+    z-index: 1;
+    margin: -15px 0px;
+    /* border: 1px solid greenyellow; */
+    display: flex;
+    justify-content: space-around;
+}
+
+.sliderTags {
+    position: absolute;
+    margin: 1px 0px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-around;
+}
+
+.sliderZeroPercent {
+    width: 82px;
+    height: 65px;
+    /* border: 1px solid yellow; */
+
+    cursor: pointer;
+}
+.sliderFiftyPercent {
+    width: 82px;
+    height: 65px;
+    /* border: 1px solid yellow; */
+
+    cursor: pointer;
+}
+.sliderHundredPercent {
+    width: 82px;
+    height: 65px;
+    /* border: 1px solid yellow; */
+
+    cursor: pointer;
+}
+
+.sliderTags1 {
+    position: absolute;
+    margin: 1px -23px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-around;
+}
+
+.sliderZeroPercent1 {
+    width: 100px;
+    height: 40px;
+    /* border: 1px solid yellow; */
+    cursor: pointer;
+}
+.sliderFiftyPercent1 {
+    width: 100px;
+    height: 40px;
+    /* border: 1px solid yellow; */
+    cursor: pointer;
+}
+.sliderHundredPercent1 {
+    width: 100px;
+    height: 40px;
+    /* border: 1px solid yellow; */
+    cursor: pointer;
+}
+
+/* slider */
+.slider0 {
+    width: 15px;
+    border: 4px solid #f29f13;
+    border-radius: 10px;
+}
+
+.circleSlider0 {
+    position: absolute;
+    background-image: url("https://www.pluralsight.com/content/dam/pluralsight2/product/v2/logos/pricing-slider.svg");
+    width: 70px;
+    height: 60px;
+    /* border: 1px solid yellow; */
+    margin: -30px -15px;
+    cursor: grab;
+}
+
+.slider50 {
+    width: 120px;
+    border: 4px solid #f29f13;
+    border-radius: 10px;
+}
+
+.circleSlider50 {
+    position: absolute;
+    background-image: url("https://www.pluralsight.com/content/dam/pluralsight2/product/v2/logos/pricing-slider.svg");
+    width: 70px;
+    height: 60px;
+    /* border: 1px solid yellow; */
+    margin: -30px 80px;
+    cursor: grab;
+}
+
+.slider100 {
+    width: 240px;
+    border: 4px solid #f29f13;
+    border-radius: 10px;
+}
+
+.circleSlider100 {
+    position: absolute;
+    background-image: url("https://www.pluralsight.com/content/dam/pluralsight2/product/v2/logos/pricing-slider.svg");
+    width: 70px;
+    height: 60px;
+    /* border: 1px solid yellow; */
+    margin: -30px 200px;
+    cursor: grab;
+}
+/* slider */
+
+.dataDiv {
+    width: 80%;
+    margin: 80px auto auto;
+
+    /* display: flex; */
+    /* justify-content: space-evenly; */
+}
+
+.monthlyYearlyButton {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 70px;
+
+    align-items: center;
+    gap: 20px;
+}
+
+.cardsData {
+    /* margin: 80px auto auto; */
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.fourteenDayTrial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fourteenDayTrial > div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.numberOfSubscription {
+    text-align: left;
+}
+
+.numberOfSubscription > h2 {
+    margin-bottom: 3px;
+}
+.numberOfSubscription > p {
+    margin-top: 2px;
+}
+
+.individualAndTeamBtns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.individualAndTeamBtns > div {
+    margin: 1%;
+}
+
+/* button group 1 */
+.buttonGroup1 {
+    display: flex;
+    justify-content: space-around;
+
+    background-color: black;
+    border: 1px solid gray;
+    width: 415px;
+    height: 70px;
+    border-radius: 50px;
+
+    transition: all 0.5s ease-in-out;
+}
+
+.individualBtn {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    color: white;
+    font-size: 15px;
+    font-weight: 900;
+
+    cursor: pointer;
+}
+
+.innerOval {
+    background-color: #4e4c4c;
+
+    position: absolute;
+    margin-right: 207.75px;
+    width: 207.5px;
+    height: 70px;
+
+    border-radius: 50px;
+    opacity: 0.6;
+    cursor: pointer;
+
+    transition: all 0.5s ease-in-out;
+}
+
+.buttonGroup1.active {
+    background: #363636;
+}
+
+.buttonGroup1.active > .innerOval {
+    margin-left: 411px;
+}
+
+.teamBtn {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    color: white;
+    font-size: 15px;
+    font-weight: 900;
+
+    cursor: pointer;
+}
+/* button group 1 end */
+
+/* button group 2 */
+.buttonGroup2 {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    transform: translate(-50, -50);
+}
+
+.toggleBtn {
+    width: 70px;
+    height: 25px;
+    background: #363636;
+    border-radius: 30px;
+    padding: 3px;
+
+    transition: all 0.5s ease-in-out;
+}
+
+.toggleBtn > .innerCircle {
+    width: 30px;
+    height: 25px;
+    background: white;
+    border-radius: 50%;
+
+    transition: all 0.5s ease-in-out;
+}
+
+.toggleBtn.active {
+    background: #363636;
+}
+
+.toggleBtn.active > .innerCircle {
+    margin-left: 45px;
+}
+/* button group 2 end */
+
+.pricingCards {
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+
+    text-align: center;
+}
+
+.pricingCards > .standardPricingCard > h4 {
+    margin: 8.5% 0% 8.5% 0%;
+}
+
+.standardPricingCard,
+.premiumPricingCard {
+    flex-basis: 20vw;
+}
+
+.premiumPricingCard {
+    margin: -40px;
+}
+
+.premiumPricingCard > .opportunityLabel {
+    background-color: #f7a614;
+    color: black;
+}
+
+.rupees {
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.dollar {
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.bgPink {
+    color: #ec008c;
+}
+
+.pricingCardBtn {
+    width: 270px;
+    height: 50px;
+    padding: 1%;
+    background-image: linear-gradient(to right, #f05a28, #ec008c);
+    color: white;
+    font-size: 17px;
+    white-space: normal;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.pricingCardBtn::before {
+    background-image: linear-gradient(to right, #f05a28, #ec008c);
+    transition: 3s;
+}
+
+.pricingCardBtn:hover {
+    animation: colorChange 3s linear infinite;
+}
+
+@keyframes colorChange {
+    0% {
+        background: #f05a28;
+    }
+    50% {
+        background: #ec008c;
+    }
+    100% {
+        background: #f05a28;
+    }
+}
+
+.compareCourseLibrary {
+    padding-top: 4%;
+    width: 80vw;
+    margin: auto;
+    text-align: center;
+}
+
+.compareCourseLibrary > div:nth-child(2) {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+}
+
+.compareCourseLibrary > div:nth-child(2) > div:nth-child(1) {
+    flex-basis: 25vw;
+}
+
+.compareCourseLibrary > div:nth-child(2) > div:nth-child(2) {
+    flex-basis: 25vw;
+}
+
+.coreTable,
+.assessmentsTable,
+.premiumTable,
+.analyticsTable,
+.strategicTable,
+.professionalServicesTable {
+    margin-top: 5%;
+}
+
+table {
+    width: 70vw;
+    margin: auto;
+}
+
+table tr td:nth-child(n + 2):nth-child(-n + 5) {
+    border-right: thin solid #333333;
+}
+
+table tr {
+    line-height: 50px;
+    border-top: 0px;
+    border-left: 0px;
+    border-bottom: 0px;
+}
+
+table th {
+    text-align: left;
+}
+
+table td {
+    margin: auto;
+}
+
+table tr:nth-child(odd) {
+    background-color: #212121;
+}
+
+.pinkCheckMark {
+    margin: auto;
+    width: 8px;
+    height: 20px;
+    border: solid #ec008c;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg) translateX(-50%);
+}
+
+.orangeCheckMark {
+    margin: auto;
+    width: 8px;
+    height: 20px;
+    border: solid #f7a614;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg) translateX(-50%);
+}
+
+.coreTable
+    > table
+    > tbody
+    > tr:nth-child(1)
+    > td:nth-child(n + 2):nth-child(-n + 6) {
+    text-align: center;
+    font-weight: 700;
+}
+.coreTable
+    > table
+    > tbody
+    > tr:nth-child(2)
+    > td:nth-child(n + 2):nth-child(-n + 6) {
+    text-align: center;
+    font-weight: 700;
+}
+.coreTable
+    > table
+    > tbody
+    > tr:nth-child(3)
+    > td:nth-child(n + 2):nth-child(-n + 6) {
+    text-align: center;
+    font-weight: 700;
+}
+
+table td > img {
+    text-align: center;
+}
+
+table img {
+    width: 22px;
+}
+
+.textAlignCenter {
+    text-align: center;
+}
+
+.colorOrange {
+    color: #f7a614;
+}
+
+.colorBlue {
+    color: #0084bd;
+}
+
+.colorPink {
+    color: #ec008c;
+}
+
+.collapsiblesDiv {
+    display: flex;
+    width: 80vw;
+    margin: auto;
+    padding: 10%;
+    justify-content: space-around;
+}
+
+.collapsibleBtns {
+    display: flex;
+    flex-direction: column;
+}
+
+.collapsibleBtns > button {
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 5% solid yellow;
+    border-left: 0;
+    color: white;
+    background-color: black;
+}
+
+/* Css for collapsible div */
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 40vw;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: all 0.5s ease-in-out;
+}
+
+.collapsible::after {
+    content: "\25BE";
+    float: right;
+    /* transform: scale(1.5); */
+}
+
+.collapsibleActive {
+    background-color: #555555;
+}
+
+.collapsibleActive::after {
+    content: "\25B4";
+}
+
+.active,
+.collapsible:hover {
+    background-color: #555;
+}
+
+.content {
+    width: 38vw;
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: black;
+}
+
+.endPage {
+    width: 50vw;
+    margin: auto;
+    text-align: center;
+}
+
+.brandBar {
+    width: 70vw;
+    margin: 3% auto auto auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
