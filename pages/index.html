@@ -655,8 +655,12 @@
         gap: 5%;
     }
 
-
-    /* popups */
+    /* Changes by Aaditya */
+        button {
+            cursor: pointer;
+        }
+    /* Changes by Aaditya */
+    
 </style>
 
 <body>
@@ -763,8 +767,8 @@
                 <p>Your customers won’t settle and neither should you. With Pluralsight, technology teams know more and
                     work better together. Develop the skills you need for your top priorities. Improve workflows with
                     actionable data. Build better—every time.</p>
-                <button>VIEW PLANS</button>
-                <button>TRY FOR FREE</button>
+                <button onclick="locateTo('skills-plans-and-pricing')">VIEW PLANS</button>
+                <button onclick="locateTo('free-trial')">TRY FOR FREE</button>
             </div>
         </div>
         <!-- header -->
@@ -953,6 +957,8 @@
 
 
     </div>
+
+    <script src="../scripts/locate-to.js"></script>
 </body>
 
 </html>
