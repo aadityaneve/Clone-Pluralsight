@@ -6,7 +6,7 @@
 }
 
 p {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
 }
 
 h1 {
@@ -408,6 +408,16 @@ body {
     left: 50%;
 }
 
+.yellowCheckMark {
+    width: 8px;
+    height: 20px;
+    border: solid #ffd825;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg) translateX(-50%);
+    position: relative;
+    left: 50%;
+}
+
 .planTable {
     width: 80vw;
     margin: auto;
@@ -547,4 +557,33 @@ th {
     border: none;
 
     transition: all 3s linear;
+}
+
+.endPageButtons:hover {
+    animation: 3s linear 0s infinite colorChange;
+}
+
+.skillsForIndividualBtn::before,
+.skillsForIndividualBtn::after {
+    box-sizing: border-box;
+}
+
+.skillsForIndividualBtn {
+    width: 300px;
+    height: 60px;
+    padding: 3% 5% 3% 5%;
+    /* background-image: linear-gradient(to right, #f05a28, #ec008c); */
+    background-color: black;
+    color: white;
+    font-size: 17px;
+    white-space: normal;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 2px;
+
+    transition: all 1s ease-out;
+}
+
+.skillsForIndividualBtn:hover {
+    border: 2px solid white;
 }
