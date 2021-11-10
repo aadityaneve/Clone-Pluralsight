@@ -152,7 +152,7 @@ var event2Div=[
     },
     {
         TopTitl:"Webinars",
-        SubTitl:"Cybersecurity street smarts: One number and a pair of dice",
+        SubTitl:"Cybersecurity street smarts: One number...",
         Sumry:"Build an incident response plan and align your team to it. Start by focusing on the one number...",
         date:"Nov 18,21",
         time:"1:00 PM GMT",
