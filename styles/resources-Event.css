@@ -18,7 +18,7 @@ body{
     position: sticky;
     top: 0;
     padding: 45px;
-    z-index: 1;
+    z-index: 2;
 }
 #topHeadng{
     background-color: #000;
