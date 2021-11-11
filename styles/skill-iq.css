@@ -127,6 +127,25 @@ body {
   border-radius: 2px;
 }
 
+.lastbox > button:hover{
+  animation: colorChange 3s linear infinite;
+}
+
+@keyframes colorChange {
+  0% {
+      /* background: linear-gradient(to right, #f05a28, #ec008c); */
+      background: #f05a28;
+  }
+  50% {
+      /* background: linear-gradient(to right, #f05a28, #ec008c, #f05a28); */
+      background: #ec008c;
+  }
+  100% {
+      /* background: linear-gradient(to right, #ee1f6a, #f05a29); */
+      background: #f05a28;
+  }
+}
+
 .middel {
   display: flex;
   justify-content: center;

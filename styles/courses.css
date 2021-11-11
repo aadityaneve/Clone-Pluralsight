@@ -1,34 +1,33 @@
-
-
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Prompt:wght@400&family=Source+Sans+Pro&display=swap");
 
 * {
-    font-family: "Prompt", sans-serif;
-    letter-spacing: 1px;
-    margin: 0;padding: 0;
+  font-family: "Prompt", sans-serif;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 0;
 }
 
 p {
-    font-family: "Source Sans Pro", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 h1 {
-    line-height: 1.3em;
-    
+  line-height: 1.3em;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 body {
   padding: 0;
   margin: 0;
   background-color: #181818;
   color: #ffffff;
-  
 }
-
+.skill-box-main {
+  margin-top: 7%;
+}
 .skill-box {
   margin-top: 50px;
   background: url("https://www.pluralsight.com/content/dam/pluralsight2/browse/backgrounds/bg-hero.png");
@@ -82,11 +81,6 @@ body {
   cursor: pointer;
 }
 
-.non-selected {
-  color: #aaaaaa;
-  font-weight: 500;
-}
-
 .selected {
   padding-bottom: 10px;
   color: #ffffff;
@@ -97,7 +91,7 @@ body {
   border-image-slice: 0 0 7 0;
 }
 
-#cards {
+.cards {
   width: 350px;
   height: 250px;
   margin: 20px;
@@ -127,47 +121,33 @@ li {
 }
 
 .image {
-  width: 350px;
+  width: 100%;
   height: 100px;
   object-fit: cover;
 }
-
-.displayBlock{
-  display: block;
-}
-
-.displayNone{
-  display: none;
-}
-
-/* .upperactive > div:nth-child(2){
-  border: 2px solid yellow;
-} */
 
 .active {
   display: flex;
   max-width: 95vw;
   margin: auto;
-  /* overflow-x: scroll; */
 }
-.upperCards{
-  width: 350px;
-}
+
 .slick-prev {
-  left: 15px;
+  left: 0.5%;
   z-index: 1;
 }
 .slick-next {
-  right: 15px;
+  right: 1%;
 }
-.slick-next:before, .slick-prev:before {
-  font-size:25px;
+.slick-next:before,
+.slick-prev:before {
+  font-size: 35px;
 }
-#cards{
+.cards {
   width: 90%;
 }
-.short-dis>h3{
-  font-size:17px;
+.short-dis > h3 {
+  font-size: 17px;
   width: 250px;
 }
 
@@ -182,7 +162,7 @@ li {
 .cards-ul-flex > li {
   list-style: none;
   font-size: 15px;
-  margin: 0 10px 0 0;
+  /* margin: 0 10px 0 0; */
 }
 
 .cards-ul-flex > img {
@@ -190,19 +170,17 @@ li {
   margin: 0 20px 0 10px;
 }
 
-
 .item-a {
   margin: 0;
   padding: 0;
 }
-.skill{
+.skill {
   margin-bottom: 20px;
 }
-.subject{
+.subject {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-
 
 .browse-content {
   padding: 20px;
@@ -234,15 +212,15 @@ li {
   cursor: pointer;
   width: 20px;
   position: relative;
-  right: 7%;
+  right: 8%;
   top: 2px;
   transform: rotate(270deg);
 }
 
-.search-sort{
+.search-sort {
   display: flex;
-  justify-content:space-between;
-  margin-bottom:30px;
+  justify-content: space-between;
+  margin-bottom: 30px;
 }
 
 #sort-by {
@@ -270,7 +248,7 @@ li {
   right: 2%;
   width: 150px;
   display: none;
-  padding:15px;
+  padding: 15px;
 }
 .dropdown-menu > .droparrow::before {
   position: absolute;
@@ -345,10 +323,9 @@ li {
 }
 
 #courses_data h4 {
- margin: 5px auto;
+  margin: 5px auto;
 }
 #star {
   /* height:10px; */
   width: 60px;
 }
-

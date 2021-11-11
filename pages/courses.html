@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courses</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,22 +15,25 @@
       href="https://fonts.googleapis.com/css2?family=Prompt&display=swap"
       rel="stylesheet"
     />
+
+    
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
-      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
     />
+    
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
-      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
     />
+    
     <link rel="stylesheet" href="../styles/courses.css" />
-    <title>Courses</title>
   </head>
 
   <body>
@@ -63,157 +67,227 @@
     <div class="cards-main-content">
       <ul class="cards-main">
         <li id="new-selected" class="selected">New this month</li>
-        <li id="trending" class="non-selected">Trending</li>
+        <!-- <li id="trending" class="non-selected">Trending</li> -->
       </ul>
     </div>
-
-    <div id="ac" class="displayBlock">
-      <div id="active-content" class="active slider1">
-        <div class="upperCards">
-          <div id="cards">
+        
+    <div id="ac">
+      <div id="active-content" class="active slider">
+        <div class="upperCards" onclick="getVal(1)" >
+          <div class="cards">
             <img
               class="image"
-              src="https://pluralsight.imgix.net/course-images/ibm-cloud-pak-security-1-dot-x-administration-v1.png?h=180&w=320"
-              alt=""
+              src="https://pluralsight.imgix.net/course-images/clean-transform-load-data-power-bi-v1.jpg?h=180&amp;w=320"
             />
             <div class="short-dis">
-              <h3>IBM Cloud Pak for Security 1.x Administration</h3>
-              <div>by IBM</div>
+              <h4>Clean, Transform, and Load Data with Power BI</h4>
+              <div>Thomas LeBlanc</div>
               <ul class="cards-ul-flex">
-                <li>2h 5m</li>
+                <li>1h 3m</li>
                 <img
                   src="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/course/clock.png"
-                  alt=""
                 />
-                <li>intermediate</li>
+                <li>Beginner</li>
                 <img
                   src="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/course/level.png"
-                  alt=""
                 />
               </ul>
             </div>
           </div>
         </div>
-        <div class="upperCards">
-          <div id="cards">
+        <div class="upperCards" onclick="getVal(2)" >
+          <div class="cards">
             <img
               class="image"
-              src="https://pluralsight.imgix.net/course-images/ibm-cloud-pak-security-1-dot-x-administration-v1.png?h=180&w=320"
-              alt=""
+              src="https://pluralsight.imgix.net/course-images/key-concepts-machine-learning-v1.jpg?h=180&amp;w=320"
             />
             <div class="short-dis">
-              <h3>IBM Cloud Pak for Security 1.x Administration</h3>
-              <div>by IBM</div>
+              <h4>Key Concepts Machine Learning</h4>
+              <div>Janani Ravi</div>
               <ul class="cards-ul-flex">
-                <li>2h 5m</li>
+                <li>2h 6m</li>
                 <img
                   src="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/course/clock.png"
-                  alt=""
                 />
-                <li>intermediate</li>
+                <li>Beginner</li>
                 <img
                   src="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/course/level.png"
-                  alt=""
                 />
               </ul>
             </div>
           </div>
         </div>
-        <div class="upperCards">
-          <div id="cards">
+        <div class="upperCards" onclick="getVal(3)" >
+          <div class="cards">
             <img
               class="image"
-              src="https://pluralsight.imgix.net/course-images/ibm-cloud-pak-security-1-dot-x-administration-v1.png?h=180&w=320"
-              alt=""
+              src="https://pluralsight.imgix.net/course-images/literacy-essentials-core-concepts-neural-network-v1.jpg?h=180&amp;w=320"
             />
             <div class="short-dis">
-              <h3>IBM Cloud Pak for Security 1.x Administration</h3>
-              <div>by IBM</div>
+              <h4>Literacy Essentials: Core Concepts Neural Network</h4>
+              <div>Abdul Rehman Yousaf</div>
               <ul class="cards-ul-flex">
-                <li>2h 5m</li>
+                <li>48m</li>
                 <img
                   src="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/course/clock.png"
-                  alt=""
                 />
-                <li>intermediate</li>
+                <li>Beginne</li>
                 <img
                   src="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/course/level.png"
-                  alt=""
                 />
               </ul>
             </div>
           </div>
         </div>
-        <div class="upperCards">
-          <div id="cards">
+        <div class="upperCards" onclick="getVal(4)" >
+          <div class="cards">
             <img
               class="image"
-              src="https://pluralsight.imgix.net/course-images/ibm-cloud-pak-security-1-dot-x-administration-v1.png?h=180&w=320"
-              alt=""
+              src="https://pluralsight.imgix.net/course-images/working-pointers-arrays-cplusplus-20-v1.jpg?h=180&amp;w=320"
             />
             <div class="short-dis">
-              <h3>IBM Cloud Pak for Security 1.x Administration</h3>
-              <div>by IBM</div>
+              <h4>Working with Pointers and Arrays in C++ 20</h4>
+              <div>Mateo Prigl</div>
               <ul class="cards-ul-flex">
-                <li>2h 5m</li>
+                <li>5h 2m</li>
                 <img
                   src="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/course/clock.png"
-                  alt=""
                 />
-                <li>intermediate</li>
+                <li>Intermediate</li>
                 <img
                   src="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/course/level.png"
-                  alt=""
                 />
               </ul>
             </div>
           </div>
         </div>
-        <div class="upperCards">
-          <div id="cards">
+        <div class="upperCards" onclick="getVal(5)" >
+          <div class="cards">
             <img
               class="image"
-              src="https://pluralsight.imgix.net/course-images/ibm-cloud-pak-security-1-dot-x-administration-v1.png?h=180&w=320"
-              alt=""
+              src="https://pluralsight.imgix.net/course-images/cisco-collaboration-fundamentals-media-resources-isr-call-voicemail-reporting-v3.jpg?h=180&amp;w=320"
             />
             <div class="short-dis">
-              <h3>IBM Cloud Pak for Security 1.x Administration</h3>
-              <div>by IBM</div>
+              <h4>Cisco Collaboration Fundamentals</h4>
+              <div>Sean Douglas</div>
               <ul class="cards-ul-flex">
-                <li>2h 5m</li>
+                <li>3h 21m</li>
                 <img
                   src="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/course/clock.png"
-                  alt=""
                 />
-                <li>intermediate</li>
+                <li>Intermediate</li>
                 <img
                   src="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/course/level.png"
-                  alt=""
                 />
               </ul>
             </div>
           </div>
         </div>
-        <div class="upperCards">
-          <div id="cards">
+        <div class="upperCards" onclick="getVal(6)" >
+          <div class="cards">
             <img
               class="image"
-              src="https://pluralsight.imgix.net/course-images/ibm-cloud-pak-security-1-dot-x-administration-v1.png?h=180&w=320"
-              alt=""
+              src="https://pluralsight.imgix.net/course-images/icagile-icp-fdo-continuous-delivery-v1.jpg?h=180&amp;w=320"
             />
             <div class="short-dis">
-              <h3>IBM Cloud Pak for Security 1.x Administration</h3>
-              <div>by IBM</div>
+              <h4>ICAgile (ICP-FDO): Continuous Delivery</h4>
+              <div>Chris Behrens</div>
               <ul class="cards-ul-flex">
-                <li>2h 5m</li>
+                <li>1h 37m</li>
                 <img
                   src="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/course/clock.png"
-                  alt=""
                 />
-                <li>intermediate</li>
+                <li>Intermediate</li>
                 <img
                   src="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/course/level.png"
-                  alt=""
+                />
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="upperCards" onclick="getVal(7)" >
+          <div class="cards">
+            <img
+              class="image"
+              src="https://pluralsight.imgix.net/course-images/enhance-reports-expose-insights-power-bi-v1.jpg?h=180&amp;w=320"
+            />
+            <div class="short-dis">
+              <h4>Enhance Reports to Expose Insights</h4>
+              <div>Ifedayo Bamikole</div>
+              <ul class="cards-ul-flex">
+                <li>54m</li>
+                <img
+                  src="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/course/clock.png"
+                />
+                <li>Advanced</li>
+                <img
+                  src="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/course/level.png"
+                />
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="upperCards" onclick="getVal(8)" >
+          <div class="cards">
+            <img
+              class="image"
+              src="https://pluralsight.imgix.net/course-images/servicenow-using-reports-dashboards-v1.jpg?h=180&amp;w=320"
+            />
+            <div class="short-dis">
+              <h4>Using ServiceNow Reports and Dashboards</h4>
+              <div>Saravanan Dhandapani</div>
+              <ul class="cards-ul-flex">
+                <li>1h 4m</li>
+                <img
+                  src="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/course/clock.png"
+                />
+                <li>Intermediate</li>
+                <img
+                  src="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/course/level.png"
+                />
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="upperCards" onclick="getVal(9)" >
+          <div class="cards">
+            <img
+              class="image"
+              src="https://pluralsight.imgix.net/course-images/manage-account-access-salesforce-territory-mgmt-v1.jpg?h=180&amp;w=320"
+            />
+            <div class="short-dis">
+              <h4>Manage Account Access with Salesforce Territory</h4>
+              <div>Sara Morgan Nettles</div>
+              <ul class="cards-ul-flex">
+                <li>46m</li>
+                <img
+                  src="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/course/clock.png"
+                />
+                <li>Intermediate</li>
+                <img
+                  src="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/course/level.png"
+                />
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="upperCards" onclick="getVal(1)" ">
+          <div class="cards">
+            <img
+              class="image"
+              src="https://pluralsight.imgix.net/course-images/dot-net-6-first-look-v1.jpg?h=180&amp;w=320"
+            />
+            <div class="short-dis">
+              <h4>.NET 6 First Look</h4>
+              <div>Gill Cleeren</div>
+              <ul class="cards-ul-flex">
+                <li>1h 52m</li>
+                <img
+                  src="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/course/clock.png"
+                />
+                <li>Beginner</li>
+                <img
+                  src="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/course/level.png"
                 />
               </ul>
             </div>
@@ -223,135 +297,6 @@
     </div>
     
 
-    <div id="nonac" class="displayBlock">
-      <div id="non-active-content" class="active slider2">
-        <div class="upperCards">
-          <div id="cards">
-            <img
-              class="image"
-              src="https://1pluralsight.imgix.net/course-images/ibm-cloud-pak-security-1-dot-x-administration-v1.png?h=180&w=320"
-              alt=""
-            />
-            <div class="short-dis">
-              <h3>IBM Cloud Pak for Security 1.x Administration</h3>
-              <div>by IBM</div>
-              <ul class="cards-ul-flex">
-                <li>2h 5m</li>
-                <img
-                  src="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/course/clock.png"
-                  alt=""
-                />
-                <li>intermediate</li>
-                <img
-                  src="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/course/level.png"
-                  alt=""
-                />
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="upperCards">
-          <div id="cards">
-            <img
-              class="image"
-              src="https://pluralsight.imgix.net/course-images/ibm-cloud-pak-security-1-dot-x-administration-v1.png?h=180&w=320"
-              alt=""
-            />
-            <div class="short-dis">
-              <h3>IBM Cloud Pak for Security 1.x Administration</h3>
-              <div>by IBM</div>
-              <ul class="cards-ul-flex">
-                <li>2h 5m</li>
-                <img
-                  src="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/course/clock.png"
-                  alt=""
-                />
-                <li>intermediate</li>
-                <img
-                  src="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/course/level.png"
-                  alt=""
-                />
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="upperCards">
-          <div id="cards">
-            <img
-              class="image"
-              src="https://pluralsight.imgix.net/course-images/ibm-cloud-pak-security-1-dot-x-administration-v1.png?h=180&w=320"
-              alt=""
-            />
-            <div class="short-dis">
-              <h3>IBM Cloud Pak for Security 1.x Administration</h3>
-              <div>by IBM</div>
-              <ul class="cards-ul-flex">
-                <li>2h 5m</li>
-                <img
-                  src="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/course/clock.png"
-                  alt=""
-                />
-                <li>intermediate</li>
-                <img
-                  src="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/course/level.png"
-                  alt=""
-                />
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="upperCards">
-          <div id="cards">
-            <img
-              class="image"
-              src="https://pluralsight.imgix.net/course-images/ibm-cloud-pak-security-1-dot-x-administration-v1.png?h=180&w=320"
-              alt=""
-            />
-            <div class="short-dis">
-              <h3>IBM Cloud Pak for Security 1.x Administration</h3>
-              <div>by IBM</div>
-              <ul class="cards-ul-flex">
-                <li>2h 5m</li>
-                <img
-                  src="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/course/clock.png"
-                  alt=""
-                />
-                <li>intermediate</li>
-                <img
-                  src="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/course/level.png"
-                  alt=""
-                />
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="upperCards">
-          <div id="cards">
-            <img
-              class="image"
-              src="https://pluralsight.imgix.net/course-images/ibm-cloud-pak-security-1-dot-x-administration-v1.png?h=180&w=320"
-              alt=""
-            />
-            <div class="short-dis">
-              <h3>IBM Cloud Pak for Security 1.x Administration</h3>
-              <div>by IBM</div>
-              <ul class="cards-ul-flex">
-                <li>2h 5m</li>
-                <img
-                  src="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/course/clock.png"
-                  alt=""
-                />
-                <li>intermediate</li>
-                <img
-                  src="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/course/level.png"
-                  alt=""
-                />
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
 
     <div class="browse-content">
@@ -498,6 +443,7 @@
         </div>
       </div>
     </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
@@ -505,13 +451,15 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script>
-    $('.slider1').slick({
+
+    <script type="text/javascript">
+
+$('.slider').slick({
   dots: false,
   infinite: true,
-  speed: 500,
-  slidesToShow: 3,
-  slidesToScroll: 3,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 4,
   responsive: [
     {
       breakpoint: 1024,
@@ -519,7 +467,7 @@
         slidesToShow: 3,
         slidesToScroll: 3,
         infinite: true,
-        dots: false
+        dots: true
       }
     },
     {
@@ -541,43 +489,8 @@
     // instead of a settings object
   ]
 });
-    </script>
-    <script>
-    $('.slider2').slick({
-  dots: false,
-  infinite: true,
-  speed: 500,
-  slidesToShow: 3,
-  slidesToScroll: 3,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        infinite: true,
-        dots: false
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
-  ]
-});
+
+
     </script>
   </body>
 </html>
