@@ -17,7 +17,7 @@
     <div id="top_opt">
         <div class="acc_pay">
             <div class="ind_blk">
-                <div class="circle"><span class="material-icons" style="font-size:18px">chevron_right</span></div>
+                <div class="circle"><span class="material-icons" style="font-size:18px" id="acc_arrow">chevron_right</span></div>
                 <div class="circle_cont">ACCOUNT</div>
             </div>
             <div class="line"></div>
@@ -397,14 +397,16 @@
                                 <div class="pay_data_blk">
                                     <div class="sub_inp">
                                         <label class="pay_label">Name on Card*
-                                        <div><input class="user_inp" id="card_name" type="text" value=""></div>
+                                        <div><input class="pay_user_inp" id="card_name" type="text" value=""></div>
+                                        <div class="req_feild" id="cardnme_mand">Required</div>
                                     
                                     </label>
                                     </div>
                     
                                     <div class="sub_inp">
                                         <label class="pay_label">Card number* 
-                                        <div><input class="user_inp" id="card_nmbr" type="number" value=""></div>
+                                        <div><input class="pay_user_inp" id="card_nmbr" type="number" value=""></div>
+                                        <div class="req_feild" id="cardnmbr_mand">Required</div>
                                     
                                     </label>
                                     </div>
@@ -415,41 +417,42 @@
                                             <div>Expiration*</div>
                                             <div id="pay_drop">
                                             <div id="month">
-                                                <select class="user_inp1">
-                                                    <option value="">- Select One - </option>
-                                                    <option value="01"> 01 </option>
-                                                    <option value="02">02</option>
-                                                    <option value="03"> 03 </option>
-                                                    <option value="04"> 04 </option>
-                                                    <option value="05"> 05 </option>
-                                                    <option value="06"> 06 </option>
-                                                    <option value="07"> 07 </option>
-                                                    <option value="08"> 08 </option>
-                                                    <option value="09"> 09 </option>
-                                                    <option value="10"> 10 </option>
-                                                    <option value="11"> 11 </option>
-                                                    <option value="12"> 12 </option>
+                                                <select class="user_inp1" id="card_month">
+                                                    <option class="opt" value="">- Select One - </option>
+                                                    <option class="opt" value="01"> 01 </option>
+                                                    <option class="opt" value="02">02</option>
+                                                    <option class="opt" value="03"> 03 </option>
+                                                    <option class="opt" value="04"> 04 </option>
+                                                    <option class="opt" value="05"> 05 </option>
+                                                    <option class="opt" value="06"> 06 </option>
+                                                    <option class="opt" value="07"> 07 </option>
+                                                    <option class="opt" value="08"> 08 </option>
+                                                    <option class="opt" value="09"> 09 </option>
+                                                    <option class="opt" value="10"> 10 </option>
+                                                    <option class="opt" value="11"> 11 </option>
+                                                    <option class="opt" value="12"> 12 </option>
                                                  </select> 
                                             </div>
                                             <div class="seperator"><strong>\</strong></div>
                                             <div id="year">
-                                                <select class="user_inp1">
-                                                    <option value="">- Select One - </option>
-                                                    <option value="21"> 2021 </option>
-                                                    <option value="22">2022</option>
-                                                    <option value="23">2023 </option>
-                                                    <option value="24">2024 </option>
-                                                    <option value="25">2025 </option>
-                                                    <option value="26">2026 </option>
-                                                    <option value="27">2027 </option>
-                                                    <option value="28">2028 </option>
-                                                    <option value="29">2029 </option>
-                                                    <option value="30">2030 </option>
-                                                    <option value="31">2031 </option>
-                                                    <option value="32">2032 </option>
+                                                <select class="user_inp1" id="card_year">
+                                                    <option class="opt" value="">- Select One - </option>
+                                                    <option class="opt" value="21"> 2021 </option>
+                                                    <option class="opt" value="22">2022</option>
+                                                    <option class="opt" value="23">2023 </option>
+                                                    <option class="opt" value="24">2024 </option>
+                                                    <option class="opt" value="25">2025 </option>
+                                                    <option class="opt" value="26">2026 </option>
+                                                    <option class="opt" value="27">2027 </option>
+                                                    <option class="opt" value="28">2028 </option>
+                                                    <option class="opt" value="29">2029 </option>
+                                                    <option class="opt" value="30">2030 </option>
+                                                    <option class="opt" value="31">2031 </option>
+                                                    <option class="opt" value="32">2032 </option>
                                                  </select> 
                                             </div>
                                         </div>
+                                        <div class="req_feild" id="date_mand">Required</div>
                                         </label>
                                     </div>
                                         
@@ -459,57 +462,58 @@
                                             <label class="pay_label">CVV*
                                             <div>
                                                 <div class="cvv_inp">
-                                                    <div ><input class="cvv_inp1" type="text" value=""></div>
+                                                    <div ><input class="cvv_inp1" type="number" id="cvv_nmbr" value=""></div>
                                                     <div><img class="cvv_img" src="https://static.zuora.com/Resources/108224/Images/cvv_logo.png"/></div>
                                             </div>
                                             </div>
+                                            <div class="req_feild" id="cvv_mand">Required</div>
                                         </label>
                                         </div>
 
                                         <div class="sub_inp">
                                             <label class="pay_label">Address* 
-                                            <div><input class="user_inp" id="address" type="text" value=""></div>
-                                        
+                                            <div><input class="pay_user_inp" id="address" type="text" value=""></div>
+                                            <div class="req_feild" id="address_mand">Required</div>
                                         </label>
                                         </div>
 
                                         <div class="sub_inp">
                                             <label class="pay_label">Address(cont.)* 
-                                            <div><input class="user_inp" id="address_cont" type="text" value=""></div>
-                                        
+                                            <div><input class="pay_user_inp" id="address1" type="text" value=""></div>
+                                            <div class="req_feild" id="address1_mand">Required</div>
                                         </label>
                                         </div>
 
                                         <div class="sub_inp">
                                             <label class="pay_label">Contry* 
-                                            <div><input class="user_inp" id="contry" type="text" value=""></div>
-                                        
+                                            <div><input class="pay_user_inp" id="card_contry" type="text" value=""></div>
+                                            <div class="req_feild" id="card_contry_mand">Required</div>
                                         </label>
                                         </div>
 
                                         <div class="sub_inp">
                                             <label class="pay_label">City* 
-                                            <div><input class="user_inp" id="city" type="text" value=""></div>
-                                        
+                                            <div><input class="pay_user_inp" id="city" type="text" value=""></div>
+                                            <div class="req_feild" id="city_mand">Required</div>
                                         </label>
                                         </div>
 
                                         <div class="sub_inp">
                                             <label class="pay_label">State* (No state?Enter 'none'.)
-                                            <div><input class="user_inp" id="state" type="text" value=""></div>
-                                        
+                                            <div><input class="pay_user_inp" id="state" type="text" value=""></div>
+                                            <div class="req_feild" id="state_mand">Required</div>
                                         </label>
                                         </div>
 
                                         <div class="sub_inp">
                                             <label class="pay_label">Postal Code* 
-                                            <div><input class="user_inp" id="post_code" type="text" value=""></div>
-                                        
+                                            <div><input class="pay_user_inp" id="post_code" type="number" value=""></div>
+                                            <div class="req_feild" id="post_mand">Required</div>
                                         </label>
                                          </div>
 
                                          <div>
-                                            <button class="review_btn">Review</button>
+                                            <button onclick="payment()" class="review_btn">Review</button>
                                          </div>
                             
                      </div>
@@ -523,13 +527,20 @@
 
          <div id="srl_no3">
             <div class="drawer_head">
+            
                 <div class="account">
-                <div class="number"><strong>3</strong></div>
-                <div class="acc_heading">Review and Confirm</div>
+                      <div class="number"><strong>3</strong></div>
+                      <div class="acc_heading">Review and Confirm</div>
+                    
+                      <div class="secure_pay"><div data-css-7lhegg="">Secure checkout</div><img class="secure_img" src="https://www.pluralsight.com/buy/static/assets/icon-lock.svg"></div>
+                   
                 </div>
+             
             </div>
             <div id="hidding3">
-                    <div class="final_btn"><button class="final_cnfm">Confirm Pay</button></div>
+                    <div  id="btn_final" class="final_btn"><button onclick="confirm_pay()" class="final_cnfm">Confirm Pay</button></div>
+
+                    <div id="hide_thanks" class="thanks"><div>Successfull... Thank you</div></div>
             </div>
      </div>
      </div>
