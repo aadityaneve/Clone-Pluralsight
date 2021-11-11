@@ -113,6 +113,7 @@
   let push = document.getElementById("push");
 
   async function data(){
+    
     let res = await fetch("../scripts/run_results.json");
 
     let d = await res.json();
