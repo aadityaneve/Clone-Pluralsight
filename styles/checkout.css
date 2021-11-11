@@ -71,8 +71,7 @@ body {
     border: none;
     margin: auto;
     border-radius: 50%;
-    background-color: rgb(85, 85, 85);
-    background: rgb(46, 160, 214);
+    background: rgb(85, 85, 85);
     justify-content: center;
 }
 .back {
@@ -199,6 +198,15 @@ label {
    font-size: 16px;
    margin-top: 5px;
 }
+.pay_user_inp {
+    width: 90%;
+    border: none;
+    border-radius: 3px;
+    margin:none;
+    padding: 8px 20px;
+    font-size: 16px;
+    margin-top: 5px;
+ }
 .req_feild {
     color: rgb(222, 54, 54);
     height:2px;
@@ -431,7 +439,7 @@ hr {
     border-radius: 3px;
     margin:none;
     padding: 8px 3px;
-    font-size: 16px;
+    font-size: 14px;
     margin-top: 5px;
  }
  #pay_drop {
@@ -468,6 +476,7 @@ hr {
     color: rgba(255, 255, 255, 0.9);
     background: rgb(0, 132, 189);
     margin-bottom: 2%;
+    margin-top: 5%;
 }
 .final_btn {
     width: 40%;
@@ -488,16 +497,245 @@ hr {
     color: rgba(255, 255, 255, 0.9);
     background: rgb(0, 132, 189);
 }
+.pay_user_inp, .user_inp1, .cvv_inp, .cvv_inp1 {
+    background-color:rgba(255, 255, 255, 0.15) ;
+    color: white;
+}
+.opt {
+    background-color: #333333 ;
+}
 #fname_mand, #lname_mand, #mail_mand,
 #cmail_mand, #contry_mand, #pass_mand,
-#cpass_mand{
+#cpass_mand, #cardnme_mand, #cardnmbr_mand, 
+#city_mand, #cvv_mand, #date_mand, #address_mand,
+#address1_mand, #card_contry_mand, #state_mand,
+#post_mand{
     display: none;
 }
+.account {
+    display: flex;
+    justify-content: space-between;
+}
+.css-7lhegg, [data-css-7lhegg] {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.7);
+    vertical-align: middle;
+    padding-top: 5px;
+}
+.secure_img {
+    margin-left: 12px;
+    border: 0px;
+    display: block;
+    max-width: 12px;
+    height: auto;
+}
+.secure_pay {
+    display: flex;
+    width: 20%;
+}
+.thanks {
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.3s all;
+    border-radius: 2px;
+    background: linear-gradient(to right,#F05A28,#EC008C,#F05A28);
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 25px;
+}
+#hidding2,#hidding3{
+    display:none;
+}
+#hide_thanks {
+    display: none;
+}
+@media (max-width: 769px) {
+    .plu_img {
+        width: 25%;
+        height: 35px;
+        padding: 5px 0px;
+    }
+    .acc_pay {
+        display: flex;
+        padding: 1px 0px 1px;
+        width: 95%;
+    }
+    .number {
+        width: 15px;
+        height: 15px;
+        font-size: 14px;
+        font-weight: 300;
+    }
+    .acc_heading {
+        font-size: 18px;
+        line-height: 18px;
+        font-weight: 400;
+        margin-left: 4px;
+        flex: 1;
+        padding-top: 4px;
+    }
+    .already {
+        font-size: 10px;
+        padding-top: 3px;
+        font-weight: 400;
+    }
+    .drawer_blk1 {
+        margin: 0px 10px;
+       }
+     .acc_data_blk {
+           width: 95%;
+           border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+           padding-bottom: 4%;
+    }
 
- #hidding2,#hidding3{
-    display: none;
+      
+    label {
+        cursor: default;
+    }
+    .labels{
+        color: rgba(255, 255, 255, 0.9);
+        font-size: 12px;
+        line-height: 12px;
+    }
+    .user_inp {
+       width: 90%;
+       padding: 8px 20px;
+       font-size: 12px;
+       margin-top: 5px;
+       margin-bottom: 2px;;
+    }
+    .pay_user_inp {
+        width: 80%;
+        padding: 8px 20px;
+        font-size: 12px;
+        margin-top: 5px;
+     }
+    .terms_blk {
+        width:auto;
+        padding: 0px 10px;
+        vertical-align: top;
+    }
+    .tick_box {
+        height: 12px;
+        width: 12px;
+    }
+    .by_check {
+        font-size: 10px;
+    }
+   
+    #submitButton {
+        padding: 4px 10px;
+        font-size: 12px;
+        font-weight: 500;
+    }
+  
+    .order_head {
+        margin:0px 30px 0px 15px;
+        font-size: 20px;
+        line-height: 18px;
+    }
+    .pln_head, .price_head, .sub_title{
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 12px;
+        font-weight: 400;
+        margin-bottom: 3px;
+    }
+    .pln_det, .price_det{
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .sub_title {
+        flex-grow: 1;
+        font-size: 10px;
+    }
+    .sub_amt {
+        width: 20%;
+        font-size: 12px;
+    }
+    .tot_due {
+        margin:0px 30px 15px 15px;
+        display: flex;
+    }
+    .tot_due_head {
+        font-size: 14px;
+        line-height: 24px;
+        padding-top: 5px;
+    }
+    .description {
+        font-size: 10px;
+    }
+    
+    .pay_head{
+        font-size: 12px;
+    }
+    
+    .pay_options1 {
+        padding: 4px 0px;
+    }
+   
+    .opt_circle > div:nth-child(1) {
+        height: 12px;
+        width: 12px;
+        margin-top: 2%;
+    }
+    .opt_circle > div:nth-child(1) >div {
+        height: 8px;
+        width: 8px;
+        margin: 2px;
+    }
+  
+    .pay_label {
+            font-size: 12px;
+    }
+    .user_inp1 {
+        font-size: 10px;
+    }
+    
+     .cvv_inp1 {
+        font-size: 10px;
+        padding: 8px 22px;
+        border-radius: 5px;
+     }
+     .seperator {
+         font-size: 12px;
+     }
+     .cvv_img{
+        width: 90%;
+        padding-top: 5px;
+        align-items: center;
+       
+    }
+    .final_btn {
+        width: 40%;
+        margin: auto;
+        margin-top: 5%;
+    
+    }
+   
+    .thanks {
+        width: 50%;
+        font-size: 14px;
+        padding: 10px;
+    }
 }
-#pay_arrow, #review_arrow {
-    background: rgb(68, 68, 68);
-    color:rgb(68, 68, 68);
+@media (max-width: 500px) {
+    .plu_img {
+        width: 35%;
+        height: 35px;
+        padding: 5px 0px;
+    }
+    .drawer_blk1 {
+        margin: 0px 10px;
+       }
+       .main_blk {
+           flex-direction: column;
+       }
+       .main, .summary {
+           width: 100%;
+       } 
 }

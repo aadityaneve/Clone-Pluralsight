@@ -1,3 +1,5 @@
+var loggedin_name = "";
+
 function myFunc_fname(){
     let first_name = document.getElementById("first_name").value;
     let mandatory = document.getElementById("fname_mand"); 
@@ -61,6 +63,29 @@ function myFunc_cpass() {
      mandatory.setAttribute("style", "display:none");
     }  
 }
+  
+
+
+let hide1 = document.getElementById("hidding1");
+let hide2 = document.getElementById("hidding2");
+let hide3 = document.getElementById("hidding3");
+let arrow1 = document.getElementById("acc_arrow");
+arrow1.setAttribute("style", "background: rgb(0, 132, 189)")
+let arrow2 = document.getElementById("pay_arrow");
+let arrow3 = document.getElementById("review_arrow");
+
+function effect(){
+    let user =JSON.parse(localStorage.getItem("loggedin_user"));
+    if(user[0] != "" || user[0] != undefined || user[0] != null){
+        hide1.setAttribute("style", "display: none");
+        hide2.setAttribute("style", "display: block");
+        arrow2.setAttribute("style", "background: rgb(0, 132, 189)");   
+    }
+}
+
+effect();
+
+console.log('loggedin_name:', loggedin_name)
 
 function signup(){
  
@@ -154,9 +179,202 @@ function signup(){
      let array=JSON.parse(localStorage.getItem("plural_Signup"));
      //push new user to array
      array.push(user); // adding new user
+    
      console.log('array:', array);
-     localStorage.setItem(("plural_Signup"), JSON.stringify(array));  
+     localStorage.setItem(("plural_Signup"), JSON.stringify(array));     
+     hide1.setAttribute("style", "display: none");
+     hide2.setAttribute("style", "display: block");
+     arrow2.setAttribute("style", "background: rgb(0, 132, 189)");
+     console.log('user:', user)
      }
-  
   }
 
+  function payment(){
+    // *************validation********* //
+  
+     let card_name = document.getElementById("card_name").value;
+      let card_name_mand= document.getElementById("cardnme_mand"); 
+      if( card_name.length == 0){
+          card_name_mand.setAttribute("style", "display:block");
+       }else {
+        card_name_mand.setAttribute("style", "display:none");
+       }
+
+    let card_nmbr = document.getElementById("card_nmbr").value;
+       let card_nmbr_mand= document.getElementById("cardnmbr_mand"); 
+       if( card_nmbr.length < 12){
+           card_nmbr_mand.setAttribute("style", "display:block");
+        }else if( card_nmbr.length > 12){
+            card_nmbr_mand.innerText = "Invalid Number"
+            card_nmbr_mand.setAttribute("style", "display:block");
+         }else {
+            card_nmbr_mand.innerText = "Required"
+          card_nmbr_mand.setAttribute("style", "display:none");
+         }
+
+    let cvv_nmbr = document.getElementById("cvv_nmbr").value;
+        let cvv_mand= document.getElementById("cvv_mand"); 
+        if( cvv_nmbr.length < 3){
+            cvv_mand.setAttribute("style", "display:block");
+         }else if( cvv_nmbr.length > 3){
+            cvv_mand.innerText = "Invalid CVV"
+            cvv_mand.setAttribute("style", "display:block");
+         }else {
+            cvv_mand.innerText = "Required"
+          cvv_mand.setAttribute("style", "display:none");
+         }
+
+      let address = document.getElementById("address").value;
+       let address_mand= document.getElementById("address_mand"); 
+        if( address.length == 0){
+             address_mand.setAttribute("style", "display:block");
+          }else {
+           address_mand.setAttribute("style", "display:none");
+          }
+
+       let address1 = document.getElementById("address1").value;
+          let address1_mand= document.getElementById("address1_mand"); 
+           if( address1.length == 0){
+                address1_mand.setAttribute("style", "display:block");
+             }else {
+              address1_mand.setAttribute("style", "display:none");
+             }
+
+        let card_month = document.getElementById("card_month").value;
+        let card_year = document.getElementById("card_year").value;
+          let date_mand= document.getElementById("date_mand"); 
+           if( card_month == "" || card_year == "" ){
+                date_mand.setAttribute("style", "display:block");
+             }else {
+              date_mand.setAttribute("style", "display:none");
+             }
+
+         let card_contry = document.getElementById("card_contry").value;
+          let card_contry_mand= document.getElementById("card_contry_mand"); 
+           if( card_contry == 0){
+                card_contry_mand.setAttribute("style", "display:block");
+             }else {
+              card_contry_mand.setAttribute("style", "display:none");
+             }
+
+        let state = document.getElementById("state").value;
+          let state_mand= document.getElementById("state_mand"); 
+           if( state.length == 0){
+                state_mand.setAttribute("style", "display:block");
+             }else {
+              state_mand.setAttribute("style", "display:none");
+             }
+
+        let city = document.getElementById("city").value;
+          let city_mand= document.getElementById("city_mand"); 
+           if( city.length == 0){
+                city_mand.setAttribute("style", "display:block");
+             }else {
+              city_mand.setAttribute("style", "display:none");
+             }
+
+        let postal = document.getElementById("post_code").value;
+             let post_mand= document.getElementById("post_mand"); 
+             if( postal.length < 6){
+                 post_mand.setAttribute("style", "display:block");
+              }else if( postal.length > 6){
+                 post_mand.innerText = "Invalid Postal Code"
+                 post_mand.setAttribute("style", "display:block");
+              }else {
+                 post_mand.innerText = "Required"
+               post_mand.setAttribute("style", "display:none");
+              }
+
+        
+  // *************validation********* //
+  
+      if(localStorage.getItem("plural_payment") === null){
+        localStorage.setItem(("plural_payment"), JSON.stringify([]));
+      }
+     
+    if((card_name.length != 0) && (card_nmbr.length == 12) && (cvv_nmbr.length == 3) && (postal.length == 6) &&
+        (address.length !=0) && (address1.length !=0) && (card_month != "") && (card_year !="") && (state.length != 0) && (city.length != 0)) {
+       let payment_det ={
+          card_name,
+          card_nmbr,
+          cvv_nmbr,
+          card_month,
+          card_year,
+          city,
+          state,
+          postal,
+       };
+      // get array from localstorage
+      let pay_array=JSON.parse(localStorage.getItem("plural_payment"));
+      //push new payment_det to pay_array
+      pay_array.push(payment_det); // adding new payment_det
+        console.log('pay_array:', pay_array);
+      localStorage.setItem(("plural_payment"), JSON.stringify(pay_array));     
+       hide1.setAttribute("style", "display: none");
+       hide2.setAttribute("style", "display: none");
+       hide3.setAttribute("style", "display: block");
+       arrow2.setAttribute("style", "background: rgb(0, 132, 189)");
+       arrow3.setAttribute("style", "background: rgb(0, 132, 189)");
+      }
+  }
+
+
+
+
+  function confirm_pay() {
+      
+  let last_btn = document.getElementById("btn_final");
+  let hide_final = document.getElementById("hide_thanks");
+     // alert("hello")
+     last_btn.setAttribute("style","display:none");
+     hide_final.setAttribute("style", "display: block");
+    // location.href = "/pages/index.html";
+  }
+
+  if(localStorage.getItem("loggedin_user") === null){
+    localStorage.setItem(("loggedin_user"), JSON.stringify([]));
+  }
+
+  function signin(e){
+    e.preventDefault();
+    let myForm = document.getElementById("myForm");
+    let username = myForm.username.value;
+   // console.log('username:', username)
+    let password = myForm.password.value;
+  //  console.log('password:', password)
+    let top_note =   document.getElementById("top_error");
+  if(username.length == 0 || password.length == 0){
+    top_note.setAttribute("style", "display:block")
+  }else{
+    let all_users =JSON.parse(localStorage.getItem("plural_Signup"));
+          all_users.forEach(function(user){
+              if(username === user.mail && password === user.signup_pass){
+                 let loggedin ={
+                    username,
+                  }
+                  console.log('loggedin:', loggedin);
+                  let log_array=JSON.parse(localStorage.getItem("loggedin_user"));
+                  
+                  console.log('log_array:', log_array)
+    
+                  log_array[0] = (loggedin);
+                  console.log('log_array:', log_array)
+                  localStorage.setItem(("loggedin_user"), JSON.stringify(log_array));   
+                  
+                  location.href="checkout.html";
+              }
+
+       
+       });
+  }
+}
+  
+
+ 
+
+  function closing_note(){
+    let top_note =   document.getElementById("top_error"); 
+    top_note.setAttribute("style", "display: none")
+  }
+
+ 

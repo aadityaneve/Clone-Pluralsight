@@ -29,6 +29,10 @@ body {
     display: flex;
     flex-direction: row-reverse;
 }
+button {
+    background-color: none;
+    border: none;
+}
 .alert {
     min-height: 30px;
     color: #fff;
@@ -107,7 +111,7 @@ body {
     margin-top: 1.5%;
     margin-bottom: 25px;
 }
-.psds-text-input__label {
+.inp_label {
 color: hsla(0,0%,100%,.95);
     font-size: 12px;
     font-weight: 500;
