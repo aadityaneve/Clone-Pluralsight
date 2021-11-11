@@ -369,10 +369,8 @@ async function getVal(v) {
   let res = await fetch('../scripts/dataSlider.json');
   let d = await res.json();
   let data = d.data;
-  for(let i=0;i<v;i++){
-    console.log('data[i]:', data[i])
-    localStorage.setItem("course",JSON.stringify(data[i]));
-  }
+  localStorage.setItem("course",JSON.stringify(data[v-1]));
+  
   location.href = "course-details.html";
 }
 
