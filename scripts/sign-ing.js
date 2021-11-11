@@ -331,41 +331,56 @@ function signup(){
     // location.href = "/pages/index.html";
   }
 
-  if(localStorage.getItem("loggedin_user") === null){
-    localStorage.setItem(("loggedin_user"), JSON.stringify([]));
-  }
+
 
   function signin(e){
+     
+    if(localStorage.getItem("loggedin_user") === null){
+        localStorage.setItem(("loggedin_user"), JSON.stringify([]));
+      }
+
     e.preventDefault();
     let myForm = document.getElementById("myForm");
     let username = myForm.username.value;
-   // console.log('username:', username)
     let password = myForm.password.value;
-  //  console.log('password:', password)
-    let top_note =   document.getElementById("top_error");
-  if(username.length == 0 || password.length == 0){
-    top_note.setAttribute("style", "display:block")
-  }else{
-    let all_users =JSON.parse(localStorage.getItem("plural_Signup"));
-          all_users.forEach(function(user){
-              if(username === user.mail && password === user.signup_pass){
-                 let loggedin ={
-                    username,
-                  }
-                  console.log('loggedin:', loggedin);
-                  let log_array=JSON.parse(localStorage.getItem("loggedin_user"));
-                  
-                  console.log('log_array:', log_array)
-    
-                  log_array[0] = (loggedin);
-                  console.log('log_array:', log_array)
-                  localStorage.setItem(("loggedin_user"), JSON.stringify(log_array));   
-                  
-                  location.href="checkout.html";
-              }
+    let log_array=JSON.parse(localStorage.getItem("loggedin_user"));
 
-       
-       });
+    let top_note =   document.getElementById("top_error");
+    var count=0;
+
+    if(username.length == 0 || password.length == 0){
+     top_note.setAttribute("style", "display:block");
+    }else{
+       let all_users =JSON.parse(localStorage.getItem("plural_Signup"));
+          console.log('all_users:', all_users);
+            all_users.forEach(function(user){
+              if(username == user.mail && password == user.signup_pass){
+                
+                  count++;
+                  
+              }
+            });
+            console.log('count:', count)
+         
+            if(count > 0){
+                // console.log('username:', username)
+                // console.log('password:', password)
+                let logg = {
+                    username,
+                    password, 
+                }
+               // console.log('logg:', logg);
+              
+                log_array[0] = logg;
+                localStorage.setItem(("loggedin_user"), JSON.stringify(log_array));   
+              //  console.log('log_array:', log_array);
+              location.href="checkout.html";
+            }else{
+                top_note.setAttribute("style", "display:block");
+            }
+                 
+                  
+  
   }
 }
   
