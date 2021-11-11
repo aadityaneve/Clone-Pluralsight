@@ -28,21 +28,26 @@
         <div class="UpEvFilDiv">
             <p>Upcoming <br>Events</p>
             <p>Filter events</p>
-            <select id="opt1" class="opt1C">
-                <option value="0">Event type</option>
-                <option value="1">Briefings & Workshops</option>
-                <option value="2">In Platform Conferences</option>
-                <option value="3">Product & Tech Demo</option>
-                <option value="4">User Groups</option>
-                <option value="4">Webinars</option>
-            </select><br>
-            <select id="opt2" class="opt1C">
-                <option value="0">Region</option>
-                <option value="1">All Regions</option>
-                <option value="2">Americas</option>
-                <option value="3">APAC</option>
-                <option value="4">EMEA</option>
-            </select>
+            <div id="optionSel1Id" class="optionSelClsCmn">Event type &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; ></div>
+            <div id="optionSel1InnerId" class="optionSelCmn">
+                <ul class="optionSel2Ul">
+                    <li onclick="OpSelected(1,1,'b&w')">Briefings & Workshops</li>
+                    <li onclick="OpSelected(1,1,'p&c')">In Platform Conferences</li>
+                    <li onclick="OpSelected(1,1,'p&t')">Product & Tech Demo</li>
+                    <li onclick="OpSelected(1,1,'UG')">User Groups</li>
+                    <li onclick="OpSelected(1,1,'webn')">Webinars</li>
+                </ul>
+            </div>
+
+            <div id="optionSel2Id" class="optionSelClsCmn">Region &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp&nbsp ></div>
+            <div id="optionSel2InnerId" class="optionSelCmn">
+                <ul class="optionSel2Ul">
+                    <li onclick="OpSelected(1,2,'AR')">All Regions</li>
+                    <li onclick="OpSelected(1,2,'AM')">Americas</li>
+                    <li onclick="OpSelected(1,2,'APAC')">APAC</li>
+                    <li onclick="OpSelected(1,2,'EMEA')">EMEA</li>
+                </ul>
+            </div>
         </div>
 
         <div>
@@ -55,21 +60,27 @@
         <div class="UpEvFilDiv">
             <p>On-Demand<br>Events</p>
             <p>Filter events</p>
-            <select id="opt1" class="opt1C">
-                <option value="0">Event type</option>
-                <option value="1">Briefings & Workshops</option>
-                <option value="2">In Platform Conferences</option>
-                <option value="3">Product & Tech Demo</option>
-                <option value="4">User Groups</option>
-                <option value="4">Webinars</option>
-            </select><br>
-            <select id="opt2" class="opt2C">
-                <option value="0">Region</option>
-                <option value="1">All Regions</option>
-                <option value="2">Americas</option>
-                <option value="3">APAC</option>
-                <option value="4">EMEA</option>
-            </select>
+            <div id="optionSel1Id2" class="optionSelClsCmn">Event type &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; ></div>
+            <div id="optionSel1InnerId2" class="optionSelCmn">
+                <ul class="optionSel2Ul">
+                    <li onclick="OpSelected(2,1,'b&w')">Briefings & Workshops</li>
+                    <li onclick="OpSelected(2,1,'p&c')">In Platform Conferences</li>
+                    <li onclick="OpSelected(2,1,'p&t')">Product & Tech Demo</li>
+                    <li onclick="OpSelected(2,1,'UG')">User Groups</li>
+                    <li onclick="OpSelected(2,1,'webn')">Webinars</li>
+                </ul>
+            </div>
+
+            <div id="optionSel2Id2" class="optionSelClsCmn">Region &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp&nbsp ></div>
+            <div id="optionSel2InnerId2" class="optionSelCmn">
+                <ul class="optionSel2Ul">
+                    <li onclick="OpSelected(2,2,'AR')">All Regions</li>
+                    <li onclick="OpSelected(2,2,'AM')">Americas</li>
+                    <li onclick="OpSelected(2,2,'APAC')">APAC</li>
+                    <li onclick="OpSelected(2,2,'EMEA')">EMEA</li>
+                </ul>
+            </div>
+           
         </div>
 
         <div id="eventSpc">

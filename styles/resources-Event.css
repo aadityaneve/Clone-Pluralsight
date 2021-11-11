@@ -44,7 +44,6 @@ body{
     font-size: 17px;
     font-weight: 600;
 }
-border
 #topImgInnrDiv>p:nth-child(2){
     color: white;
     padding: 22px 0px 0px 34px;
@@ -202,6 +201,28 @@ border
 }
 .showMoreEvnt{
     color: #ec008c;
+    cursor: pointer;
+}
+
+.optionSelCmn{
+    position: absolute;
+    width: 273px;
+    display: none;
+    padding-top: 10px;
+    background-color: #222;
+}
+.optionSel2Ul>li{
+    list-style-type: none;
+    color: rgb(221, 220, 220);
+    padding: 15px 20px;
+    background-color: #222;
+    cursor: pointer;
+}
+.optionSelClsCmn{
+    color: rgb(221, 220, 220);
+    margin-top: 30px;
+    border-bottom: 1px solid rgb(221, 220, 220);
+    padding: 10px 0px;
     cursor: pointer;
 }
 
