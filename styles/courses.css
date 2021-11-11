@@ -92,12 +92,12 @@ body {
 }
 
 .cards {
+  cursor: pointer;
   width: 350px;
   height: 250px;
   margin: 20px;
   background-color: #222222;
   box-shadow: 6px 6px 0.5px 0.5px rgba(18, 18, 18, 0.3);
-  /* padding: 10px; */
 }
 
 .short-dis {
@@ -315,7 +315,6 @@ li {
   border-bottom: 1px solid #4f4f4f;
   padding: 15px 5px;
   cursor: pointer;
-  /* margin-right: 10px; */
 }
 
 #courses_data > div:hover {
@@ -326,6 +325,5 @@ li {
   margin: 5px auto;
 }
 #star {
-  /* height:10px; */
   width: 60px;
 }

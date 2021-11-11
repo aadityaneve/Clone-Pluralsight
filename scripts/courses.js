@@ -363,9 +363,6 @@ moon().then((data) => {
 })
 
 
-// let cards = document.getElementsByClassName("cards");
-// cards.addEventListener("click",getVal);
-
 async function getVal(v) {
   console.log(v)
 
