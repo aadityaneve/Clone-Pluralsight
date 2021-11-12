@@ -1,5 +1,4 @@
 
-
 let data_div = document.getElementById("courses_data");
 
 let new_selected = document.getElementById("new-selected");
@@ -17,130 +16,12 @@ new_selected.addEventListener("click", () => {
 });
 
 
-// function newThisMonth() {
-  
-// }
-
-// function trend() {
- 
-// }
-
-/*
-const courses = [
-  {
-    type: "Configuring, Compiling, and Debugging TypeScript Projects",
-    name: "Web development",
-    level: "Beginner",
-    rat: 51,
-    time: "2h 7m",
-    by: "by Daniel Stern",
-  },
-  {
-    type: "JavaScript Arrays and Collections",
-    name: "Web development",
-    level: "Beginner",
-    rat: 201,
-    time: "1h 57m ",
-    by: "by Jeff Batt",
-  },
-  {
-    type: "Creating Asynchronous TypeScript Code",
-    name: "Web development",
-    level: "Beginner",
-    rat: 92,
-    time: "1h 50m ",
-    by: "by John Papa",
-  },
-  {
-    type: "Managing Big Data with AWS Storage Options",
-    name: "Software development",
-    level: "Advanced",
-    rat: 11,
-    time: "1h 38m ",
-    by: "by Nertil Poci",
-  },
-  {
-    type: "Working with Django Models",
-    name: "Software development",
-    level: "Intermediate",
-    rat: 19,
-    time: "2h 33m ",
-    by: "by Reindert-Jan Ekker",
-  },
-  {
-    type: "Credential Access with Responder",
-    name: "Information & cyber security",
-    level: "Advanced",
-    rat: 12,
-    time: "20m ",
-    by: "by Ricardo Reimao",
-  },
-  {
-    type: "Results and Reporting for CompTIA PenTest+",
-    name: "Information & cyber security",
-    level: "Advanced",
-    rat: 18,
-    time: "1h 16m ",
-    by: "by Dale Meredith",
-  },
-  {
-    type: "Autodesk Vault Professional Installation and Setup",
-    name: "Manufacturing & design",
-    level: "Advanced",
-    rat: 12,
-    time: "2h 25m ",
-    by: "by Neil Cross",
-  },
-  {
-    type: "Creating Data Integrations with SharePoint Framework",
-    name: "It ops",
-    level: "Intermediate",
-    rat: 10,
-    time: "1h 40m ",
-    by: "by JS Padoan",
-  },
-  {
-    type: "Designing SSIS Integration Solutions",
-    name: "Data professional",
-    level: "Beginner",
-    rat: 24,
-    time: "1h 20m",
-    by: "by Don Robins",
-  },
-  {
-    type: "Exploring Product Business Foundations",
-    name: "Business professional",
-    level: "Intermediate",
-    rat: 15,
-    time: "2h 33m ",
-    by: "by Michael Krasowski",
-  },
-  {
-    type: "Earning and Retaining Your PMP® Certification Product Business Foundations",
-    name: "Business professional",
-    level: "Beginner",
-    rat: 22,
-    time: "3h 30m ",
-    by: "by Tommy van Schaik",
-  },
-];
-*/
-
 async function moon(){
   let res = await fetch("../scripts/courses.json");
   let d = await res.json();
   let data = d.all;  
  return data;
 }
-
-
-
-
-
-
-// let data = moon();
-// console.log('data:', data)
-// dropdown open-close
 
 function dropdown() {
   let dd_menu = document.querySelector(".dropdown-menu");
@@ -155,8 +36,6 @@ function dropdown() {
 
 async function dropDownFilter(v) {
   let data = await moon();
-  
-  // console.log('all_data:', data)
 
   if (v == "highest") {
    
@@ -220,8 +99,6 @@ async function skills() {
   let Begin = document.getElementById("Beginner");
   let Inter = document.getElementById("Intermediate");
   let Advan = document.getElementById("Advanced");
-
-  // console.log(Begin.checked, Inter.checked, Advan.checked);
 
   if(Begin.checked && Inter.checked && Advan.checked){
    
@@ -383,8 +260,6 @@ async function slideData(){
 
   slide(d.data)
 }
-
-// slideData();
 
 
 let slid = document.getElementById("active-content");

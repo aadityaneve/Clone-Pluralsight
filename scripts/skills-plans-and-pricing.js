@@ -2,13 +2,16 @@ import IndividualPricingCards from "../components/IndividualPricingCards.js";
 import TeamPricingCards from "../components/TeamPricingCards.js";
 import MonthlyYearlyBtn from "../components/MonthlyYearlyBtn.js";
 
-import NavItems from "../components/NavItems.js";
-import Navbar from "../components/Navbar.js";
+import Navbar from '../components/Navbar.js';
+import NavItems from '../components/NavItems.js'
+import Footer from '../components/Footer.js';
 
 let navItems = document.getElementById("navItems");
 let nav = document.getElementById('nav');
+let footer = document.getElementById('footer');
 navItems.innerHTML = NavItems();
 nav.innerHTML = Navbar();
+footer.innerHTML = Footer();
 
 let pricingCardsDiv = document.getElementsByClassName("pricingCards")[0];
 let monthlyYearlyBtn = document.getElementsByClassName("buttonGroup2")[0];

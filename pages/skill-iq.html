@@ -14,20 +14,15 @@
     />
 
     <link rel="stylesheet" href="../styles/skill-iq.css" />
+    <link rel="stylesheet" href="../styles/index.css" />
     <title>Skill IQ</title>
+    <link rel="icon" type="image/png"
+        href="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/favicons/android-chrome-192x192.png" />
   </head>
   <body>
     <!--- navbar here -->
-    <nav
-      style="
-        margin: 0%;
-        width: 100vw;
-        padding: 2.5%;
-        border: 1px solid yellow;
-        position: fixed;
-        top: 0;
-      "
-    ></nav>
+    <div id="navItems"></div>
+    <div id="nav"></div>
 
     <div class="skill-container">
       <div class="skill-details">
@@ -107,6 +102,9 @@
             <button class="btn1">GET YOUR SKILL IQ</button>
         </div>
     </div>
+
+    <div id="footer"></div>
+
   </body>
 </html>
 <script>
@@ -150,3 +148,6 @@
     })
   }
 </script>
+<script type="module" src="../scripts/import-nav-footer.js"></script>  
+<script type="module" src="../scripts/navbar.js"></script>
+<script type="module" src="../scripts/locate-to.js"></script>
