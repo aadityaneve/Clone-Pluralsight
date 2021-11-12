@@ -178,9 +178,16 @@ body {
 }
 /* slider */
 
+.mainDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 80px auto auto;
+}
+
 .dataDiv {
     width: 80%;
-    margin: 80px auto auto;
 
     /* display: flex; */
     /* justify-content: space-evenly; */
@@ -197,7 +204,7 @@ body {
 }
 
 .cardsData {
-    /* margin: 80px auto auto; */
+    text-align: center;
 
     display: flex;
     justify-content: space-evenly;
@@ -361,6 +368,8 @@ body {
 .premiumPricingCard > .opportunityLabel {
     background-color: #f7a614;
     color: black;
+    font-weight: 700;
+    padding: 6px;
 }
 
 .rupees {
