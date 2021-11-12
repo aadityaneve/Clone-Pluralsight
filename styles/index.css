@@ -383,11 +383,11 @@
         box-sizing: border-box;
     }
 
-    .head {
+    /* .head { */
         /* margin: 10px 0; */
         /* height: 10%; */
 
-    }
+    /* } */
 
     .head h3 {
         color: #e40084;
@@ -468,9 +468,9 @@
         box-sizing: border-box;
     }
 
-    #twit>div {
+    /* #twit>div { */
         /* border: 2px solid red; */
-    }
+    /* } */
 
     #twit>div:nth-child(1) {
         /* border: 2px solid red; */
