@@ -860,4 +860,63 @@
                 font-size: 16px;
                 font-weight: 600;
             }
+            /* popups */
+
+
+            /* popups */
+            #platform4 {
+                position: absolute;
+                top: 90px;
+                width: 100%;
+                height: 100vh;
+                background-color: rgba(0, 0, 0, .8);
+                z-index: 4;
+                display: none;
+                color: white;
+            }
+
+            #platform4>div {
+                width: 25%;
+                height: 180px;
+                background-image: linear-gradient(#171717, #000000);
+
+                margin-left: auto;
+                padding: 2.5%;
+                box-sizing: border-box;
+                display: flex;
+            }
+
+            #platform4 img {
+                width: 130px;
+            }
+
+            #platform4>div>div {
+                display: flex;
+                justify-content: space-between;
+                gap: 40px;
+            }
+
+            #platform4>div>div>div {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 25px;
+            }
+            
+            hr {
+                border: 1px solid #363638;
+                width: 100%;
+            }
+
+            #verticalLine {
+                border: 1px solid #363638;
+                height: 100%;
+                /* border-right-color: #363638; */
+            }
+
+            #platform4 h4 {
+                font-size: 16px;
+                font-weight: 600;
+            }
+
     /* Changes by Aaditya */
