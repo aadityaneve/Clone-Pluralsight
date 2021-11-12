@@ -18,7 +18,7 @@ html {
 body {
     font-family: PS TT Commons Roman,Gotham SSm A,Gotham SSm B,Arial,sans-serif;
     margin: 0;
-    background-color: #000000;
+    background-color: #0d0f12;
     color: hsla(0,0%,100%,.95);
 }
 #top_error {
@@ -195,6 +195,7 @@ background-color: #333333;
  text-decoration: underline;
 }
 #block2 {
+    background-color: #000000;
     position: relative;
     flex: 6;
     display: block;
@@ -246,3 +247,75 @@ background-color: #333333;
        width: 77%;
    }
 }
+
+/* ---------------signing - in with company------------------------------ */
+#screen {
+    font-family: PS TT Commons Roman,Gotham SSm A,Gotham SSm B,Arial,sans-serif;
+    font-weight: 300;
+    height: 100%;
+    color: hsla(0,0%,100%,.95);
+    letter-spacing: .025em;
+    font-size: 14px;
+    height: auto;
+}
+#content_block {
+    width: 20%;
+    margin: auto;
+    height: 200px;
+    margin-top: 10%;
+    justify-content: center;
+}
+.logo_com {
+        margin-bottom: 40px;
+        width: 100%;
+}
+.img_com {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+}
+.have_acc {
+    text-align: justify;
+    padding: 0px;
+    font-size: 16px;
+    padding-bottom: 5px;
+}
+.comp_url {
+    width: 95%;
+    margin: 1%;
+    background-color: transparent;
+    border-color: hsla(0,0%,100%,.3);
+    color: white;
+    font-weight: 200;
+    height: 35px;
+}
+.comp_btn {
+    width: 98%;
+    margin: 2% 1% 0% 1%;
+    color: hsla(0,0%,100%,.95);
+    background: #0074ab;
+    font-size: 16px;
+    border-radius: 3px;
+    padding: 8px 0px;
+}
+.try_free:hover {
+    color:white;
+}
+.p_left {
+font-size: 16px;
+padding-left: 2px;
+}
+.comp_signin {
+    color: #2ea0d6;
+    text-decoration: none;
+}
+.comp_signin:hover{
+    color: #2ea0d6;
+}
+
+@media (max-width: 768px){
+    #content_block {
+        width: 50%;
+    }
+}
+
