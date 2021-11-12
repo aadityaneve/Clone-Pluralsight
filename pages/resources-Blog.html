@@ -7,12 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pluralsight blog: The Tech Skills</title>
     <link rel="shortcut icon" type="image" href="https://images-eu.ssl-images-amazon.com/images/I/51-Hci2bYjL.png">
-    <link rel="stylesheet" href="/styles/resources-Blog.css">
-    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/styles/resources-blog.css">
+    <link rel="stylesheet" href="../styles/index.css">
 </head>
 
 <body>
-    <div id="navbr"></div>
+    <div id="navItems"></div>
+    <div id="nav"></div>
     <div id="atBarBlog">
         <div>EXPLORE TECHNOLOGY</div>
         <div>BUILD BETTER TEAMS</div>
@@ -65,12 +66,11 @@
         <div class="explTechDvIcn fourthScrlYello">></div>
     </div>
     <div id="articleDiv6" class="articleDiv2Cls articleDiv5Cls"></div>
+
+    <script type="module" src="/scripts/resources-blog.js"></script>
+    <script type="module" src="../scripts/subscription.js"></script>
+    <script type="module" src="../scripts/navbar.js"></script>
 </body>
 
 </html>
 
-<script type="module" src="/scripts/resources-Blog.js">
-    import Navbar from "/components/Navbar.js"
-    console.log(Navbar);
-    document.getElementById("navbr").innerHTML = Navbar();
-</script>
