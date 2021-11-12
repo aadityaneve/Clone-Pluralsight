@@ -121,11 +121,27 @@ let rot = document.getElementById('rotate')
 
             platform.style.display = 'none'
             plat.setAttribute('class','pop_out')
+
+            // will disable platform 2 & 3
+            platform2.style.display = 'none'
+            plat2.setAttribute('class','pop_out')
+            
+            platform3.style.display = 'none'
+            plat3.setAttribute('class','pop_out')            
+            // will disable platform 2 & 3
         }
         else {
-
+            
             platform.style.display = 'block'
             plat.setAttribute('class','pop_on')
+            
+            // will disable platform 2 & 3
+            platform2.style.display = 'none'
+            plat2.setAttribute('class','pop_out')
+            
+            platform3.style.display = 'none'
+            plat3.setAttribute('class','pop_out')            
+            // will disable platform 2 & 3            
         }
     }
 
@@ -136,11 +152,27 @@ let rot = document.getElementById('rotate')
 
             platform3.style.display = 'none'
             plat3.setAttribute('class','pop_out')
+
+            // will disable platform 1 & 2
+            platform.style.display = 'none'
+            plat.setAttribute('class','pop_out')
+
+            platform2.style.display = 'none'
+            plat2.setAttribute('class','pop_out')
+            // will disable platform 1 & 2
         }
         else {
-
+            
             platform3.style.display = 'block'
             plat3.setAttribute('class','pop_on')
+
+            // will disable platform 1 & 2
+            platform.style.display = 'none'
+            plat.setAttribute('class','pop_out')
+    
+            platform2.style.display = 'none'
+            plat2.setAttribute('class','pop_out')
+            // will disable platform 1 & 2
         }
     }
 
@@ -152,10 +184,26 @@ let rot = document.getElementById('rotate')
 
             platform2.style.display = 'none'
             plat2.setAttribute('class','pop_out')
+
+            // will disable platform 1 & 3
+            platform.style.display = 'none'
+            plat.setAttribute('class','pop_out')
+
+            platform3.style.display = 'none'
+            plat3.setAttribute('class','pop_out')
+            // will disable platform 1 & 3
         }
         else {
-
+            
             platform2.style.display = 'block'
             plat2.setAttribute('class','pop_on')
+            
+            // will disable platform 1 & 3
+            platform.style.display = 'none'
+            plat.setAttribute('class','pop_out')
+    
+            platform3.style.display = 'none'
+            plat3.setAttribute('class','pop_out')
+            // will disable platform 1 & 3
         }
     }
