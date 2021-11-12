@@ -36,3 +36,9 @@ function locateTo(string) {
         window.location.href = "./signin.html";
     }
 }
+
+
+let onClick = document.getElementById("onclick");
+onClick.addEventListener("click", () => {
+    locateTo(string);
+})
