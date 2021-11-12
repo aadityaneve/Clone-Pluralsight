@@ -432,5 +432,9 @@ function OpSelected(selNum,el,selected) {
     }
 }
 
+function redirectRE(){
+    console.log("yss you made it");
+}
+
 
 
