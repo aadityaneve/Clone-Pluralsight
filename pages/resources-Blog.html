@@ -8,10 +8,11 @@
     <title>Pluralsight blog: The Tech Skills</title>
     <link rel="shortcut icon" type="image" href="https://images-eu.ssl-images-amazon.com/images/I/51-Hci2bYjL.png">
     <link rel="stylesheet" href="/styles/resources-Blog.css">
+    <link rel="stylesheet" href="/styles/index.css">
 </head>
 
 <body>
-    <div id="navbar"></div>
+    <div id="navbr"></div>
     <div id="atBarBlog">
         <div>EXPLORE TECHNOLOGY</div>
         <div>BUILD BETTER TEAMS</div>
@@ -68,4 +69,8 @@
 
 </html>
 
-<script src="/scripts/resources-Blog.js"></script>
+<script type="module" src="/scripts/resources-Blog.js">
+    import Navbar from "/components/Navbar.js"
+    console.log(Navbar);
+    document.getElementById("navbr").innerHTML = Navbar();
+</script>
