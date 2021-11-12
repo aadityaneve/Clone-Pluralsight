@@ -777,7 +777,7 @@
             }
 
             #platform3>div {
-                width: 65%;
+                width: 80%;
                 height: 400px;
                 background-image: linear-gradient(#171717, #000000);
 
@@ -852,6 +852,7 @@
             }
 
             .bgGrayImg {
+                position: relative;
                 background-image: url("https://www.pluralsight.com/content/experience-fragments/pluralsight/Navigation/global-nav/master/jcr:content/root/navigation/main/nav_item_dropdown_1789622253/parsys/nav_resource/parsys/generic_block/image-res.img.5d9d4c9e-2ab3-4cd2-853f-351faa18633e.png");
                 width: 100%;
                 height: 90%;
@@ -861,9 +862,9 @@
             .bgGrayImg > img {
                 position: absolute;
                 z-index: 1;
-                width: 18%;
-                margin-left: 277px;
-                margin-top: 90px;
+                width: 40%;
+                right: 0;
+                bottom: 0;
             }
 
             .bgGrayImg {

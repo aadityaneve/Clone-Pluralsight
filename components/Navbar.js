@@ -1,7 +1,7 @@
 function Navbar() {
     return `
-        <div><img src="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/global/header/PS_logo.png"
-                    alt="">
+        <div><a href="./index.html"><img src="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/global/header/PS_logo.png"
+                    alt=""></a>
             </div>
             <div>
                 <ul>
@@ -9,7 +9,7 @@ function Navbar() {
                     <li id="plat">Platform <span>&#9662</span></li>
                     <li id="plat2">Products <span>&#9662</span></li>
                     <li id="plat3">Resourses <span>&#9662</span></li>
-                    <li>For Individuals <span></span></li>
+                    <li><a href="./for-individuals.html">For Individuals</a></li>
                 </ul>
             </div>
             <div>
@@ -20,7 +20,7 @@ function Navbar() {
                     <p id="plat4">Sign in <span>&#9662</span></p>
                 </div>
                 <div>
-                    <button>TRY FOR FREE</button>
+                    <a href="./free-trial.html"><button>TRY FOR FREE</button></a>
                 </div>
             </div>
         `;

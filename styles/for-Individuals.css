@@ -31,6 +31,13 @@ body {
     /* border: 1px solid red; */
     padding: 5px;
 }
+
+#head_p1 > div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
 #for_Individuals {
     display: flex;
     flex-direction: row;
@@ -39,7 +46,6 @@ body {
     font-weight: bold;
 }
 h1 {
-    /* border: 1px solid red; */
     font-size: 56px;
     font-weight: bolder;
 }
@@ -49,8 +55,6 @@ h3 {
     line-height: 24px;
 }
 button {
-    /* border: 1px solid red; */
-    width: 160px;
     height: 50px;
     border-radius: 2px;
     font-weight: bold;
@@ -61,9 +65,7 @@ button {
     letter-spacing: 1px;
 }
 #See_Plans {
-    /* border: 1px solid red; */
     text-align: center;
-    /* vertical-align: middle; */
     margin-top: 100px;
     font-size: 24px;
     padding: 20px;
@@ -86,7 +88,7 @@ a {
     display: grid;
     grid-template-columns: 30% 30% 30%;
     grid-gap: 3%;
-    /* border: 1px solid red; */
+    
     width: 100%;
     height: 320px;
     padding: 5px;
@@ -121,8 +123,6 @@ h2 {
 }
 
 #More_Course {
-    /* border: 1px solid red; */
-    /* height: 40px; */
     margin-top: 20px;
     padding: 10px;
     text-align: left;
@@ -180,9 +180,6 @@ h2 {
     text-align: center;
     align-content: center;
 }
-/* #learners_ref img {
-    width:100%
-} */
 
 #img_text {
     display: grid;
@@ -242,21 +239,6 @@ h2 {
 
     cursor: pointer;
 }
-
-/* .innerOval {
-    background-color: #4e4c4c;
-
-    position: absolute;
-    margin-right: 207.75px;
-    width: 207.5px;
-    height: 70px;
-
-    border-radius: 50px;
-    opacity: 0.6;
-    cursor: pointer;
-
-    transition: all 0.5s ease-in-out;
-} */
 
 .buttonGroup1.active {
     background: #363636;
@@ -335,13 +317,25 @@ h2 {
     flex-basis: 20vw;
 }
 
+.standardPricingCard {
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
 .premiumPricingCard {
-    margin: -40px;
+    margin: -20px;
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .premiumPricingCard > .opportunityLabel {
     background-color: #f7a614;
     color: black;
+    width: 100%;
 }
 
 .rupees {
@@ -621,4 +615,9 @@ table img {
 #overall {
     width: 80%;
     margin: auto;
+}
+
+.bgGrayImg h1,
+.bgGrayImg h3{
+    all: revert;
 }
