@@ -14,8 +14,8 @@ function locateTo(string) {
         window.location.href = "./checkout.html";
     } else if (string === "courses") {
         window.location.href = "./courses.html";
-    } else if (string === "for-Individuals") {
-        window.location.href = "./for-Individuals.html";
+    } else if (string === "for-individuals") {
+        window.location.href = "./for-individuals.html";
     } else if (string === "free-trial") {
         window.location.href = "./free-trial.html";
     } else if (string === "index") {
@@ -24,5 +24,15 @@ function locateTo(string) {
         window.location.href = "./signin.html";
     } else if (string === "subscription") {
         window.location.href = "./subscription.html";
+    }else if (string === "resources-blog") {
+        window.location.href = "./resources-blog.html";
+    }else if (string === "resources-custo-stories") {
+        window.location.href = "./resources-custo-stories.html";
+    }else if (string === "resources-event") {
+        window.location.href = "./resources-event.html";
+    }else if (string === "signin-company") {
+        window.location.href = "./signin-company.html";
+    }else if (string === "signin") {
+        window.location.href = "./signin.html";
     }
 }
