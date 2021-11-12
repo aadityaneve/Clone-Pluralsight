@@ -128,3 +128,18 @@ let rot = document.getElementById('rotate')
             plat.setAttribute('class','pop_on')
         }
     }
+
+    let plat3 = document.getElementById('plat3');
+    let platform3 = document.getElementById('platform3');
+    plat3.onclick = function () {
+        if (platform3.style.display == 'block') {
+
+            platform3.style.display = 'none'
+            plat3.setAttribute('class','pop_out')
+        }
+        else {
+
+            platform3.style.display = 'block'
+            plat3.setAttribute('class','pop_on')
+        }
+    }

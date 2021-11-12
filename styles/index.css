@@ -674,4 +674,129 @@
             padding: 10px;
         }
 
+
+
+            /* popups */
+    #platform3 {
+        position: absolute;
+        top: 90px;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, .8);
+        z-index: 4;
+        display: none;
+        color: white;
+    }
+
+    #platform3>div {
+        width: 80%;
+        height: 400px;
+        background-image: linear-gradient(#171717, #000000);
+        /* background-color: #151515; */
+
+        margin: auto;
+        padding: 3%;
+        box-sizing: border-box;
+        display: flex;
+
+    }
+
+
+    .box {
+        width: 25%;
+        height: 100%;
+        border-right: 1px solid rgb(131, 131, 131);
+
+        /* padding: 3%; */
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .box>div {
+        /* border: 2px solid blue; */
+        box-sizing: border-box;
+        display: flex;
+        gap: 10%;
+    }
+
+    #platform3 p {
+        font-weight: bold;
+
+    }
+
+    .box>div span {
+        background: linear-gradient(100.37deg, rgb(236, 0, 139) 0%, rgb(241, 90, 34) 100%);
+        border-radius: 2px;
+        padding: 0 5%;
+
+    }
+
+    #platform3>div>div:nth-child(2) {
+        width: 75%;
+        height: 100%;
+        /* border: 1px solid rgb(131, 131, 131); */
+
+        padding: 0 2%;
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #platform3>div>div:nth-child(2)>div:nth-child(1) {
+        width: 30%;
+        height: 75%;
+        /* border: 2px solid red; */
+        border: none;
+
+    }
+
+    #platform3 h4 {
+        color: rgb(192, 192, 192);
+        font-weight: 100;
+    }
+
+    #platform3>div>div:nth-child(2)>div:nth-child(2) {
+        width: 65%;
+        height: 75%;
+        /* border: 2px solid red; */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #platform3>div>div:nth-child(2)>div:nth-child(2)>div {
+        width: 47%;
+        height: 29%;
+        /* border: 2px solid red; */
+        box-sizing: border-box;
+        background-color: #222222;
+        border-radius: 10px;
+    }
+
+    #platform3>div>div:nth-child(2)>div:nth-child(3) {
+        width: 100%;
+        height: 15%;
+        /* border: 2px solid red; */
+        display: flex;
+        gap: 5%;
+    }
+
+    .learnMoreBtn {
+        width: 200px;
+        /* height: 50px; */
+        padding: 12px;
+        /* background-image: linear-gradient(to right, #f05a28, #ec008c); */
+        background-color: #ec008c;
+        color: white;
+        font-size: 17px;
+        white-space: normal;
+        cursor: pointer;
+        border: none;
+        /* border-radius: 5px; */
+    }
+
+
     /* Changes by Aaditya */
