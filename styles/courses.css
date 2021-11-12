@@ -1,16 +1,33 @@
-*{
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@400&family=Source+Sans+Pro&display=swap");
+
+* {
+  font-family: "Prompt", sans-serif;
+  letter-spacing: 1px;
   margin: 0;
   padding: 0;
+}
+
+p {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+h1 {
+  line-height: 1.3em;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 body {
   padding: 0;
   margin: 0;
   background-color: #181818;
   color: #ffffff;
-  font-family: "Roboto", sans-serif;
-  /* font-family: 'Prompt', sans-serif; */
 }
-
+.skill-box-main {
+  margin-top: 7%;
+}
 .skill-box {
   margin-top: 50px;
   background: url("https://www.pluralsight.com/content/dam/pluralsight2/browse/backgrounds/bg-hero.png");
@@ -64,11 +81,6 @@ body {
   cursor: pointer;
 }
 
-.non-selected {
-  color: #aaaaaa;
-  font-weight: 500;
-}
-
 .selected {
   padding-bottom: 10px;
   color: #ffffff;
@@ -79,13 +91,13 @@ body {
   border-image-slice: 0 0 7 0;
 }
 
-#cards {
+.cards {
+  cursor: pointer;
   width: 350px;
   height: 250px;
   margin: 20px;
   background-color: #222222;
   box-shadow: 6px 6px 0.5px 0.5px rgba(18, 18, 18, 0.3);
-  /* padding: 10px; */
 }
 
 .short-dis {
@@ -109,41 +121,33 @@ li {
 }
 
 .image {
-  width: 350px;
+  width: 100%;
   height: 100px;
   object-fit: cover;
 }
 
-.upperactive{
-  display: block;
-}
-.uppernonactive{
-  display: none;
-}
 .active {
   display: flex;
   max-width: 95vw;
   margin: auto;
-  /* overflow-x: scroll; */
 }
-.upperCards{
-  width: 350px;
-}
+
 .slick-prev {
-  left: 15px;
+  left: 0.5%;
   z-index: 1;
 }
 .slick-next {
-  right: 15px;
+  right: 1%;
 }
-.slick-next:before, .slick-prev:before {
-  font-size:25px;
+.slick-next:before,
+.slick-prev:before {
+  font-size: 35px;
 }
-#cards{
+.cards {
   width: 90%;
 }
-.short-dis>h3{
-  font-size:17px;
+.short-dis > h3 {
+  font-size: 17px;
   width: 250px;
 }
 
@@ -158,7 +162,7 @@ li {
 .cards-ul-flex > li {
   list-style: none;
   font-size: 15px;
-  margin: 0 10px 0 0;
+  /* margin: 0 10px 0 0; */
 }
 
 .cards-ul-flex > img {
@@ -166,15 +170,22 @@ li {
   margin: 0 20px 0 10px;
 }
 
-
 .item-a {
   margin: 0;
   padding: 0;
+}
+.skill {
+  margin-bottom: 20px;
+}
+.subject {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .browse-content {
   padding: 20px;
 }
+
 #browse-input {
   outline: none;
   border: none;
@@ -185,6 +196,7 @@ li {
   padding: 15px 120px 15px 20px;
   width: 900px;
 }
+
 #close {
   position: relative;
   right: 9%;
@@ -195,14 +207,22 @@ li {
   color: #aaaaaa;
   border-right: 1px solid #555555;
 }
+
 #search-btn {
   cursor: pointer;
   width: 20px;
   position: relative;
-  right: 7%;
+  right: 8%;
   top: 2px;
   transform: rotate(270deg);
 }
+
+.search-sort {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
 #sort-by {
   background-color: #181818;
   padding: 14px 50px;
@@ -213,6 +233,7 @@ li {
   margin-bottom: 10px;
   cursor: pointer;
 }
+
 #sort-by > div {
   display: flex;
   align-items: center;
@@ -223,9 +244,11 @@ li {
   position: absolute;
   background-color: #222222;
   list-style: none;
-  right: 40px;
+  margin-top: 5.5%;
+  right: 2%;
   width: 150px;
   display: none;
+  padding: 15px;
 }
 .dropdown-menu > .droparrow::before {
   position: absolute;
@@ -256,32 +279,51 @@ li {
 .dropdown-menu > li > button:hover {
   color: #e80c88;
 }
+
 .filter-data {
   display: grid;
   grid-template-columns: 25% 70%;
   gap: 5%;
 }
+
 .skill {
   border-bottom: 1px solid #4f4f4f;
 }
+
 .group {
   margin: 5px auto;
   padding: 2px;
   font-size: 20px;
+  cursor: pointer;
 }
+
+.group > label {
+  cursor: pointer;
+}
+
 .subject {
   border-bottom: 1px solid #4f4f4f;
 }
+
 #courses_data {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
+
 #courses_data > div {
   border-bottom: 1px solid #4f4f4f;
-  /* margin-right: 10px; */
+  padding: 15px 5px;
+  cursor: pointer;
+}
+
+#courses_data > div:hover {
+  background-color: rgb(92, 92, 92);
+}
+
+#courses_data h4 {
+  margin: 5px auto;
 }
 #star {
-  /* height:10px; */
   width: 60px;
 }
