@@ -388,7 +388,6 @@ table img {
 .collapsible::after {
     content: "\25BE";
     float: right;
-    /* transform: scale(1.5); */
 }
 
 .collapsibleActive {

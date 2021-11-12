@@ -1,4 +1,7 @@
-// import footer from "../components/footer";
+import Navbar from '../components/Navbar.js';
+
+let nav = document.getElementById('nav');
+nav.innerHTML = Navbar();
 
 let rot = document.getElementById('rotate')
 let c = 0

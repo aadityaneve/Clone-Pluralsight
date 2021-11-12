@@ -94,7 +94,6 @@ body {
 .headPart {
     background-color: #1d1d1d;
     padding: 10%;
-    /* border: 1px solid yellow; */
 }
 
 .standardCard,
@@ -109,7 +108,6 @@ body {
 }
 
 .bottomPart > table {
-    /* border: 1px solid red; */
     flex-basis: 80%;
     margin: auto;
 }
@@ -157,7 +155,6 @@ td {
 .collapsible::after {
     content: "\25BE";
     float: right;
-    /* transform: scale(1.5); */
 }
 
 .collapsibleActive {
