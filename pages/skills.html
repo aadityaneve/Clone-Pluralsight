@@ -4,17 +4,18 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../styles/skills.css" />
+        <link rel="stylesheet" href="../styles/index.css" />
         <title>Skills</title>
         <link
             rel="icon"
             type="image/png"
             href="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/favicons/android-chrome-192x192.png"
         />
-        <link rel="stylesheet" href="../styles/skills.css" />
     </head>
     <body>
-        <nav style="margin: 0%; padding: 2.5%; border: 1px solid yellow"></nav>
-
+        <div id="navItems"></div>
+        <div id="nav"></div>
         <div class="topDiv">
             <div class="containerFluid flex backgroundImg">
                 <div class="skillsImg container">
@@ -686,7 +687,8 @@
             </div>
         </div>
 
-        <script src="../scripts/locate-to.js"></script>
-        <script src="../scripts/skills.js"></script>
+        <script type="module" src="../scripts/skills.js"></script>
+        <script type="module" src="../scripts/navbar.js"></script>
+        <script type="module" src="../scripts/locate-to.js"></script>
     </body>
 </html>
