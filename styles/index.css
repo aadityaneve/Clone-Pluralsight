@@ -18,7 +18,6 @@
 
     /* navbar */
     #container {
-        background-color: rgb(51, 90, 11);
         color: rgb(240, 240, 240);
 
     }
@@ -637,6 +636,15 @@
         display: flex;
         gap: 5%;
     }
+
+/* box-5 */
+#box-5{
+    height: 600px;
+    background: url("https://www.pluralsight.com/content/pluralsight/en/jcr:content/main/generic_block_1609496607/image-res.img.f024c1fc-946a-4a96-a74c-5e1974165b9e.jpg") center center/cover;
+    
+}
+
+/* box-5 */
 
     /* footer */
     #footer{
