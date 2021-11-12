@@ -143,3 +143,19 @@ let rot = document.getElementById('rotate')
             plat3.setAttribute('class','pop_on')
         }
     }
+
+
+    let plat2 = document.getElementById('plat2');
+    let platform2 = document.getElementById('platform2');
+    plat2.onclick = function () {
+        if (platform2.style.display == 'block') {
+
+            platform2.style.display = 'none'
+            plat2.setAttribute('class','pop_out')
+        }
+        else {
+
+            platform2.style.display = 'block'
+            plat2.setAttribute('class','pop_on')
+        }
+    }
