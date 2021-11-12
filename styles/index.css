@@ -109,7 +109,8 @@
         font-weight: bold;
         font-size: 15px;
 
-
+        padding: 15% 0%;
+        cursor: pointer;
     }
 
     #nav>div:nth-child(3)>div img {
