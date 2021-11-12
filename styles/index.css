@@ -37,6 +37,10 @@
         height: 100%;
     }
 
+    #nav>div>img {
+        cursor: pointer
+    }
+
     #nav>div:nth-child(1) {
         width: 20%;
         height: 80%;
