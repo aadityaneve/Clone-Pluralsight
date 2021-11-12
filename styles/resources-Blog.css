@@ -15,12 +15,6 @@ html {
 body{
     background-color: #181818;
 }
-#navbar{
-    background-color: #181818;
-    position: sticky;
-    top: 0;
-    padding: 45px;
-}
 #atBarBlog{
     position: sticky;
     top: 90px;
