@@ -2,19 +2,6 @@
 
 let data_div = document.getElementById("courses_data");
 
-let new_selected = document.getElementById("new-selected");
-let trending = document.getElementById("trending");
-
-let active_content = document.getElementById("ac");
-let non_active_content = document.getElementById("nonac");
-
-new_selected.addEventListener("click", () => {
-  new_selected.setAttribute("class", "selected");
-  trending.setAttribute("class", "non-selected");
-
-  active_content.setAttribute("class", "displayBlock");
-  non_active_content.setAttribute("class", "displayNone");
-});
 
 
 // function newThisMonth() {
