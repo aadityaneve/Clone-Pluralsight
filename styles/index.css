@@ -950,4 +950,22 @@
                 font-weight: 600;
             }
 
+
+            #platform p,
+            #platform2 p,
+            #platform3 p,
+            #platform4 p{
+                cursor: pointer;
+            }
+
+            #platform2 h4,
+            #platform2 img{
+                cursor: pointer;
+            }
+
+            #platform4 h4,
+            #platform4 img{
+                cursor: pointer;
+            }
+
     /* Changes by Aaditya */
