@@ -1,3 +1,8 @@
+import Navbar from '../components/Navbar.js';
+
+let nav = document.getElementById('nav');
+nav.innerHTML = Navbar();
+
 let rot = document.getElementById('rotate')
     let c = 0
     let arr = ['skill', 'products', 'worksflows', 'process', "team"]

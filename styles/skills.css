@@ -42,9 +42,7 @@ body {
     background-image: url("https://www.pluralsight.com/content/pluralsight/en/product/skills/jcr:content/main/generic_block1_copy_/image-res.img.9791782a-3039-4f31-8110-b42ab888542c.png");
     width: 98.6vw;
     height: 50vh;
-    /* background-size: cover; */
     background-repeat: no-repeat;
-    /* background-attachment: fixed; */
     background-position: right, top;
 }
 
@@ -57,10 +55,6 @@ body {
     display: flex;
 
     margin: 0%;
-    /* display: flex;
-    background-image: url("");
-    background-repeat: no-repeat; */
-    /* padding: 2.5%; */
     padding-left: 2.5%;
     padding-top: 2.5%;
     width: 8vw;
@@ -106,14 +100,6 @@ body {
     cursor: pointer;
     border: none;
     border-radius: 5px;
-
-    /* transition: all 1s linear;
-    transition-property: all;
-    transition-timing-function: linear;
-    transition-duration: 1s;
-    animation: 1s linear */
-
-    /* transition: all 3s linear; */
 }
 
 .tryForFreeBtn::before {
@@ -122,29 +108,17 @@ body {
 }
 
 .tryForFreeBtn:hover {
-    /* background-image: linear-gradient(to right, #ee1f6a, #f05a29); */
-    /* transition: all 3s linear; */
-
-    /* box-shadow: 0 10px 30px rgb(0 0 0 / 40%); */
-
-    /* animation-name: colorChange;
-    animation-duration: 3s;
-    transition-timing-function: ease-in-out; */
-
     animation: colorChange 3s linear infinite;
 }
 
 @keyframes colorChange {
     0% {
-        /* background: linear-gradient(to right, #f05a28, #ec008c); */
         background: #f05a28;
     }
     50% {
-        /* background: linear-gradient(to right, #f05a28, #ec008c, #f05a28); */
         background: #ec008c;
     }
     100% {
-        /* background: linear-gradient(to right, #ee1f6a, #f05a29); */
         background: #f05a28;
     }
 }
@@ -176,12 +150,10 @@ body {
     display: flex;
     margin: auto;
     gap: 5%;
-    /* justify-content: space-evenly; */
 }
 
 .overFlowWrapBreakWords {
     overflow-wrap: break-word;
-    /* word-wrap: break-word; */
 }
 
 .courseLibraryImg {
@@ -572,7 +544,6 @@ th {
     width: 300px;
     height: 60px;
     padding: 3% 5% 3% 5%;
-    /* background-image: linear-gradient(to right, #f05a28, #ec008c); */
     background-color: black;
     color: white;
     font-size: 17px;
