@@ -82,6 +82,7 @@ body{
     opacity: 0;
 }
 
+/* opacity */
 #imgBtn:hover::before {
     opacity: 1;
 }
