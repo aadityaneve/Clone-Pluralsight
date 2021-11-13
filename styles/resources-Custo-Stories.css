@@ -303,3 +303,7 @@ body{
 #buttomDv>div:nth-child(2) button:hover::before {
     opacity: 1;
 }
+
+.bgGrayImg {    
+    height: 110% !important;                 
+}

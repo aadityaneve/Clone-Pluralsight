@@ -226,3 +226,6 @@ body{
     cursor: pointer;
 }
 
+.bgGrayImg {    
+    height: 110% !important;                 
+}
