@@ -1,6 +1,6 @@
 # Pluralsight (Clone)
 -----
-
+### For Educational And Learning Purpose*
 Project: make a clone of https://www.pluralsight.com/ site
 
 Pluralsight is an online learning and workforce development platform that helps businesses and individuals adjust to changing technology. Pluralsight provide products to build tech skills & Get insights into your workflow.
