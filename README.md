@@ -1,7 +1,7 @@
 # Pluralsight (Clone)
 -----
 ### For Educational And Learning Purpose*
-Project: make a clone of https://www.pluralsight.com site
+Project: make a clone of Pluralsight website.
 
 Original-Website: https://www.pluralsight.com
 
