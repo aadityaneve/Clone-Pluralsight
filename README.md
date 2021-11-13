@@ -17,27 +17,35 @@ For storing user data we also used localStorage.
 # Snapshots 📷
 * Landing page (Home page)
 
-![Landing page (Home page)]()
+![Landing page (Home page)](https://github.com/aadityaneve/Clone-Pluralsight/blob/main/screenshots/landing-page.png?raw=true)
 
-* Product page
+* Courses page
 
-![Product page]()
+![Courses page](https://github.com/aadityaneve/Clone-Pluralsight/blob/main/screenshots/courses-page.png?raw=true)
 
-* Basket page
+* Plans and Pricing page
 
-![Basket page]()
+![Plans and Pricing page](https://github.com/aadityaneve/Clone-Pluralsight/blob/main/screenshots/plans-and-pricing.png?raw=true)
 
-* Checkout page
+* Events page
 
-![Checkout page]()
+![Events page](https://github.com/aadityaneve/Clone-Pluralsight/blob/main/screenshots/events-page.png?raw=true)
 
 * Signin page
 
-![Signin page]()
+![Sign-in page](https://github.com/aadityaneve/Clone-Pluralsight/blob/main/screenshots/login.png?raw=true)
 
-* Success page
+* Sign-up page
 
-![Success page]()
+![Sign-up page](https://github.com/aadityaneve/Clone-Pluralsight/blob/main/screenshots/signup.png?raw=true)
+
+* Checkout page
+
+![Checkout page](https://github.com/aadityaneve/Clone-Pluralsight/blob/main/screenshots/checkout.png?raw=true)
+
+* Try For Free Page
+
+![Try For Free Page](https://github.com/aadityaneve/Clone-Pluralsight/blob/main/screenshots/try-for-free.png?raw=true)
 
 ## How to run the Project
 * Open pages directory.
