@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@400&family=Source+Sans+Pro&display=swap');
+
+* {
+    font-family: 'Prompt', sans-serif;
+}
+
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1 {
+    line-height: 1.3em;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    letter-spacing: 0.1em;
+    background-color: black;
+    color: white;
+    width: 99vw;
+}
+
+.topDiv {
+    margin-top: 0.1%;
+}
+
+.topDiv > div {
+    width: 44%;
+    padding: 5% 0% 0% 12%;
+}
+
+.container {
+    width: 80vw;
+}
+
+.backgroundImg {
+    background-image: url("https://www.pluralsight.com/content/dam/pluralsight2/landing-pages/gitprime/hero-gp-landing.jpg");
+    width: 98.6vw;
+    height: 53vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right, top;
+}
+
+.overFlowWrapBreakWords {
+    overflow-wrap: break-word;
+}
+
+.flowButton {
+    position: absolute;
+    width: 270px;
+    padding: 1%;
+    background-image: linear-gradient(to right, #2556a3, #237ec3);
+    color: white;
+    font-size: 17px;
+    white-space: normal;
+    margin: 1% 0% 0% 0%;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+}
+
+.flowButton:hover {
+    animation: colorChange 3s linear infinite;
+}
+
+@keyframes colorChange {
+    0% {
+        background: #2556a3;
+    }
+    50% {
+        background: #237ec3;
+    }
+    100% {
+        background: #2556a3;
+    }
+}
+
+.colorBlue {
+    color: #0084bd;
+}
+
+.colorPink {
+    color: #ec0959;
+}
+
+.teamLikeNeverBefore {
+    background-color: #181818;
+    display: flex;
+    align-items: center;
+    vertical-align: center;
+    justify-content: center;
+    gap: 5%;
+
+    padding: 5%;
+}
+
+.teamLikeNeverBefore > img {
+    margin-top: 4%;
+    flex-basis: 20vw;
+    cursor: pointer;
+}
+.teamLikeNeverBefore > div {
+    flex-basis: 25vw;
+}
+
+.stopCountingLines {
+    margin: auto;
+    width: 60vw;
+    display: flex;
+
+    padding: 5%;
+    gap: 5%;
+}
+
+.stopCountingLines > div:nth-child(1) {
+    flex-basis: 50vw;
+}
+
+.stopCountingLines > div:nth-child(2) > img {
+    width: 25vw;
+}
+
+.managePullRequest {
+    display: flex;
+    align-items: center;
+    vertical-align: center;
+    justify-content: center;
+    gap: 5%;
+
+    padding: 3%;
+    gap: 10%;
+}
+
+.managePullRequest > img {
+    margin-top: 4%;
+    flex-basis: 20vw;
+    cursor: pointer;
+}
+.managePullRequest > div:nth-child(1) {
+}
+
+.managePullRequest {
+    margin: auto;
+    width: 60vw;
+    display: flex;
+
+    padding: 5%;
+}
+
+.managePullRequest > div:nth-child(1) > img {
+    width: 25vw;
+}
+
+.managePullRequest > div:nth-child(2) {
+    flex-basis: 60vw;
+}
+
+.customerStoriesBackgroundImg {
+    background-image: url("https://www.pluralsight.com/content/dam/pluralsight2/product/v2/flow-bg-cs-code.jpg");
+    background-position-y: 25%;
+    background-position-x: 60%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 80%;
+
+    height: 40vw;
+}
+
+.customerStories {
+    width: 100%;
+    height: 100%;
+}
+
+.customerStories > div:nth-child(1) {
+    padding-top: 28%;
+}
+
+.middlePart {
+    width: 75vw;
+    margin: auto;
+}
+
+.middlePart > div:nth-child(3) {
+    background-color: black;
+    display: flex;
+    gap: 5%;
+    padding: 3%;
+}
+
+.brandBar {
+    background-image: url("https://www.pluralsight.com/content/pluralsight/en/product/flow/jcr:content/main/generic_block_1938993852/parsys/generic_block_119848/image-res.img.0cb85ba6-5a6c-44e4-91f7-3f05a1df376e.jpg");
+    height: 90vh;
+    margin-top: -20.9%;
+}
+
+.brandBar > div {
+    margin: auto;
+    width: 75vw;
+    text-align: center;
+    padding-top: 12%;
+}
+
+.brandBar > div:nth-child(1) > img {
+    width: 75vw;
+}
+
+.signupForEngineeringDiv {
+    background-color: #181818;
+}
+
+.signupForEngineering {
+
+    background-color: #181818;
+
+    margin: auto;
+    width: 75vw;
+    padding: 7%;
+}
+
+.signupForEngineering > div:nth-child(3) {
+    display: flex;
+    margin: 7% 0% 0% 2%;
+}
+
+input {
+    margin: 0%;
+    width: 30vw;
+}
+
+.submitBtn {
+    width: 270px;
+    padding: 1%;
+    background-image: linear-gradient(to right, #2556a3, #237ec3);
+    color: white;
+    font-size: 17px;
+    white-space: normal;
+    margin: 0% 0% 0% 2%;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+}
+
+.submitBtn:hover {
+    animation: colorChange 3s linear infinite;
+}
+
+.label {
+    position: absolute;
+    margin: -2% 0% 0% 0%;
+}

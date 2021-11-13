@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@400&family=Source+Sans+Pro&display=swap');
+
+* {
+    font-family: 'Prompt', sans-serif;
+}
+
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1 {
+    line-height: 1.3em;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    letter-spacing: 0.1em;
+    background-color: #181818;
+    color: white;
+    width: 99vw;
+}
+
+.topDiv {
+    padding: 4% 0% 0% 0%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 99vw;
+    margin: auto;
+}
+
+.topDiv > h1 {
+    font-weight: 900;
+    font-size: 3.2rem;
+}
+
+.individualAndTeamBtns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.individualAndTeamBtns > div {
+    margin: 1%;
+}
+
+/* button group 1 */
+.buttonGroup1 {
+    display: flex;
+    justify-content: space-around;
+
+    background-color: black;
+    border: 1px solid gray;
+    width: 415px;
+    height: 70px;
+    border-radius: 50px;
+
+    transition: all 0.5s ease-in-out;
+}
+
+.individualBtn {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    color: white;
+    font-size: 15px;
+    font-weight: 900;
+
+    cursor: pointer;
+}
+
+.innerOval {
+    background-color: #4e4c4c;
+
+    position: absolute;
+    margin-right: 207.75px;
+    width: 207.5px;
+    height: 70px;
+
+    border-radius: 50px;
+    opacity: 0.6;
+    cursor: pointer;
+
+    transition: all 0.5s ease-in-out;
+}
+
+.buttonGroup1.active {
+    background: #363636;
+}
+
+.buttonGroup1.active > .innerOval {
+    margin-left: 411px;
+}
+
+.teamBtn {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    color: white;
+    font-size: 15px;
+    font-weight: 900;
+
+    cursor: pointer;
+}
+/* button group 1 end */
+
+/* button group 2 */
+.buttonGroup2 {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    transform: translate(-50, -50);
+}
+
+.toggleBtn {
+    width: 70px;
+    height: 25px;
+    background: #363636;
+    border-radius: 30px;
+    padding: 3px;
+
+    transition: all 0.5s ease-in-out;
+}
+
+.toggleBtn > .innerCircle {
+    width: 30px;
+    height: 25px;
+    background: white;
+    border-radius: 50%;
+
+    transition: all 0.5s ease-in-out;
+}
+
+.toggleBtn.active {
+    background: #363636;
+}
+
+.toggleBtn.active > .innerCircle {
+    margin-left: 45px;
+}
+/* button group 2 end */
+
+.pricingCards {
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+
+    text-align: center;
+}
+
+.pricingCards > .standardPricingCard > h4 {
+    margin: 8.5% 0% 8.5% 0%;
+}
+
+.standardPricingCard {
+    flex-basis: 20vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.premiumPricingCard {
+    flex-basis: 20vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;    
+    align-items: center;
+}
+
+.premiumPricingCard > .opportunityLabel {
+    background-color: #f7a614;
+    color: black;
+    width: 100%;
+}
+
+.rupees {
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.dollar {
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.bgPink {
+    color: #ec008c;
+}
+
+.pricingCardBtn {
+    width: 270px;
+    height: 50px;
+    padding: 1%;
+    background-image: linear-gradient(to right, #f05a28, #ec008c);
+    color: white;
+    font-size: 17px;
+    white-space: normal;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.pricingCardBtn::before {
+    background-image: linear-gradient(to right, #f05a28, #ec008c);
+    transition: 3s;
+}
+
+.pricingCardBtn:hover {
+    animation: colorChange 3s linear infinite;
+}
+
+@keyframes colorChange {
+    0% {
+        background: #f05a28;
+    }
+    50% {
+        background: #ec008c;
+    }
+    100% {
+        background: #f05a28;
+    }
+}
+
+.compareCourseLibrary {
+    padding-top: 4%;
+    width: 80vw;
+    margin: auto;
+    text-align: center;
+}
+
+.compareCourseLibrary > div:nth-child(2) {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+}
+
+.compareCourseLibrary > div:nth-child(2) > div:nth-child(1) {
+    display: flex;
+    flex-basis: 25vw;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.compareCourseLibrary > div:nth-child(2) > div:nth-child(2) {    
+    display: flex;
+    flex-basis: 25vw;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.coreTable,
+.assessmentsTable,
+.premiumTable,
+.analyticsTable,
+.strategicTable,
+.professionalServicesTable {
+    margin-top: 5%;
+}
+
+table {
+    width: 70vw;
+    margin: auto;
+}
+
+table tr td:nth-child(n + 2):nth-child(-n + 5) {
+    border-right: thin solid #333333;
+}
+
+table tr {
+    line-height: 50px;
+    border-top: 0px;
+    border-left: 0px;
+    border-bottom: 0px;
+}
+
+table th {
+    text-align: left;
+}
+
+table td {
+    margin: auto;
+}
+
+table tr:nth-child(odd) {
+    background-color: #212121;
+}
+
+.pinkCheckMark {
+    margin: auto;
+    width: 8px;
+    height: 20px;
+    border: solid #ec008c;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg) translateX(-50%);
+}
+
+.orangeCheckMark {
+    margin: auto;
+    width: 8px;
+    height: 20px;
+    border: solid #f7a614;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg) translateX(-50%);
+}
+
+.coreTable
+    > table
+    > tbody
+    > tr:nth-child(1)
+    > td:nth-child(n + 2):nth-child(-n + 6) {
+    text-align: center;
+    font-weight: 700;
+}
+.coreTable
+    > table
+    > tbody
+    > tr:nth-child(2)
+    > td:nth-child(n + 2):nth-child(-n + 6) {
+    text-align: center;
+    font-weight: 700;
+}
+.coreTable
+    > table
+    > tbody
+    > tr:nth-child(3)
+    > td:nth-child(n + 2):nth-child(-n + 6) {
+    text-align: center;
+    font-weight: 700;
+}
+
+table td > img {
+    text-align: center;
+}
+
+table img {
+    width: 22px;
+}
+
+.textAlignCenter {
+    text-align: center;
+}
+
+.colorOrange {
+    color: #f7a614;
+}
+
+.colorBlue {
+    color: #0084bd;
+}
+
+.colorPink {
+    color: #ec008c;
+}
+
+.collapsiblesDiv {
+    display: flex;
+    width: 80vw;
+    margin: auto;
+    padding: 10%;
+    justify-content: space-around;
+}
+
+.collapsibleBtns {
+    display: flex;
+    flex-direction: column;
+}
+
+.collapsibleBtns > button {
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 5% solid yellow;
+    border-left: 0;
+    color: white;
+    background-color: black;
+}
+
+/* Css for collapsible div */
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 40vw;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: all 0.5s ease-in-out;
+}
+
+.collapsible::after {
+    content: "\25BE";
+    float: right;
+}
+
+.collapsibleActive {
+    background-color: #555555;
+}
+
+.collapsibleActive::after {
+    content: "\25B4";
+}
+
+.active,
+.collapsible:hover {
+    background-color: #555;
+}
+
+.content {
+    width: 38vw;
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: black;
+}
+
+.endPage {
+    width: 50vw;
+    margin: auto;
+    text-align: center;
+}
+
+.brandBar {
+    width: 70vw;
+    margin: 3% auto auto auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
