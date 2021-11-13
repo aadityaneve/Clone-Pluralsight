@@ -76,10 +76,13 @@ let arrow3 = document.getElementById("review_arrow");
 
 function effect(){
     let user =JSON.parse(localStorage.getItem("loggedin_user"));
-    if(user[0] != "" || user[0] != undefined || user[0] != null){
-        hide1.setAttribute("style", "display: none");
-        hide2.setAttribute("style", "display: block");
-        arrow2.setAttribute("style", "background: rgb(0, 132, 189)");   
+    if(user.length == 0){
+        hide1.setAttribute("style", "display: block");
+        hide2.setAttribute("style", "display: none");
+    }else{
+      hide1.setAttribute("style", "display: none");
+      hide2.setAttribute("style", "display: block");
+      arrow2.setAttribute("style", "background: rgb(0, 132, 189)")
     }
 }
 
@@ -190,7 +193,6 @@ function signup(){
   }
 
   function payment(){
-    // *************validation********* //
   
      let card_name = document.getElementById("card_name").value;
       let card_name_mand= document.getElementById("cardnme_mand"); 
@@ -285,9 +287,7 @@ function signup(){
                post_mand.setAttribute("style", "display:none");
               }
 
-        
-  // *************validation********* //
-  
+      
       if(localStorage.getItem("plural_payment") === null){
         localStorage.setItem(("plural_payment"), JSON.stringify([]));
       }
@@ -304,10 +304,10 @@ function signup(){
           state,
           postal,
        };
-      // get array from localstorage
+     
       let pay_array=JSON.parse(localStorage.getItem("plural_payment"));
-      //push new payment_det to pay_array
-      pay_array.push(payment_det); // adding new payment_det
+     
+      pay_array.push(payment_det); 
         console.log('pay_array:', pay_array);
       localStorage.setItem(("plural_payment"), JSON.stringify(pay_array));     
        hide1.setAttribute("style", "display: none");
@@ -329,6 +329,9 @@ function signup(){
      last_btn.setAttribute("style","display:none");
      hide_final.setAttribute("style", "display: block");
     // location.href = "/pages/index.html";
+    setTimeout(() => {
+      window.location.href = "../pages/index.html";
+    },3000)
   }
 
 
@@ -363,18 +366,16 @@ function signup(){
             console.log('count:', count)
          
             if(count > 0){
-                // console.log('username:', username)
-                // console.log('password:', password)
                 let logg = {
                     username,
                     password, 
                 }
-               // console.log('logg:', logg);
               
                 log_array[0] = logg;
                 localStorage.setItem(("loggedin_user"), JSON.stringify(log_array));   
-              //  console.log('log_array:', log_array);
-              location.href="checkout.html";
+            setInterval(() => {
+               window.location.href = "../pages/courses.html";
+            },2000)
             }else{
                 top_note.setAttribute("style", "display:block");
             }
@@ -392,4 +393,35 @@ function signup(){
     top_note.setAttribute("style", "display: none")
   }
 
+  function summary(){
+   let price =JSON.parse(localStorage.getItem("planPrice"));
+   console.log('user:', price)
+   let scheme_plan = document.getElementById("scheme_plan");
+   let scheme_price = document.getElementById("scheme_price");
+   let plan_sub_total = document.getElementById("plan_sub_total");
+   let plan_total = document.getElementById("plan_total");
+      
+   if(price[0] == "1499"){
+      scheme_plan.innerText = "Individual Standard";
+      scheme_price.innerText = "₹ 1,499";
+      plan_sub_total.innerText = "₹ 1,499";
+      plan_total.innerText = "₹ 1,499";
+   }else if(price[0] == "12299"){
+      scheme_plan.innerText = "Individual Standard";
+      scheme_price.innerText = "₹ 12,299";
+      plan_sub_total.innerText = "₹ 12,299";
+      plan_total.innerText = "₹ 12,299";
+   }else if(price[0] == "18399"){
+      scheme_plan.innerText = "Individual Premium";
+      scheme_price.innerText = "₹ 18,399";
+      plan_sub_total.innerText = "₹ 18,399";
+      plan_total.innerText = "₹ 18,399";
+   }else if(price[0] == "2299"){
+      scheme_plan.innerText = "Individual Premium";
+      scheme_price.innerText = "₹ 2,299";
+      plan_sub_total.innerText = "₹ 2,299";
+      plan_total.innerText = "₹ 2,299";
+   }
+  }
+  summary();
  

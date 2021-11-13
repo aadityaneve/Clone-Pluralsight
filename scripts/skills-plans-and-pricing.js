@@ -100,3 +100,51 @@ for (let i = 0; i < collapsibles.length; i++) {
         }
     });
 }
+
+
+// onclicke it will add plan price 
+let standardPricingCardBtn = document.getElementsByClassName("standardPricingCard")[0];
+standardPricingCardBtn.addEventListener("click", () => {
+
+    let price = document.getElementsByClassName("standardPrice")[0];
+    price = price.innerText;
+    let string = "";
+    for( let i = 0; i < price.length; i++){
+        if(!isNaN(price[i])){
+            string+=price[i];
+        }
+    }
+    localStorage.setItem("planPrice", JSON.stringify([string]));
+})
+
+// onclicke it will add plan price 
+let premiumPricingCard = document.getElementsByClassName("premiumPricingCard")[0];
+premiumPricingCard.addEventListener("click", () => {
+
+    let price = document.getElementsByClassName("premiumPrice")[0];
+    price = price.innerText;
+    let string = "";
+    for( let i = 0; i < price.length; i++){
+        if(!isNaN(price[i])){
+            string+=price[i];
+        }
+    }
+    localStorage.setItem("planPrice", JSON.stringify([string]));
+})
+
+
+let starterCard = document.getElementById("starterCard");
+starterCard.addEventListener("click", () => {
+    let starterPrice = document.getElementById("starterPrice");
+    console.log(starterPrice)
+})
+let professionalCard = document.getElementById("professionalCard");
+professionalCard.addEventListener("click", () => {
+    let professionalPrice = document.getElementById("starterPrice");
+    
+})
+let enterpriseCard = document.getElementById("enterpriseCard");
+enterpriseCard.addEventListener("click", () => {
+    let enterprisePrice = document.getElementById("enterprisePrice");
+    
+})

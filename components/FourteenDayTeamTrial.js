@@ -38,7 +38,7 @@ function FourteenDayTeamTrial() {
                 <p>Align learning to your goals with paths and channels</p>
             </div>
             <button class="pricingCardBtn">
-                <strong>START A FREE TEAM TRIAL</strong>
+                <strong><a href="./checkout.html">START A FREE TEAM TRIAL</a></strong>
             </button>
         </div>
         `

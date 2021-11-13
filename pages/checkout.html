@@ -4,15 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkout | Pluralsight</title>
-    <link
-            rel="icon"
-            type="image/png"
-            href="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/favicons/android-chrome-192x192.png"
-        />
-    <link rel="stylesheet" href="/styles/checkout.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Checkout | Pluralsight</title>
+    <link rel="icon" type="image/png"
+        href="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/favicons/android-chrome-192x192.png" />
+    <link rel="stylesheet" href="../styles/checkout.css" />
     
 </head>
 <body>
@@ -38,7 +35,7 @@
         </div>
     </div>
     <div class="back">
-        <a class="back_to" href=""> &lt; Back to pricing</a>
+        <a class="back_to" href="skills-plans-and-pricing.html"> &lt; Back to pricing</a>
     </div>
     <div class="main_blk">
         <div class="main">
@@ -549,25 +546,25 @@
             </div>
      </div>
      </div>
-             <!------------------------- //left block end---------------------------- -->
+           
 
         <div class="summary">
             <div><div class="order_head">Order Summary</div>
             <div class="odr_det">
                 <div class="plan">
                     <div class="pln_head">PLAN</div>
-                    <div class="pln_det">xxxx</div>
+                    <div class="pln_det" id="scheme_plan">xxxx</div>
                 </div>
                 <div class="price">
                     <div class="pln_head">PRICE</div>
-                    <div class="price_det">₹00</div>
+                    <div class="price_det" id="scheme_price">₹00</div>
                 </div>
             </div>
 
             <div class="sub_tot">
                 <div>
-                    <div class="sub_title">Subtotal</div>
-                    <div class="sub_amt">₹00</div>
+                    <div class="sub_title" >Subtotal</div>
+                    <div class="sub_amt" id="plan_sub_total">₹00</div>
                 </div>
                 <div>
                     <div class="sub_title">Estimated tax ✝</div>
@@ -577,7 +574,7 @@
 
             <div class="tot_due">
                 <div class="tot_due_head">Total due today</div>
-                <div class="price_det">₹00</div>
+                <div class="price_det" id="plan_total">₹00</div>
             </div>
         
         </div>

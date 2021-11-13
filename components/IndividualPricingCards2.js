@@ -8,7 +8,7 @@ function IndividualPricingCards2() {
                         skill assessments
                     </h4>
                     <button class="pricingCardBtn">
-                        START 10-DAY FREE TRIAL
+                        <a href="./checkout.html">START 10-DAY FREE TRIAL</a>
                     </button>
                     <p><span class="bgPink">10-day free trial</span></p>
                     <p id="standardPricingCardBill">then ₹ 1,499.00/month, billed monthly</p>
@@ -21,7 +21,7 @@ function IndividualPricingCards2() {
                         certification practice exams and interactive courses.
                     </h4>
                     <button class="pricingCardBtn">
-                        START 10-DAY FREE TRIAL
+                        <a href="./checkout.html">START 10-DAY FREE TRIAL</a>
                     </button>
                     <p><span class="bgPink"> 10-day free trial</span></p>
                     <p id="premiumPricingCardBill">then ₹ 2,299.00/month, billed monthly</p>
