@@ -20,11 +20,15 @@ body{
     top: 90px;
     /* z-index: 1; */
     padding: 30px 50px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 23% 20% 30% 23%;
+    grid-gap: 3%;
     font-weight: 600;
-    gap: 98px;
     background-color: black;
     color: white;
+}
+#atBarBlog>div{
+    cursor: pointer;
 }
 
 #articleDiv1{
