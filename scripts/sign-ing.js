@@ -79,6 +79,7 @@ function effect(){
     if(user.length == 0){
         hide1.setAttribute("style", "display: block");
         hide2.setAttribute("style", "display: none");
+        summary();
     }else{
       hide1.setAttribute("style", "display: none");
       hide2.setAttribute("style", "display: block");
