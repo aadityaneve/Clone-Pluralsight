@@ -329,6 +329,9 @@ function signup(){
      last_btn.setAttribute("style","display:none");
      hide_final.setAttribute("style", "display: block");
     // location.href = "/pages/index.html";
+    setTimeout(() => {
+      window.location.href = "../pages/index.html";
+    },3000)
   }
 
 
@@ -374,7 +377,10 @@ function signup(){
                 log_array[0] = logg;
                 localStorage.setItem(("loggedin_user"), JSON.stringify(log_array));   
               //  console.log('log_array:', log_array);
-              location.href="checkout.html";
+            //   location.href="checkout.html";
+            setInterval(() => {
+               window.location.href = "../pages/courses.html";
+            },2000)
             }else{
                 top_note.setAttribute("style", "display:block");
             }
