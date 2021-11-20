@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@400&family=Source+Sans+Pro&display=swap");
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Prompt", sans-serif;
+}
+p {
+    font-family: "Source Sans Pro", sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #181818;
+}
+#navbar{
+    background-color: #181818;
+    position: sticky;
+    top: 0;
+    padding: 45px;
+    z-index: 1;
+}
+#CusStorSubnav{
+    width: 100%;
+    height: 70px;
+    background-image: url("https://www.pluralsight.com/content/pluralsight/en/customer-stories/jcr:content/main/generic_block_1574572576/image-res.img.2bddef30-0183-4828-af04-b8867784c84b.jpg");
+    /* background-repeat:no-repeat; */
+    background-size:cover;
+}
+#SubnavInnerDiv{
+    width: 80%;
+    margin: auto;
+}
+#SubnavInnerDiv>div{
+    display: inline-block;
+    vertical-align: top;
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+    padding: 10px;
+}
+#SubnavInnerDiv>div:nth-child(1){
+    margin-left: 35px;
+}
+#SubnavInnerDiv>div:nth-child(2){
+    font-size: 24px;
+    margin-left: 90px;
+    /* vertical-align: middle; */
+    padding-top: 18px;
+}
+#SubnavInnerDiv>div:nth-child(1)>div:nth-child(1){
+    border-bottom: 1.5px solid red;
+    font-size: 24px;
+    line-height: 1.2;
+}
+#SubnavInnerDiv>div:nth-child(1)>div:nth-child(2){
+    font-size: 12px;
+    text-align: center;
+    color: rgb(196, 193, 193);
+    margin-top: 4px;
+}
+#storiesHead{
+    margin-top: 80px;
+    text-align: center;
+}
+#storiesHdInnDiv1{
+    color: #ec008c; 
+    font-weight: 600;
+}
+#storiesHdInnDiv2,#storiesHdInnDiv3{
+    color: white; 
+}
+#storiesHdInnDiv2{
+    margin-top: 8px;
+    font-size: 64px;
+    font-weight: 600;
+}
+#storiesHdInnDiv3{
+    margin-top: 11px;
+    font-size: 18px;
+    font-weight: 600;
+}
+#storiesPoster{
+    margin: 75px 29px 0px 29px;
+}
+#storiesPoster>div{
+    display: inline-block;
+}
+#storiesPoster>div:nth-child(1){
+    width: 66%;
+    background-image: url("https://www.pluralsight.com/content/dam/pluralsight2/customer-stories/featured-images/itc.jpg");
+    height: 450px;
+}
+#storiesPoster>div:nth-child(2){
+    width: 33.5%;
+    vertical-align: top;
+}
+#storiesPosterD1_innerD{
+    height: 75%;
+    width: 90%;
+    margin: 56px auto 0px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+#storiesPosterD1InrImg{
+    width: 36%;
+    margin: 0px 0px 0px 10px;
+}
+#storiesPosterD1InrImg img{
+    width: 100%;
+}
+#storiesPosterD1_innerD>p{
+    color: white;
+    margin-top: 20px;
+    margin-left: 18px;
+    font-size: 18px;
+    font-weight: 550;
+}
+#storieslearnMore{
+    display: inline-block;
+    background-color: #2556A3;
+    color: white;
+    margin: 24px 0px 0px 19px;
+    padding: 15px 25px;
+    font-size: 20px;
+    font-weight: 550;
+}
+#storiesPosterD2>div{
+    background-color: #222222;
+    margin-bottom: 27px;
+    margin-left: 80px;
+    padding: 38px 15px 40px 68px;
+    height: 170px;
+}
+#topTxt{
+    color: #E40C7E;
+    margin-bottom: 8px;
+    font-size: 38px;
+    font-weight: 700;
+}
+#botmTxt{
+    color: #CCCCCC;
+}
+.storiesIcn{
+    position: relative;
+    bottom: 80px;
+    right: 130px;
+
+}
+#techOrgnHead{
+    margin-top: 75px;
+    text-align: center;
+    color: white;
+    padding: 0px 200px;
+}
+#techOrgnHead>p:nth-child(1){
+    font-size: 46px;
+    font-weight: 700;
+}
+#techOrgnHead>p:nth-child(2){
+    font-size: 19px;
+    margin-top: 10px;
+    /* font-weight: 700; */
+}
+
+.storiesDivCls{
+    display: grid;
+    grid-template-columns: 31.4% 31.4% 31.4%;
+    grid-gap: 2.2%;
+    margin-left: 14px;
+    margin-top: 55px;
+}
+.storiesDivImgDiv{
+    height: 200px;
+    background-size: cover;
+    text-align: center;
+}
+.storiesDivImg1{
+    display: block;
+    width: 25%;
+    position: relative;
+    top: 32px;
+    left: 40%;
+}
+.storiesDivImg2{
+    display: inline-block;
+    max-width: 90%;
+    max-height: 100px;
+    margin: 50px 0px 0px 0px;
+    vertical-align: middle;
+    /* padding: 0px 20px; */
+}
+#storiesDiv6{
+    margin-top: 75px;
+}
+.storiesRprDiv{
+    background-color: #222;
+    color: white;
+    text-align: center;
+}
+#storiesDiv>div>div:nth-child(2){
+    height: 190px;
+}
+.divBackCl{
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 200px;
+}
+.storiesDivP1{
+    padding: 32px 40px 20px;
+    font-weight: 550;
+    font-size: 18px;
+    height: 100px;
+    line-height: 130%;
+    display: inline-block;
+}
+.storiesDivP2{
+    margin: 38px 0px;
+    font-weight: 550;
+    font-size: 20px;
+    display: inline-block;
+}
+.iconSpan{
+    color: #ec008c;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+#custRvw{
+    margin-top: 120px;
+    background-color: #222;
+    color: white;
+    text-align: center;
+}
+#custRvw>p{
+    padding-top: 70px;
+    font-size: 46px;
+    font-weight: 600;
+}
+#custrvwInrDiv{
+    text-align: left;
+    display: grid;
+    padding: 0px 22px;
+    grid-gap: 7%;
+    grid-template-columns: 28.5% 28.5% 28.5%;
+}
+.custInnerImg{
+    margin-top: 40px;
+}
+.custInnertxt1{
+    padding-top: 26px;
+    font-size: 22px;
+}
+.custInnertxt2{
+    padding-top: 20px;
+    font-size: 18px;
+}
+.custInnertxt3{
+    padding-top: 3px;
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 110px;
+}
+#buttomDv{
+    padding: 100px 0px;
+    color: white;
+}
+#buttomDv{
+    display: grid;
+    grid-template-columns: 70% 20%;
+    grid-gap: 10%;
+}
+#buttomDv>div:nth-child(1){
+    margin-left: 16px;
+    font-size: 45px;
+    font-weight: 600;
+}
+
+#buttomDv>div:nth-child(2) button{
+    background-image: linear-gradient(to right,#F05A28,#EC008C,#F05A28);
+    padding: 15px 30px;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 20px 0px 0px 25px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+#buttomDv>div:nth-child(2) button::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to right,#EC008C,#EC008C,#F05A28);
+    z-index: -1;
+    transition: opacity 0.5s linear;
+    opacity: 0;
+}
+#buttomDv>div:nth-child(2) button:hover::before {
+    opacity: 1;
+}
+
+.bgGrayImg {    
+    height: 110% !important;                 
+}

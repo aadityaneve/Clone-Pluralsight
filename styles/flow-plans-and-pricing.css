@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@400&family=Source+Sans+Pro&display=swap");
+
+* {
+    font-family: "Prompt", sans-serif;
+}
+
+p {
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+h1 {
+    line-height: 1.3em;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    letter-spacing: 0.1em;
+    background-color: #181818;
+    color: white;
+    width: 99vw;
+}
+
+.header {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+
+    margin: 8% 0% 0% 12%;
+}
+
+.header > div:nth-child(1) {
+    display: flex;
+    gap: 1.2%;
+}
+
+.header > div:nth-child(1) > img {
+    width: 7vw;
+    height: 2.7vh;
+}
+
+.header > div:nth-child(1) > h4 {
+    margin: 0.4% 0% 0.4% 0%;
+}
+
+.flowButton {
+    width: 270px;
+    padding: 5%;
+    background-image: linear-gradient(to right, #2556a3, #237ec3);
+    color: white;
+    font-size: 17px;
+    white-space: normal;
+    margin: 1% 0% 0% 0%;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+}
+
+.flowButton:hover {
+    animation: colorChange 3s linear infinite;
+}
+
+@keyframes colorChange {
+    0% {
+        background: #2556a3;
+    }
+    50% {
+        background: #237ec3;
+    }
+    100% {
+        background: #2556a3;
+    }
+}
+
+.blueCheckMark {
+    margin: auto;
+    width: 3px;
+    height: 9px;
+    border: solid #288cc9;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg) translateX(-50%);
+}
+
+.cards {
+    display: flex;
+    text-align: center;
+    width: 70vw;
+    margin: 5% auto auto auto;
+}
+
+.headPart {
+    background-color: #1d1d1d;
+    padding: 10%;
+}
+
+.standardCard,
+.plusCard,
+.enterpriseCard {
+    flex-basis: 25%;
+    padding: 3%;
+}
+
+.cards table {
+    text-align: left;
+}
+
+.bottomPart > table {
+    flex-basis: 80%;
+    margin: auto;
+}
+
+td {
+    padding: 5px;
+}
+
+.collapsiblesDiv {
+    display: flex;
+    width: 80vw;
+    margin: auto;
+    padding: 10%;
+    justify-content: space-around;
+}
+
+.collapsibleBtns {
+    display: flex;
+    flex-direction: column;
+}
+
+.collapsibleBtns > button {
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 5% solid yellow;
+    border-left: 0;
+    color: white;
+    background-color: black;
+}
+
+/* Css for collapsible div */
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 40vw;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: all 0.5s ease-in-out;
+}
+
+.collapsible::after {
+    content: "\25BE";
+    float: right;
+}
+
+.collapsibleActive {
+    background-color: #555555;
+}
+
+.collapsibleActive::after {
+    content: "\25B4";
+}
+
+.active,
+.collapsible:hover {
+    background-color: #555;
+}
+
+.content {
+    width: 38vw;
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: black;
+}
+
+.colorBlue {
+    color: #0084bd;
+}
+
+.brandBar {
+    background-image: url("https://www.pluralsight.com/content/pluralsight/en/product/flow/jcr:content/main/generic_block_1938993852/parsys/generic_block_119848/image-res.img.0cb85ba6-5a6c-44e4-91f7-3f05a1df376e.jpg");
+    height: 90vh;
+    margin-top: -9%;
+}
+
+.brandBar > div {
+    margin: auto;
+    width: 75vw;
+    text-align: center;
+    padding-top: 12%;
+}
+
+.brandBar > div:nth-child(1) > img {
+    width: 75vw;
+}
