@@ -15,20 +15,22 @@ html {
 body{
     background-color: #181818;
 }
+#navbar{
+    background-color: #181818;
+    position: sticky;
+    top: 0;
+    padding: 45px;
+}
 #atBarBlog{
     position: sticky;
     top: 90px;
     /* z-index: 1; */
     padding: 30px 50px;
-    display: grid;
-    grid-template-columns: 23% 20% 30% 23%;
-    grid-gap: 3%;
+    display: flex;
     font-weight: 600;
+    gap: 98px;
     background-color: black;
     color: white;
-}
-#atBarBlog>div{
-    cursor: pointer;
 }
 
 #articleDiv1{
@@ -155,7 +157,4 @@ explTechDvTxt
     color: #f15b2a;
 }
 
-.bgGrayImg {    
-    height: 110% !important;                 
-}
 
