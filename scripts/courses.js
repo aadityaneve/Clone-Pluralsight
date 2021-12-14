@@ -84,10 +84,10 @@ cl.onclick = () => {
 };
 
 // Routes
-const courses = 'http://localhost:3001/courses';
-const beginner = 'http://localhost:3001/courses/beginner';
-const intermediate = 'http://localhost:3001/courses/intermediate';
-const advanced = 'http://localhost:3001/courses/advanced';
+const courses = 'https://clone-pluralsight-server.herokuapp.com/courses';
+const beginner = 'https://clone-pluralsight-server.herokuapp.com/courses/beginner';
+const intermediate = 'https://clone-pluralsight-server.herokuapp.com/courses/intermediate';
+const advanced = 'https://clone-pluralsight-server.herokuapp.com/courses/advanced';
 
 const getCourses = async (API) => {
     let response = await fetch(API);
