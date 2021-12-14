@@ -85,14 +85,21 @@ cl.onclick = () => {
 
 // Routes
 const courses = 'https://clone-pluralsight-server.herokuapp.com/courses';
-const beginner = 'https://clone-pluralsight-server.herokuapp.com/courses/beginner';
-const intermediate = 'https://clone-pluralsight-server.herokuapp.com/courses/intermediate';
-const advanced = 'https://clone-pluralsight-server.herokuapp.com/courses/advanced';
+const beginner =
+    'https://clone-pluralsight-server.herokuapp.com/courses/beginner';
+const intermediate =
+    'https://clone-pluralsight-server.herokuapp.com/courses/intermediate';
+const advanced =
+    'https://clone-pluralsight-server.herokuapp.com/courses/advanced';
 
 const getCourses = async (API) => {
-    let response = await fetch(API);
-    let res = response.json();
-    return res;
+    try {
+        let response = await fetch(API);
+        let res = response.json();
+        return res;
+    } catch (e) {
+        console.log('Error: ', e);
+    }
 };
 
 // skill filter function
