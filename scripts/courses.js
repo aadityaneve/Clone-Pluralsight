@@ -33,17 +33,21 @@ function dropdown() {
 // dropdown fliters function calling
 
 async function dropDownFilter(v) {
-    let data = await moon();
+    // let data = await moon();
 
     if (v == 'highest') {
-        data.sort((a, b) => {
+        allCoursesData.sort((a, b) => {
             return b.rating - a.rating;
         });
-        courseAppend(data);
+        courseAppend(allCoursesData);
     } else if (v == 'newest') {
-        courseAppend(data);
+        allCoursesData.sort((a, b) => {
+            return a.date - b.date;
+        });
+
+        courseAppend(allCoursesData);
     } else if (v == 'atoz') {
-        data.sort((a, b) => {
+        allCoursesData.sort((a, b) => {
             if (a.title < b.title) {
                 return -1;
             }
@@ -53,9 +57,9 @@ async function dropDownFilter(v) {
             return 0;
         });
 
-        courseAppend(data);
+        courseAppend(allCoursesData);
     } else if (v == 'ztoa') {
-        data.sort((a, b) => {
+        allCoursesData.sort((a, b) => {
             if (a.title < b.title) {
                 return 1;
             }
@@ -64,7 +68,7 @@ async function dropDownFilter(v) {
             }
             return 0;
         });
-        courseAppend(data);
+        courseAppend(allCoursesData);
     }
 }
 
@@ -80,6 +84,7 @@ cl.onclick = () => {
 };
 
 // Routes
+const courses = 'http://localhost:3001/courses';
 const beginner = 'http://localhost:3001/courses/beginner';
 const intermediate = 'http://localhost:3001/courses/intermediate';
 const advanced = 'http://localhost:3001/courses/advanced';
@@ -92,19 +97,13 @@ const getCourses = async (API) => {
 
 // skill filter function
 skills();
+let allCoursesData;
 async function skills() {
     // let data = await moon();
 
-    let beginnerCourses = await getCourses(beginner);
-    let intermediateCourses = await getCourses(intermediate);
-    let advancedCourses = await getCourses(advanced);
+    let course = await getCourses(courses);
 
-    courseAppend(
-        beginnerCourses.course.concat(
-            intermediateCourses.course,
-            advancedCourses.course
-        )
-    );
+    courseAppend(course.course);
 
     let Begin = document.getElementById('Beginner');
     let Inter = document.getElementById('Intermediate');
@@ -115,12 +114,11 @@ async function skills() {
         let intermediateCourses = await getCourses(intermediate);
         let advancedCourses = await getCourses(advanced);
 
-        courseAppend(
-            beginnerCourses.course.concat(
-                intermediateCourses.course,
-                advancedCourses.course
-            )
+        allCoursesData = beginnerCourses.course.concat(
+            intermediateCourses.course,
+            advancedCourses.course
         );
+        courseAppend(allCoursesData);
     } else if (Begin.checked && Inter.checked) {
         // let d = data.filter((el) => {
         //     if (el.level == 'Beginner' || el.level == 'Intermediate') {
@@ -131,7 +129,10 @@ async function skills() {
         let beginnerCourses = await getCourses(beginner);
         let intermediateCourses = await getCourses(intermediate);
 
-        courseAppend(beginnerCourses.course.concat(intermediateCourses.course));
+        allCoursesData = beginnerCourses.course.concat(
+            intermediateCourses.course
+        );
+        courseAppend(allCoursesData);
     } else if (Begin.checked && Advanced.checked) {
         // let d = data.filter((el) => {
         //     if (el.level == 'Beginner' || el.level == 'Advanced') {
@@ -141,8 +142,8 @@ async function skills() {
 
         let beginnerCourses = await getCourses(beginner);
         let advancedCourses = await getCourses(advanced);
-
-        courseAppend(beginnerCourses.course.concat(advancedCourses.course));
+        allCoursesData = beginnerCourses.course.concat(advancedCourses.course);
+        courseAppend(allCoursesData);
     } else if (Advanced.checked && Inter.checked) {
         // let d = data.filter((el) => {
         //     if (el.level == 'Advanced' || el.level == 'Intermediate') {
@@ -153,8 +154,10 @@ async function skills() {
 
         let intermediateCourses = await getCourses(intermediate);
         let advancedCourses = await getCourses(advanced);
-
-        courseAppend(intermediateCourses.course.concat(advancedCourses.course));
+        allCoursesData = intermediateCourses.course.concat(
+            advancedCourses.course
+        );
+        courseAppend(allCoursesData);
     } else if (Begin.checked) {
         // let d = data.filter((el) => {
         //     if (el.level == 'Beginner') {
@@ -164,8 +167,8 @@ async function skills() {
         // courseAppend(d);
 
         let beginnerCourses = await getCourses(beginner);
-
-        courseAppend(beginnerCourses.course);
+        allCoursesData = beginnerCourses.course;
+        courseAppend(allCoursesData);
     } else if (Inter.checked) {
         // let d = data.filter((el) => {
         //     if (el.level == 'Intermediate') {
@@ -175,8 +178,8 @@ async function skills() {
         // courseAppend(d);
 
         let intermediateCourses = await getCourses(intermediate);
-
-        courseAppend(intermediateCourses.course);
+        allCoursesData = intermediateCourses.course;
+        courseAppend(allCoursesData);
     } else if (Advan.checked) {
         // let d = data.filter((el) => {
         //     if (el.level == 'Advanced') {
@@ -186,8 +189,8 @@ async function skills() {
         // courseAppend(d);
 
         let advancedCourses = await getCourses(advanced);
-
-        courseAppend(advancedCourses.course);
+        allCoursesData = advancedCourses.course;
+        courseAppend(allCoursesData);
     }
 }
 
