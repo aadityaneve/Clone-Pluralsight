@@ -108,9 +108,9 @@ let allCoursesData;
 async function skills() {
     // let data = await moon();
 
-    let course = await getCourses(courses);
+    let allCoursesData = await getCourses(courses);
 
-    courseAppend(course.course);
+    courseAppend(allCoursesData.course);
 
     let Begin = document.getElementById('Beginner');
     let Inter = document.getElementById('Intermediate');
