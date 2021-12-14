@@ -172,14 +172,13 @@ function coursesFilter(a) {
 
 function search() {
     let value = document.getElementById('browse-input').value.toLowerCase();
-    moon().then((data) => {
-        let d = data.filter((el) => {
-            if (el.title.toLowerCase().includes(value)) {
-                return el;
-            }
-        });
-        courseAppend(d);
+
+    let d = allCoursesData.filter((el) => {
+        if (el.title.toLowerCase().includes(value)) {
+            return el;
+        }
     });
+    courseAppend(d);
 }
 
 function courseAppend(data) {
