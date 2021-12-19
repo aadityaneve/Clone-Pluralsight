@@ -145,7 +145,12 @@ a {
   position: absolute;
   left: 65%;
   top: 45%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%)
+    width: 50%;
+    position: absolute;
+    left: 65%;
+    top: 45%;
+    transform: translate(-50%, -50%);
 }
 
 #image h1 {
