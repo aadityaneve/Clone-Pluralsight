@@ -1,5 +1,5 @@
 function Navbar() {
-    return `
+  return `
         <div><a href="./index.html"><img src="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/global/header/PS_logo.png"
                     alt=""></a>
             </div>
@@ -14,7 +14,7 @@ function Navbar() {
             </div>
             <div>
                 <div>
-                    <img src="https://cdn-icons-png.flaticon.com/128/622/622669.png" alt="">
+                    <img  id="img" src="https://cdn-icons-png.flaticon.com/128/622/622669.png" alt="">
                 </div>
                 <div>
                     <p id="plat4">Sign in <span>&#9662</span></p>
