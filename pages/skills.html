@@ -1,696 +1,669 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="../styles/skills.css" />
-        <link rel="stylesheet" href="../styles/index.css" />
-        <title>Skills</title>
-        <link
-            rel="icon"
-            type="image/png"
-            href="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/favicons/android-chrome-192x192.png"
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/skills.css" />
+    <link rel="stylesheet" href="../styles/index.css" />
+    <title>Skills</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/favicons/android-chrome-192x192.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div id="navItems"></div>
+    <div id="nav"></div>
+    <div id="searchBar"></div>
+
+    <div class="topDiv">
+      <div class="containerFluid flex backgroundImg">
+        <div class="skillsImg container">
+          <img
+            src="https://www.pluralsight.com/content/dam/pluralsight2/logos/logo_ps-skills.png"
+            alt=""
+          />
+          <img
+            src="https://www.pluralsight.com/content/pluralsight/en/product/skills/jcr:content/main/generic_block1_copy_/parsys/columns/column-parsys-1/animation_wrapper/parsys/generic_block/image-res.img.fa6b0102-262d-446a-834d-f2454881e1d3.png"
+            alt=""
+          />
+        </div>
+
+        <div class="heading">
+          <h1 class="">
+            Where technology teams <br />
+            build better skills, faster
+          </h1>
+          <br />
+          <h4>
+            Technology teams are only as successful as their skills are
+            relevant. With access to <br />
+            expert-authored courses and content, skill assessments and
+            analytics, Pluralsight <br />
+            Skills gives you the most effective path to building
+            business-critical skills.
+          </h4>
+        </div>
+        <button class="tryForFreeBtn" onclick="locateTo('free-trial')">
+          <strong><a href="../pages/free-trial.html">TRY FOR FREE</a></strong>
+        </button>
+      </div>
+      <div class="container courseSkillsDiv">
+        <h4>COURSE LIBRARY</h4>
+        <h4>SKILLS FEATURES</h4>
+        <h4>ROI</h4>
+        <h4>PRICING</h4>
+      </div>
+      <div class="container bigCard">
+        <h4>THE TECHNOLOGY SKILLS PLATFORM</h4>
+        <h1>Empower employees to build their skills</h1>
+        <div class="container mediumCard">
+          <div class="courseLibraryImg">
+            <img
+              src="https://www.pluralsight.com/content/pluralsight/en/product/skills/jcr:content/main/generic_block_copy/parsys/generic_block_413530/parsys/animation_wrapper/parsys/columns_copy/column-parsys-1/generic_block_202764/parsys/columns_copy/column-parsys-1/generic_block_copy_c/parsys/image/image-res.img.50a929ee-afcc-409d-b866-5be9f4b5d339.png"
+              alt=""
+            />
+          </div>
+          <div class="courseLibrary">
+            <h4>COURSE LIBRARY</h4>
+            <h2 class="overFlowWrapBreakWords">
+              Feel confident your team is learning from <br />
+              the industry’s best
+            </h2>
+            <h5 class="overFlowWrapBreakWords">
+              Upskill your team with courses on the most in-demand technology
+              topics, taught by the experts who know them best.
+            </h5>
+            <div class="courseLibraryFeatures">
+              <p>
+                <img
+                  src="https://www.pluralsight.com/content/pluralsight/en/product/skills/jcr:content/main/generic_block_copy/parsys/generic_block_413530/parsys/animation_wrapper/parsys/columns_copy/column-parsys-1/generic_block_202764/parsys/columns_copy/column-parsys-2/generic_block/parsys/animation_wrapper/parsys/column_control/column-parsys-1/image_text3/image/image-res.img.77e55140-dfa0-4ad5-95e5-5832f6075bab.png"
+                  alt=""
+                />
+                Software Development
+              </p>
+              <p>
+                <img
+                  src="https://www.pluralsight.com/content/pluralsight/en/product/skills/jcr:content/main/generic_block_copy/parsys/generic_block_413530/parsys/animation_wrapper/parsys/columns_copy/column-parsys-1/generic_block_202764/parsys/columns_copy/column-parsys-2/generic_block/parsys/animation_wrapper/parsys/column_control/column-parsys-1/image_text3/image/image-res.img.77e55140-dfa0-4ad5-95e5-5832f6075bab.png"
+                  alt=""
+                />
+                Data Professional
+              </p>
+              <p>
+                <img
+                  src="https://www.pluralsight.com/content/pluralsight/en/product/skills/jcr:content/main/generic_block_copy/parsys/generic_block_413530/parsys/animation_wrapper/parsys/columns_copy/column-parsys-1/generic_block_202764/parsys/columns_copy/column-parsys-2/generic_block/parsys/animation_wrapper/parsys/column_control/column-parsys-1/image_text3/image/image-res.img.77e55140-dfa0-4ad5-95e5-5832f6075bab.png"
+                  alt=""
+                />
+                Machine Learning & AI
+              </p>
+              <p>
+                <img
+                  src="https://www.pluralsight.com/content/pluralsight/en/product/skills/jcr:content/main/generic_block_copy/parsys/generic_block_413530/parsys/animation_wrapper/parsys/columns_copy/column-parsys-1/generic_block_202764/parsys/columns_copy/column-parsys-2/generic_block/parsys/animation_wrapper/parsys/column_control/column-parsys-1/image_text3/image/image-res.img.77e55140-dfa0-4ad5-95e5-5832f6075bab.png"
+                  alt=""
+                />
+                Information & Cybersecurity
+              </p>
+              <p>
+                <img
+                  src="https://www.pluralsight.com/content/pluralsight/en/product/skills/jcr:content/main/generic_block_copy/parsys/generic_block_413530/parsys/animation_wrapper/parsys/columns_copy/column-parsys-1/generic_block_202764/parsys/columns_copy/column-parsys-2/generic_block/parsys/animation_wrapper/parsys/column_control/column-parsys-1/image_text3/image/image-res.img.77e55140-dfa0-4ad5-95e5-5832f6075bab.png"
+                  alt=""
+                />
+                IT Ops
+              </p>
+              <p>
+                <img
+                  src="https://www.pluralsight.com/content/pluralsight/en/product/skills/jcr:content/main/generic_block_copy/parsys/generic_block_413530/parsys/animation_wrapper/parsys/columns_copy/column-parsys-1/generic_block_202764/parsys/columns_copy/column-parsys-2/generic_block/parsys/animation_wrapper/parsys/column_control/column-parsys-1/image_text3/image/image-res.img.77e55140-dfa0-4ad5-95e5-5832f6075bab.png"
+                  alt=""
+                />
+                Cloud computing
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="compareOurLibraries">
+          <h2>Compare our libraries</h2>
+          <div>
+            <div>
+              <h2>Core library</h2>
+              <p>
+                Our core library features 2,500+ of our most-popular courses on
+                in-demand topics like cloud, data, security, software
+                development, infrastructure and more.
+              </p>
+              <h4>*Available in our starter plan</h4>
+            </div>
+            <div>
+              <h2>Expanded library</h2>
+              <p>
+                Our expanded library gives you access to our full 7,000+ course
+                library. It includes more advanced topics if you need to build
+                deep expertise and niche topics for those tackling special
+                projects.
+              </p>
+              <h4>*Available in our professional and enterprise plans</h4>
+            </div>
+          </div>
+        </div>
+        <div class="exploreBar">
+          <h2>Explore our expansive library of expert-authored courses</h2>
+          <button onclick="locateTo('courses')">
+            <h3>BROWSE OUR COURSE LIBRARIES</h3>
+          </button>
+        </div>
+        <div class="featuresOfSkills">
+          <h4>FEATURES OF SKILLS</h4>
+          <h1>Tools to help your team grow</h1>
+          <p>
+            Give your team a trusted skill development solution that allows them
+            to build in-demand skills in a way that’s personalized to their
+            current knowledge and preferred way to learn.
+          </p>
+          <div class="tools">
+            <div class="tool">
+              <h2>
+                <img
+                  src="https://www.pluralsight.com/content/dam/pluralsight2/product/skills/icons/hand.png"
+                  alt=""
+                />
+                Hands-on learning
+              </h2>
+              <p>
+                Upskill with interactive courses, projects, labs, and practice
+                what you’ve learned with sandboxes.
+              </p>
+              <h4>Learn more <span class="colorPink"> ></span></h4>
+            </div>
+            <div class="tool">
+              <h2>
+                <img
+                  src="https://www.pluralsight.com/content/dam/pluralsight2/product/skills/icons/iq.png"
+                  alt=""
+                />
+                Skills assessments
+              </h2>
+              <p>
+                Get personalized recommendations for where to start and continue
+                learning with our assessments.
+              </p>
+              <h4>Learn more <span class="colorPink"> ></span></h4>
+            </div>
+            <div class="tool">
+              <h2>
+                <img
+                  src="https://www.pluralsight.com/content/dam/pluralsight2/product/skills/icons/play-circle-filled.png"
+                  alt=""
+                />
+                Instructor-led training
+              </h2>
+              <p>
+                Our experts create and administer a custom skill development
+                plan for your entire team.
+              </p>
+              <h4>Learn more <span class="colorPink"> ></span></h4>
+            </div>
+            <div class="tool">
+              <h2>
+                <img
+                  src="https://www.pluralsight.com/content/dam/pluralsight2/product/skills/icons/certifications.png"
+                  alt=""
+                />
+                Certification context
+              </h2>
+              <p>
+                Access courses and paths that are aligned with and help you
+                prepare for industry certifications.
+              </p>
+              <h4>Learn more <span class="colorPink"> ></span></h4>
+            </div>
+            <div class="tool">
+              <h2>
+                <img
+                  src="https://www.pluralsight.com/content/dam/pluralsight2/product/skills/icons/path.png"
+                  alt=""
+                />
+                Paths
+              </h2>
+              <p>
+                Learning material curated by experts to help your team build the
+                right skills in the right order.
+              </p>
+              <h4>Learn more <span class="colorPink"> ></span></h4>
+            </div>
+            <div class="tool">
+              <h2>
+                <img
+                  src="https://www.pluralsight.com/content/dam/pluralsight2/product/skills/icons/analytics.png"
+                  alt=""
+                />
+                Analytics
+              </h2>
+              <p>
+                Get the insights you need to align skill development to your
+                objectives.
+              </p>
+              <h4>Learn more <span class="colorPink"> ></span></h4>
+            </div>
+          </div>
+          <div class="punchLine">
+            <h3>
+              HELPING THOUSANDS OF ORGANIZATIONS BUILD TECH SKILLS AT SCALE
+            </h3>
+          </div>
+          <div class="brandBar">
+            <img
+              src="https://www.pluralsight.com/content/pluralsight/en/product/skills/jcr:content/main/generic_block_copy/parsys/generic_block_413530/parsys/animation_wrapper/parsys/columns_copy/column-parsys-1/generic_block_202764/parsys/columns_1110011315_c/column-parsys-1/generic_block/parsys/column_control/column-parsys-1/animation_wrapper/parsys/image_1399077451/image-res.img.124df2d4-e577-4a88-bd5b-57c4313a1d58.png"
+              alt=""
+            />
+            <img
+              src="https://www.pluralsight.com/content/pluralsight/en/product/skills/jcr:content/main/generic_block_copy/parsys/generic_block_413530/parsys/animation_wrapper/parsys/columns_copy/column-parsys-1/generic_block_202764/parsys/columns_1110011315_c/column-parsys-1/generic_block/parsys/column_control/column-parsys-2/animation_wrapper/parsys/image/image-res.img.5087ceab-b11d-41a9-9793-10e1a66ae192.png"
+              alt=""
+            />
+            <img
+              src="https://www.pluralsight.com/content/pluralsight/en/product/skills/jcr:content/main/generic_block_copy/parsys/generic_block_413530/parsys/animation_wrapper/parsys/columns_copy/column-parsys-1/generic_block_202764/parsys/columns_1110011315_c/column-parsys-1/generic_block/parsys/column_control/column-parsys-3/animation_wrapper/parsys/image/image-res.img.58e5edc1-12ae-42bc-a678-6419738e3e40.png"
+              alt=""
+            />
+            <img
+              src="https://www.pluralsight.com/content/pluralsight/en/product/skills/jcr:content/main/generic_block_copy/parsys/generic_block_413530/parsys/animation_wrapper/parsys/columns_copy/column-parsys-1/generic_block_202764/parsys/columns_1110011315_c/column-parsys-1/generic_block/parsys/column_control/column-parsys-4/animation_wrapper/parsys/image/image-res.img.5925763e-550f-4bb1-bc5a-07f9238eeedc.png"
+              alt=""
+            />
+            <img
+              src="https://www.pluralsight.com/content/pluralsight/en/product/skills/jcr:content/main/generic_block_copy/parsys/generic_block_413530/parsys/animation_wrapper/parsys/columns_copy/column-parsys-1/generic_block_202764/parsys/columns_1110011315_c/column-parsys-1/generic_block/parsys/column_control/column-parsys-5/animation_wrapper/parsys/image/image-res.img.308a05a4-d7a0-450b-ba64-b8bd9318aa69.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="imediateRoi">
+      <h1>See an immediate ROI</h1>
+      <p>
+        Help everyone in your organization reach their full potential. By
+        prioritizing technology skill development, your technologists will grow
+        in their careers and your business will achieve better outcomes.
+      </p>
+      <div class="roiCards">
+        <div class="roiCard">
+          <img
+            src="https://www.pluralsight.com/content/pluralsight/en/product/skills/jcr:content/main/animation_wrapper_co/parsys/generic_block_378108/parsys/generic_block_134198/parsys/animation_wrapper/parsys/columns/column-parsys-1/generic_block/parsys/column_control/column-parsys-1/image/image-res.img.052b682f-4a33-4229-9acd-3d50e370df79.png"
+            alt=""
+          />
+          <p>
+            93% of surveyed organizations realized a return on their investment
+            within 6-12 months of implementing Pluralsight
+          </p>
+        </div>
+        <div class="roiCard">
+          <img
+            src="https://www.pluralsight.com/content/pluralsight/en/product/skills/jcr:content/main/animation_wrapper_co/parsys/generic_block_378108/parsys/generic_block_134198/parsys/animation_wrapper/parsys/columns/column-parsys-1/generic_block/parsys/column_control/column-parsys-2/image/image-res.img.ad35f27b-a77b-4312-9a07-845b67949dab.png"
+            alt=""
+          />
+          <p>
+            96% of surveyed organizations are likely to recommend Pluralsight
+          </p>
+        </div>
+        <div class="roiCard">
+          <img
+            src="https://www.pluralsight.com/content/pluralsight/en/product/skills/jcr:content/main/animation_wrapper_co/parsys/generic_block_378108/parsys/generic_block_134198/parsys/animation_wrapper/parsys/columns/column-parsys-1/generic_block/parsys/column_control/column-parsys-3/image/image-res.img.a2834d11-6c27-4894-878e-3fb0cecb6560.png"
+            alt=""
+          />
+          <p>
+            Over half of surveyed organizations confirmed that Pluralsight has
+            enabled them to save time and money
+          </p>
+        </div>
+        <div class="roiCard">
+          <img
+            src="https://www.pluralsight.com/content/pluralsight/en/product/skills/jcr:content/main/animation_wrapper_co/parsys/generic_block_378108/parsys/generic_block_134198/parsys/animation_wrapper/parsys/columns/column-parsys-1/generic_block/parsys/column_control_copy/column-parsys-1/image/image-res.img.c077c802-befd-4ce4-a189-8e39703335fb.png"
+            alt=""
+          />
+          <p>
+            Providing skill development resources to your employees increases
+            retention and keeps employees engaged
+          </p>
+        </div>
+        <div class="roiCard">
+          <img
+            src="https://www.pluralsight.com/content/pluralsight/en/product/skills/jcr:content/main/animation_wrapper_co/parsys/generic_block_378108/parsys/generic_block_134198/parsys/animation_wrapper/parsys/columns/column-parsys-1/generic_block/parsys/column_control_copy/column-parsys-2/image/image-res.img.c867a459-b34f-42ab-a084-3693c6acd3b0.png"
+            alt=""
+          />
+          <p>
+            Tools like Pluralsight enable objective career development
+            discussions and guide employees into future roles
+          </p>
+        </div>
+        <div class="roiCard">
+          <img
+            src="https://www.pluralsight.com/content/pluralsight/en/product/skills/jcr:content/main/animation_wrapper_co/parsys/generic_block_378108/parsys/generic_block_134198/parsys/animation_wrapper/parsys/columns/column-parsys-1/generic_block/parsys/column_control_copy/column-parsys-3/image/image-res.img.765ab3e7-db01-4195-8693-e5b92117fcde.png"
+            alt=""
+          />
+          <p>
+            A culture of learning encourages employees to grow and learn from
+            one another, making the whole business better
+          </p>
+        </div>
+        <h4></h4>
+        <h4>*TechValidate Survey, 2020</h4>
+      </div>
+    </div>
+    <div class="comment">
+      <div>
+        <img
+          src="https://www.pluralsight.com/content/pluralsight/en/product/skills/jcr:content/main/generic_block_740207/parsys/columns/column-parsys-1/animation_wrapper/parsys/image/image-res.img.91f4c370-1dc0-499c-9f1a-5ab95213e9b3.png"
+          alt=""
         />
-    </head>
-    <body>
-        <div id="navItems"></div>
-        <div id="nav"></div>
-        <div class="topDiv">
-            <div class="containerFluid flex backgroundImg">
-                <div class="skillsImg container">
-                    <img
-                        src="https://www.pluralsight.com/content/dam/pluralsight2/logos/logo_ps-skills.png"
-                        alt=""
-                    />
-                    <img
-                        src="https://www.pluralsight.com/content/pluralsight/en/product/skills/jcr:content/main/generic_block1_copy_/parsys/columns/column-parsys-1/animation_wrapper/parsys/generic_block/image-res.img.fa6b0102-262d-446a-834d-f2454881e1d3.png"
-                        alt=""
-                    />
-                </div>
-
-                <div class="heading">
-                    <h1 class="">
-                        Where technology teams <br />
-                        build better skills, faster
-                    </h1>
-                    <br />
-                    <h4>
-                        Technology teams are only as successful as their skills
-                        are relevant. With access to <br />
-                        expert-authored courses and content, skill assessments
-                        and analytics, Pluralsight <br />
-                        Skills gives you the most effective path to building
-                        business-critical skills.
-                    </h4>
-                </div>
-                <button class="tryForFreeBtn" onclick="locateTo('free-trial')">
-                    <strong><a href="../pages/free-trial.html">TRY FOR FREE</a></strong>
-                </button>
-            </div>
-            <div class="container courseSkillsDiv">
-                <h4>COURSE LIBRARY</h4>
-                <h4>SKILLS FEATURES</h4>
-                <h4>ROI</h4>
-                <h4>PRICING</h4>
-            </div>
-            <div class="container bigCard">
-                <h4>THE TECHNOLOGY SKILLS PLATFORM</h4>
-                <h1>Empower employees to build their skills</h1>
-                <div class="container mediumCard">
-                    <div class="courseLibraryImg">
-                        <img
-                            src="https://www.pluralsight.com/content/pluralsight/en/product/skills/jcr:content/main/generic_block_copy/parsys/generic_block_413530/parsys/animation_wrapper/parsys/columns_copy/column-parsys-1/generic_block_202764/parsys/columns_copy/column-parsys-1/generic_block_copy_c/parsys/image/image-res.img.50a929ee-afcc-409d-b866-5be9f4b5d339.png"
-                            alt=""
-                        />
-                    </div>
-                    <div class="courseLibrary">
-                        <h4>COURSE LIBRARY</h4>
-                        <h2 class="overFlowWrapBreakWords">
-                            Feel confident your team is learning from <br />
-                            the industry’s best
-                        </h2>
-                        <h5 class="overFlowWrapBreakWords">
-                            Upskill your team with courses on the most in-demand
-                            technology topics, taught by the experts who know
-                            them best.
-                        </h5>
-                        <div class="courseLibraryFeatures">
-                            <p>
-                                <img
-                                    src="https://www.pluralsight.com/content/pluralsight/en/product/skills/jcr:content/main/generic_block_copy/parsys/generic_block_413530/parsys/animation_wrapper/parsys/columns_copy/column-parsys-1/generic_block_202764/parsys/columns_copy/column-parsys-2/generic_block/parsys/animation_wrapper/parsys/column_control/column-parsys-1/image_text3/image/image-res.img.77e55140-dfa0-4ad5-95e5-5832f6075bab.png"
-                                    alt=""
-                                />
-                                Software Development
-                            </p>
-                            <p>
-                                <img
-                                    src="https://www.pluralsight.com/content/pluralsight/en/product/skills/jcr:content/main/generic_block_copy/parsys/generic_block_413530/parsys/animation_wrapper/parsys/columns_copy/column-parsys-1/generic_block_202764/parsys/columns_copy/column-parsys-2/generic_block/parsys/animation_wrapper/parsys/column_control/column-parsys-1/image_text3/image/image-res.img.77e55140-dfa0-4ad5-95e5-5832f6075bab.png"
-                                    alt=""
-                                />
-                                Data Professional
-                            </p>
-                            <p>
-                                <img
-                                    src="https://www.pluralsight.com/content/pluralsight/en/product/skills/jcr:content/main/generic_block_copy/parsys/generic_block_413530/parsys/animation_wrapper/parsys/columns_copy/column-parsys-1/generic_block_202764/parsys/columns_copy/column-parsys-2/generic_block/parsys/animation_wrapper/parsys/column_control/column-parsys-1/image_text3/image/image-res.img.77e55140-dfa0-4ad5-95e5-5832f6075bab.png"
-                                    alt=""
-                                />
-                                Machine Learning & AI
-                            </p>
-                            <p>
-                                <img
-                                    src="https://www.pluralsight.com/content/pluralsight/en/product/skills/jcr:content/main/generic_block_copy/parsys/generic_block_413530/parsys/animation_wrapper/parsys/columns_copy/column-parsys-1/generic_block_202764/parsys/columns_copy/column-parsys-2/generic_block/parsys/animation_wrapper/parsys/column_control/column-parsys-1/image_text3/image/image-res.img.77e55140-dfa0-4ad5-95e5-5832f6075bab.png"
-                                    alt=""
-                                />
-                                Information & Cybersecurity
-                            </p>
-                            <p>
-                                <img
-                                    src="https://www.pluralsight.com/content/pluralsight/en/product/skills/jcr:content/main/generic_block_copy/parsys/generic_block_413530/parsys/animation_wrapper/parsys/columns_copy/column-parsys-1/generic_block_202764/parsys/columns_copy/column-parsys-2/generic_block/parsys/animation_wrapper/parsys/column_control/column-parsys-1/image_text3/image/image-res.img.77e55140-dfa0-4ad5-95e5-5832f6075bab.png"
-                                    alt=""
-                                />
-                                IT Ops
-                            </p>
-                            <p>
-                                <img
-                                    src="https://www.pluralsight.com/content/pluralsight/en/product/skills/jcr:content/main/generic_block_copy/parsys/generic_block_413530/parsys/animation_wrapper/parsys/columns_copy/column-parsys-1/generic_block_202764/parsys/columns_copy/column-parsys-2/generic_block/parsys/animation_wrapper/parsys/column_control/column-parsys-1/image_text3/image/image-res.img.77e55140-dfa0-4ad5-95e5-5832f6075bab.png"
-                                    alt=""
-                                />
-                                Cloud computing
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="compareOurLibraries">
-                    <h2>Compare our libraries</h2>
-                    <div>
-                        <div>
-                            <h2>Core library</h2>
-                            <p>
-                                Our core library features 2,500+ of our
-                                most-popular courses on in-demand topics like
-                                cloud, data, security, software development,
-                                infrastructure and more.
-                            </p>
-                            <h4>*Available in our starter plan</h4>
-                        </div>
-                        <div>
-                            <h2>Expanded library</h2>
-                            <p>
-                                Our expanded library gives you access to our
-                                full 7,000+ course library. It includes more
-                                advanced topics if you need to build deep
-                                expertise and niche topics for those tackling
-                                special projects.
-                            </p>
-                            <h4>
-                                *Available in our professional and enterprise
-                                plans
-                            </h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="exploreBar">
-                    <h2>
-                        Explore our expansive library of expert-authored courses
-                    </h2>
-                    <button onclick="locateTo('courses')"><h3>BROWSE OUR COURSE LIBRARIES</h3></button>
-                </div>
-                <div class="featuresOfSkills">
-                    <h4>FEATURES OF SKILLS</h4>
-                    <h1>Tools to help your team grow</h1>
-                    <p>
-                        Give your team a trusted skill development solution that
-                        allows them to build in-demand skills in a way that’s
-                        personalized to their current knowledge and preferred
-                        way to learn.
-                    </p>
-                    <div class="tools">
-                        <div class="tool">
-                            <h2>
-                                <img
-                                    src="https://www.pluralsight.com/content/dam/pluralsight2/product/skills/icons/hand.png"
-                                    alt=""
-                                />
-                                Hands-on learning
-                            </h2>
-                            <p>
-                                Upskill with interactive courses, projects,
-                                labs, and practice what you’ve learned with
-                                sandboxes.
-                            </p>
-                            <h4>
-                                Learn more <span class="colorPink"> ></span>
-                            </h4>
-                        </div>
-                        <div class="tool">
-                            <h2>
-                                <img
-                                    src="https://www.pluralsight.com/content/dam/pluralsight2/product/skills/icons/iq.png"
-                                    alt=""
-                                />
-                                Skills assessments
-                            </h2>
-                            <p>
-                                Get personalized recommendations for where to
-                                start and continue learning with our
-                                assessments.
-                            </p>
-                            <h4>
-                                Learn more <span class="colorPink"> ></span>
-                            </h4>
-                        </div>
-                        <div class="tool">
-                            <h2>
-                                <img
-                                    src="https://www.pluralsight.com/content/dam/pluralsight2/product/skills/icons/play-circle-filled.png"
-                                    alt=""
-                                />
-                                Instructor-led training
-                            </h2>
-                            <p>
-                                Our experts create and administer a custom skill
-                                development plan for your entire team.
-                            </p>
-                            <h4>
-                                Learn more <span class="colorPink"> ></span>
-                            </h4>
-                        </div>
-                        <div class="tool">
-                            <h2>
-                                <img
-                                    src="https://www.pluralsight.com/content/dam/pluralsight2/product/skills/icons/certifications.png"
-                                    alt=""
-                                />
-                                Certification context
-                            </h2>
-                            <p>
-                                Access courses and paths that are aligned with
-                                and help you prepare for industry
-                                certifications.
-                            </p>
-                            <h4>
-                                Learn more <span class="colorPink"> ></span>
-                            </h4>
-                        </div>
-                        <div class="tool">
-                            <h2>
-                                <img
-                                    src="https://www.pluralsight.com/content/dam/pluralsight2/product/skills/icons/path.png"
-                                    alt=""
-                                />
-                                Paths
-                            </h2>
-                            <p>
-                                Learning material curated by experts to help
-                                your team build the right skills in the right
-                                order.
-                            </p>
-                            <h4>
-                                Learn more <span class="colorPink"> ></span>
-                            </h4>
-                        </div>
-                        <div class="tool">
-                            <h2>
-                                <img
-                                    src="https://www.pluralsight.com/content/dam/pluralsight2/product/skills/icons/analytics.png"
-                                    alt=""
-                                />
-                                Analytics
-                            </h2>
-                            <p>
-                                Get the insights you need to align skill
-                                development to your objectives.
-                            </p>
-                            <h4>
-                                Learn more <span class="colorPink"> ></span>
-                            </h4>
-                        </div>
-                    </div>
-                    <div class="punchLine">
-                        <h3>
-                            HELPING THOUSANDS OF ORGANIZATIONS BUILD TECH SKILLS
-                            AT SCALE
-                        </h3>
-                    </div>
-                    <div class="brandBar">
-                        <img
-                            src="https://www.pluralsight.com/content/pluralsight/en/product/skills/jcr:content/main/generic_block_copy/parsys/generic_block_413530/parsys/animation_wrapper/parsys/columns_copy/column-parsys-1/generic_block_202764/parsys/columns_1110011315_c/column-parsys-1/generic_block/parsys/column_control/column-parsys-1/animation_wrapper/parsys/image_1399077451/image-res.img.124df2d4-e577-4a88-bd5b-57c4313a1d58.png"
-                            alt=""
-                        />
-                        <img
-                            src="https://www.pluralsight.com/content/pluralsight/en/product/skills/jcr:content/main/generic_block_copy/parsys/generic_block_413530/parsys/animation_wrapper/parsys/columns_copy/column-parsys-1/generic_block_202764/parsys/columns_1110011315_c/column-parsys-1/generic_block/parsys/column_control/column-parsys-2/animation_wrapper/parsys/image/image-res.img.5087ceab-b11d-41a9-9793-10e1a66ae192.png"
-                            alt=""
-                        />
-                        <img
-                            src="https://www.pluralsight.com/content/pluralsight/en/product/skills/jcr:content/main/generic_block_copy/parsys/generic_block_413530/parsys/animation_wrapper/parsys/columns_copy/column-parsys-1/generic_block_202764/parsys/columns_1110011315_c/column-parsys-1/generic_block/parsys/column_control/column-parsys-3/animation_wrapper/parsys/image/image-res.img.58e5edc1-12ae-42bc-a678-6419738e3e40.png"
-                            alt=""
-                        />
-                        <img
-                            src="https://www.pluralsight.com/content/pluralsight/en/product/skills/jcr:content/main/generic_block_copy/parsys/generic_block_413530/parsys/animation_wrapper/parsys/columns_copy/column-parsys-1/generic_block_202764/parsys/columns_1110011315_c/column-parsys-1/generic_block/parsys/column_control/column-parsys-4/animation_wrapper/parsys/image/image-res.img.5925763e-550f-4bb1-bc5a-07f9238eeedc.png"
-                            alt=""
-                        />
-                        <img
-                            src="https://www.pluralsight.com/content/pluralsight/en/product/skills/jcr:content/main/generic_block_copy/parsys/generic_block_413530/parsys/animation_wrapper/parsys/columns_copy/column-parsys-1/generic_block_202764/parsys/columns_1110011315_c/column-parsys-1/generic_block/parsys/column_control/column-parsys-5/animation_wrapper/parsys/image/image-res.img.308a05a4-d7a0-450b-ba64-b8bd9318aa69.png"
-                            alt=""
-                        />
-                    </div>
-                </div>
-            </div>
+        <h3>
+          ...self-service learning" -the ability to develop employee skills
+          anytime, and from anywhere. It's not hard to see why.
+        </h3>
+      </div>
+      <div>
+        <img
+          src="https://www.pluralsight.com/content/pluralsight/en/product/skills/jcr:content/main/generic_block_740207/parsys/columns/column-parsys-2/animation_wrapper/parsys/image_copy/image-res.img.7ef4bb14-4edb-456a-bb8f-d0b679d08220.png"
+          alt=""
+        />
+        <h4>Tamera Scholz - Sr. Director of Technical Education</h4>
+        <h4>Watch the full story <span class="colorPink"> ></span></h4>
+      </div>
+    </div>
+    <div class="plansAndPricingDiv">
+      <h4>PLANS & PRICING</h4>
+      <h1>Build skills that deliver results</h1>
+      <div class="priceCards">
+        <div class="priceCard">
+          <h1>Starter</h1>
+          <h1><sup>US$</sup> 399</h1>
+          <p>per user / year</p>
+          <p>Upskill your team with our core library.</p>
+          <button class="getStartedBtn">GET STARTED</button>
         </div>
-        <div class="imediateRoi">
-            <h1>See an immediate ROI</h1>
-            <p>
-                Help everyone in your organization reach their full potential.
-                By prioritizing technology skill development, your technologists
-                will grow in their careers and your business will achieve better
-                outcomes.
-            </p>
-            <div class="roiCards">
-                <div class="roiCard">
-                    <img
-                        src="https://www.pluralsight.com/content/pluralsight/en/product/skills/jcr:content/main/animation_wrapper_co/parsys/generic_block_378108/parsys/generic_block_134198/parsys/animation_wrapper/parsys/columns/column-parsys-1/generic_block/parsys/column_control/column-parsys-1/image/image-res.img.052b682f-4a33-4229-9acd-3d50e370df79.png"
-                        alt=""
-                    />
-                    <p>
-                        93% of surveyed organizations realized a return on their
-                        investment within 6-12 months of implementing
-                        Pluralsight
-                    </p>
-                </div>
-                <div class="roiCard">
-                    <img
-                        src="https://www.pluralsight.com/content/pluralsight/en/product/skills/jcr:content/main/animation_wrapper_co/parsys/generic_block_378108/parsys/generic_block_134198/parsys/animation_wrapper/parsys/columns/column-parsys-1/generic_block/parsys/column_control/column-parsys-2/image/image-res.img.ad35f27b-a77b-4312-9a07-845b67949dab.png"
-                        alt=""
-                    />
-                    <p>
-                        96% of surveyed organizations are likely to recommend
-                        Pluralsight
-                    </p>
-                </div>
-                <div class="roiCard">
-                    <img
-                        src="https://www.pluralsight.com/content/pluralsight/en/product/skills/jcr:content/main/animation_wrapper_co/parsys/generic_block_378108/parsys/generic_block_134198/parsys/animation_wrapper/parsys/columns/column-parsys-1/generic_block/parsys/column_control/column-parsys-3/image/image-res.img.a2834d11-6c27-4894-878e-3fb0cecb6560.png"
-                        alt=""
-                    />
-                    <p>
-                        Over half of surveyed organizations confirmed that
-                        Pluralsight has enabled them to save time and money
-                    </p>
-                </div>
-                <div class="roiCard">
-                    <img
-                        src="https://www.pluralsight.com/content/pluralsight/en/product/skills/jcr:content/main/animation_wrapper_co/parsys/generic_block_378108/parsys/generic_block_134198/parsys/animation_wrapper/parsys/columns/column-parsys-1/generic_block/parsys/column_control_copy/column-parsys-1/image/image-res.img.c077c802-befd-4ce4-a189-8e39703335fb.png"
-                        alt=""
-                    />
-                    <p>
-                        Providing skill development resources to your employees
-                        increases retention and keeps employees engaged
-                    </p>
-                </div>
-                <div class="roiCard">
-                    <img
-                        src="https://www.pluralsight.com/content/pluralsight/en/product/skills/jcr:content/main/animation_wrapper_co/parsys/generic_block_378108/parsys/generic_block_134198/parsys/animation_wrapper/parsys/columns/column-parsys-1/generic_block/parsys/column_control_copy/column-parsys-2/image/image-res.img.c867a459-b34f-42ab-a084-3693c6acd3b0.png"
-                        alt=""
-                    />
-                    <p>
-                        Tools like Pluralsight enable objective career
-                        development discussions and guide employees into future
-                        roles
-                    </p>
-                </div>
-                <div class="roiCard">
-                    <img
-                        src="https://www.pluralsight.com/content/pluralsight/en/product/skills/jcr:content/main/animation_wrapper_co/parsys/generic_block_378108/parsys/generic_block_134198/parsys/animation_wrapper/parsys/columns/column-parsys-1/generic_block/parsys/column_control_copy/column-parsys-3/image/image-res.img.765ab3e7-db01-4195-8693-e5b92117fcde.png"
-                        alt=""
-                    />
-                    <p>
-                        A culture of learning encourages employees to grow and
-                        learn from one another, making the whole business better
-                    </p>
-                </div>
-                <h4></h4>
-                <h4>*TechValidate Survey, 2020</h4>
-            </div>
+        <div class="priceCard">
+          <h1>Professional</h1>
+          <h1><sup>US$</sup> 579</h1>
+          <p>per user / year</p>
+          <p>Basic reporting and user analytics for teams.</p>
+          <button class="getStartedBtn">GET STARTED</button>
         </div>
-        <div class="comment">
-            <div>
-                <img
-                    src="https://www.pluralsight.com/content/pluralsight/en/product/skills/jcr:content/main/generic_block_740207/parsys/columns/column-parsys-1/animation_wrapper/parsys/image/image-res.img.91f4c370-1dc0-499c-9f1a-5ab95213e9b3.png"
-                    alt=""
-                />
-                <h3>
-                    ...self-service learning" -the ability to develop employee
-                    skills anytime, and from anywhere. It's not hard to see why.
-                </h3>
-            </div>
-            <div>
-                <img
-                    src="https://www.pluralsight.com/content/pluralsight/en/product/skills/jcr:content/main/generic_block_740207/parsys/columns/column-parsys-2/animation_wrapper/parsys/image_copy/image-res.img.7ef4bb14-4edb-456a-bb8f-d0b679d08220.png"
-                    alt=""
-                />
-                <h4>Tamera Scholz - Sr. Director of Technical Education</h4>
-                <h4>Watch the full story <span class="colorPink"> ></span></h4>
-            </div>
+        <div class="priceCard">
+          <h1>Enterprise</h1>
+          <h1><sup>US$</sup> 779</h1>
+          <p>per user / year</p>
+          <p>Flexibility and advanced analytics for the enterprise.</p>
+          <button class="getStartedBtn">GET STARTED</button>
         </div>
-        <div class="plansAndPricingDiv">
-            <h4>PLANS & PRICING</h4>
-            <h1>Build skills that deliver results</h1>
-            <div class="priceCards">
-                <div class="priceCard">
-                    <h1>Starter</h1>
-                    <h1><sup>US$</sup> 399</h1>
-                    <p>per user / year</p>
-                    <p>Upskill your team with our core library.</p>
-                    <button class="getStartedBtn">GET STARTED</button>
-                </div>
-                <div class="priceCard">
-                    <h1>Professional</h1>
-                    <h1><sup>US$</sup> 579</h1>
-                    <p>per user / year</p>
-                    <p>Basic reporting and user analytics for teams.</p>
-                    <button class="getStartedBtn">GET STARTED</button>
-                </div>
-                <div class="priceCard">
-                    <h1>Enterprise</h1>
-                    <h1><sup>US$</sup> 779</h1>
-                    <p>per user / year</p>
-                    <p>
-                        Flexibility and advanced analytics for the enterprise.
-                    </p>
-                    <button class="getStartedBtn">GET STARTED</button>
-                </div>
-            </div>
-        </div>
-        <div class="planTable">
-            <table>
-                <thead>
-                    <th>Plan</th>
-                    <th>Starter</th>
-                    <th>Professional</th>
-                    <th>Enterprise</th>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Free trial duration</td>
-                        <td>n/a</td>
-                        <td>For 14 days</td>
-                        <td>For 14 days</td>
-                    </tr>
-                    <tr>
-                        <td>Library</td>
-                        <td>Core</td>
-                        <td>Expanded</td>
-                        <td>Expanded</td>
-                    </tr>
-                    <tr>
-                        <td>Skill & Role IQs</td>
-                        <td><div class="checkMark"></div></td>
-                        <td>For 14 days</td>
-                        <td>For 14 days</td>
-                    </tr>
-                    <tr>
-                        <td>Certification practice exams</td>
-                        <td></td>
-                        <td><div class="checkMark"></div></td>
-                        <td><div class="checkMark"></div></td>
-                    </tr>
-                    <tr>
-                        <td>Skill & Role IQs</td>
-                        <td><div class="checkMark"></div></td>
-                        <td>For 14 days</td>
-                        <td>For 14 days</td>
-                    </tr>
-                    <tr>
-                        <td>Interactive courses & Projects</td>
-                        <td></td>
-                        <td><div class="checkMark"></div></td>
-                        <td><div class="checkMark"></div></td>
-                    </tr>
-                    <tr>
-                        <td>Labs & Sandboxes</td>
-                        <td>
-                            <img
-                                src="https://assets.website-files.com/5910aecac9ed8d554e6b77c1/591c42281f63c45ffb422d41_Phone%20Icon%20Gray%20Play%20SVG-01.svg"
-                                alt=""
-                            />
-                        </td>
-                        <td>
-                            <img
-                                src="https://assets.website-files.com/5910aecac9ed8d554e6b77c1/591c42281f63c45ffb422d41_Phone%20Icon%20Gray%20Play%20SVG-01.svg"
-                                alt=""
-                            />
-                        </td>
-                        <td>
-                            <img
-                                src="https://assets.website-files.com/5910aecac9ed8d554e6b77c1/591c42281f63c45ffb422d41_Phone%20Icon%20Gray%20Play%20SVG-01.svg"
-                                alt=""
-                            />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Trend & Usage analytics</td>
-                        <td></td>
-                        <td><div class="checkMark"></div></td>
-                        <td><div class="checkMark"></div></td>
-                    </tr>
-                    <tr>
-                        <td>API Access</td>
-                        <td><div class="checkMark"></div></td>
-                        <td><div class="checkMark"></div></td>
-                        <td><div class="checkMark"></div></td>
-                    </tr>
-                    <tr>
-                        <td>Skills analytics</td>
-                        <td></td>
-                        <td>Basic</td>
-                        <td>Advanced</td>
-                    </tr>
-                    <tr>
-                        <td>Roles analytics</td>
-                        <td></td>
-                        <td>Basic</td>
-                        <td>Advanced</td>
-                    </tr>
-                    <tr>
-                        <td>Single sign-on</td>
-                        <td>
-                            <img
-                                src="https://assets.website-files.com/5910aecac9ed8d554e6b77c1/591c42281f63c45ffb422d41_Phone%20Icon%20Gray%20Play%20SVG-01.svg"
-                                alt=""
-                            />
-                        </td>
-                        <td>
-                            <img
-                                src="https://assets.website-files.com/5910aecac9ed8d554e6b77c1/591c42281f63c45ffb422d41_Phone%20Icon%20Gray%20Play%20SVG-01.svg"
-                                alt=""
-                            />
-                        </td>
-                        <td>
-                            <img
-                                src="https://assets.website-files.com/5910aecac9ed8d554e6b77c1/591c42281f63c45ffb422d41_Phone%20Icon%20Gray%20Play%20SVG-01.svg"
-                                alt=""
-                            />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Onboarding</td>
-                        <td>
-                            <img
-                                src="https://assets.website-files.com/5910aecac9ed8d554e6b77c1/591c42281f63c45ffb422d41_Phone%20Icon%20Gray%20Play%20SVG-01.svg"
-                                alt=""
-                            />
-                        </td>
-                        <td>
-                            <img
-                                src="https://assets.website-files.com/5910aecac9ed8d554e6b77c1/591c42281f63c45ffb422d41_Phone%20Icon%20Gray%20Play%20SVG-01.svg"
-                                alt=""
-                            />
-                        </td>
-                        <td>
-                            <img
-                                src="https://assets.website-files.com/5910aecac9ed8d554e6b77c1/591c42281f63c45ffb422d41_Phone%20Icon%20Gray%20Play%20SVG-01.svg"
-                                alt=""
-                            />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Skills strategy plan</td>
-                        <td>
-                            <img
-                                src="https://assets.website-files.com/5910aecac9ed8d554e6b77c1/591c42281f63c45ffb422d41_Phone%20Icon%20Gray%20Play%20SVG-01.svg"
-                                alt=""
-                            />
-                        </td>
-                        <td>
-                            <img
-                                src="https://assets.website-files.com/5910aecac9ed8d554e6b77c1/591c42281f63c45ffb422d41_Phone%20Icon%20Gray%20Play%20SVG-01.svg"
-                                alt=""
-                            />
-                        </td>
-                        <td>
-                            <img
-                                src="https://assets.website-files.com/5910aecac9ed8d554e6b77c1/591c42281f63c45ffb422d41_Phone%20Icon%20Gray%20Play%20SVG-01.svg"
-                                alt=""
-                            />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td><button class="buyNow">BUY NOW</button></td>
-                        <td><button class="buyNow">BUY NOW</button></td>
-                        <td><button class="buyNow">CONTACT SALES</button></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div class="collapsiblesDiv">
-            <div class="info">
-                <h4 class="colorPink">KNOW WHAT YOU'RE GETTING</h4>
-                <h1>
-                    A few frequently <br />
-                    asked questions
-                </h1>
-            </div>
-            <div class="collapsibleBtns">
-                <button type="button" class="collapsible">
-                    Will I be charged now for the Pluralsight Skills
-                    professional team free trial?
-                </button>
-                <div class="content">
-                    <p>
-                        It's simple. When you sign up, you'll immediately have
-                        unlimited viewing of thousands of expert courses, paths
-                        to guide your learning, tools to measure your skills and
-                        hands-on resources like exercise files. There’s no limit
-                        on what you can learn and you can cancel at any time.
-                    </p>
-                </div>
-
-                <button type="button" class="collapsible">
-                    Do you offer a pilot for Pluralsight Skills enterprise
-                    business plans?
-                </button>
-                <div class="content">
-                    <p>
-                        Yes, if you would like a Pluralsight Skills business
-                        pilot for 10 or fewer users for our professional plan,
-                        you can set up your own pilot here. You can use PayPal
-                        or a credit/debit card to start the pilot. If you don't
-                        want to enter any billing information or would like a
-                        pilot for more than 10 users, you can submit a pilot
-                        request here. Someone from our sales team should follow
-                        up with you within 2 business days.
-                    </p>
-                </div>
-
-                <button type="button" class="collapsible">
-                    What's the cost of a Pluralsight Skills business plan?
-                </button>
-                <div class="content">
-                    <p>
-                        View all Professional and Enterprise Pluralsight Skills
-                        features and pricing here. You can also start a free
-                        14-day team pilot for up to 10 users here. If you need
-                        to renew your business subscription, or if you’ve worked
-                        with a salesperson in the past, please contact Sales at
-                        sales@pluralsight.com
-                    </p>
-                </div>
-
-                <button type="button" class="collapsible">
-                    How many licenses should I purchase for my plan?
-                </button>
-                <div class="content">
-                    <p>
-                        Each learner needs their own license. All Pluralsight
-                        Skills business plan licensing is license-per-learner,
-                        and we do not offer concurrent licensing. Our plans are
-                        priced accordingly, whether your organization needs two
-                        licenses or more than 1,000. For example, if you have 5
-                        people on your team, you’ll need 5 licenses. Plan
-                        administrators do not need a license to manage their
-                        team, but if the plan admin doesn’t have a license, they
-                        can’t watch content. If a learner leaves your team, you
-                        can remove their license -- click here for how to remove
-                        a user's license. The number of times you can transfer a
-                        license is subject to your company’s agreement with
-                        Pluralsight. If you have questions about this, please
-                        contact your Sales rep and refer to our Terms of Use.
-                        Accounts are personal to the learner using them and
-                        cannot be shared or re-used. A learner who has an
-                        account can be invited to your business plan, and bring
-                        their viewing history to the plan.
-                    </p>
-                </div>
-
-                <button type="button" class="collapsible">
-                    Do you offer volume pricing?
-                </button>
-                <div class="content">
-                    <p>
-                        Yes, we offer discounts to Pluralsight Skills business
-                        plans depending on the amount of licenses purchased. To
-                        learn more about volume pricing, please contact Sales.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="endPage">
-            <div>
-                <h1>Power the people who power your product</h1>
-                <button class="endPageButtons" onclick="locateTo('free-trial')">TRY FOR FREE</button>
-            </div>
-            <div>
-                <h1>Are you an individual looking for Skills?</h1>
-                <button class="skillsForIndividualBtn">SKILLS FOR INDIVIDUAL</button>
-            </div>
+      </div>
+    </div>
+    <div class="planTable">
+      <table>
+        <thead>
+          <th>Plan</th>
+          <th>Starter</th>
+          <th>Professional</th>
+          <th>Enterprise</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Free trial duration</td>
+            <td>n/a</td>
+            <td>For 14 days</td>
+            <td>For 14 days</td>
+          </tr>
+          <tr>
+            <td>Library</td>
+            <td>Core</td>
+            <td>Expanded</td>
+            <td>Expanded</td>
+          </tr>
+          <tr>
+            <td>Skill & Role IQs</td>
+            <td><div class="checkMark"></div></td>
+            <td>For 14 days</td>
+            <td>For 14 days</td>
+          </tr>
+          <tr>
+            <td>Certification practice exams</td>
+            <td></td>
+            <td><div class="checkMark"></div></td>
+            <td><div class="checkMark"></div></td>
+          </tr>
+          <tr>
+            <td>Skill & Role IQs</td>
+            <td><div class="checkMark"></div></td>
+            <td>For 14 days</td>
+            <td>For 14 days</td>
+          </tr>
+          <tr>
+            <td>Interactive courses & Projects</td>
+            <td></td>
+            <td><div class="checkMark"></div></td>
+            <td><div class="checkMark"></div></td>
+          </tr>
+          <tr>
+            <td>Labs & Sandboxes</td>
+            <td>
+              <img
+                src="https://assets.website-files.com/5910aecac9ed8d554e6b77c1/591c42281f63c45ffb422d41_Phone%20Icon%20Gray%20Play%20SVG-01.svg"
+                alt=""
+              />
+            </td>
+            <td>
+              <img
+                src="https://assets.website-files.com/5910aecac9ed8d554e6b77c1/591c42281f63c45ffb422d41_Phone%20Icon%20Gray%20Play%20SVG-01.svg"
+                alt=""
+              />
+            </td>
+            <td>
+              <img
+                src="https://assets.website-files.com/5910aecac9ed8d554e6b77c1/591c42281f63c45ffb422d41_Phone%20Icon%20Gray%20Play%20SVG-01.svg"
+                alt=""
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Trend & Usage analytics</td>
+            <td></td>
+            <td><div class="checkMark"></div></td>
+            <td><div class="checkMark"></div></td>
+          </tr>
+          <tr>
+            <td>API Access</td>
+            <td><div class="checkMark"></div></td>
+            <td><div class="checkMark"></div></td>
+            <td><div class="checkMark"></div></td>
+          </tr>
+          <tr>
+            <td>Skills analytics</td>
+            <td></td>
+            <td>Basic</td>
+            <td>Advanced</td>
+          </tr>
+          <tr>
+            <td>Roles analytics</td>
+            <td></td>
+            <td>Basic</td>
+            <td>Advanced</td>
+          </tr>
+          <tr>
+            <td>Single sign-on</td>
+            <td>
+              <img
+                src="https://assets.website-files.com/5910aecac9ed8d554e6b77c1/591c42281f63c45ffb422d41_Phone%20Icon%20Gray%20Play%20SVG-01.svg"
+                alt=""
+              />
+            </td>
+            <td>
+              <img
+                src="https://assets.website-files.com/5910aecac9ed8d554e6b77c1/591c42281f63c45ffb422d41_Phone%20Icon%20Gray%20Play%20SVG-01.svg"
+                alt=""
+              />
+            </td>
+            <td>
+              <img
+                src="https://assets.website-files.com/5910aecac9ed8d554e6b77c1/591c42281f63c45ffb422d41_Phone%20Icon%20Gray%20Play%20SVG-01.svg"
+                alt=""
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Onboarding</td>
+            <td>
+              <img
+                src="https://assets.website-files.com/5910aecac9ed8d554e6b77c1/591c42281f63c45ffb422d41_Phone%20Icon%20Gray%20Play%20SVG-01.svg"
+                alt=""
+              />
+            </td>
+            <td>
+              <img
+                src="https://assets.website-files.com/5910aecac9ed8d554e6b77c1/591c42281f63c45ffb422d41_Phone%20Icon%20Gray%20Play%20SVG-01.svg"
+                alt=""
+              />
+            </td>
+            <td>
+              <img
+                src="https://assets.website-files.com/5910aecac9ed8d554e6b77c1/591c42281f63c45ffb422d41_Phone%20Icon%20Gray%20Play%20SVG-01.svg"
+                alt=""
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Skills strategy plan</td>
+            <td>
+              <img
+                src="https://assets.website-files.com/5910aecac9ed8d554e6b77c1/591c42281f63c45ffb422d41_Phone%20Icon%20Gray%20Play%20SVG-01.svg"
+                alt=""
+              />
+            </td>
+            <td>
+              <img
+                src="https://assets.website-files.com/5910aecac9ed8d554e6b77c1/591c42281f63c45ffb422d41_Phone%20Icon%20Gray%20Play%20SVG-01.svg"
+                alt=""
+              />
+            </td>
+            <td>
+              <img
+                src="https://assets.website-files.com/5910aecac9ed8d554e6b77c1/591c42281f63c45ffb422d41_Phone%20Icon%20Gray%20Play%20SVG-01.svg"
+                alt=""
+              />
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><button class="buyNow">BUY NOW</button></td>
+            <td><button class="buyNow">BUY NOW</button></td>
+            <td><button class="buyNow">CONTACT SALES</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="collapsiblesDiv">
+      <div class="info">
+        <h4 class="colorPink">KNOW WHAT YOU'RE GETTING</h4>
+        <h1>
+          A few frequently <br />
+          asked questions
+        </h1>
+      </div>
+      <div class="collapsibleBtns">
+        <button type="button" class="collapsible">
+          Will I be charged now for the Pluralsight Skills professional team
+          free trial?
+        </button>
+        <div class="content">
+          <p>
+            It's simple. When you sign up, you'll immediately have unlimited
+            viewing of thousands of expert courses, paths to guide your
+            learning, tools to measure your skills and hands-on resources like
+            exercise files. There’s no limit on what you can learn and you can
+            cancel at any time.
+          </p>
         </div>
 
-        <div id="footer"></div>
+        <button type="button" class="collapsible">
+          Do you offer a pilot for Pluralsight Skills enterprise business plans?
+        </button>
+        <div class="content">
+          <p>
+            Yes, if you would like a Pluralsight Skills business pilot for 10 or
+            fewer users for our professional plan, you can set up your own pilot
+            here. You can use PayPal or a credit/debit card to start the pilot.
+            If you don't want to enter any billing information or would like a
+            pilot for more than 10 users, you can submit a pilot request here.
+            Someone from our sales team should follow up with you within 2
+            business days.
+          </p>
+        </div>
 
-        <script type="module" src="../scripts/skills.js"></script>
-        <script type="module" src="../scripts/navbar.js"></script>
-        <script type="module" src="../scripts/locate-to.js"></script>
-    </body>
+        <button type="button" class="collapsible">
+          What's the cost of a Pluralsight Skills business plan?
+        </button>
+        <div class="content">
+          <p>
+            View all Professional and Enterprise Pluralsight Skills features and
+            pricing here. You can also start a free 14-day team pilot for up to
+            10 users here. If you need to renew your business subscription, or
+            if you’ve worked with a salesperson in the past, please contact
+            Sales at sales@pluralsight.com
+          </p>
+        </div>
+
+        <button type="button" class="collapsible">
+          How many licenses should I purchase for my plan?
+        </button>
+        <div class="content">
+          <p>
+            Each learner needs their own license. All Pluralsight Skills
+            business plan licensing is license-per-learner, and we do not offer
+            concurrent licensing. Our plans are priced accordingly, whether your
+            organization needs two licenses or more than 1,000. For example, if
+            you have 5 people on your team, you’ll need 5 licenses. Plan
+            administrators do not need a license to manage their team, but if
+            the plan admin doesn’t have a license, they can’t watch content. If
+            a learner leaves your team, you can remove their license -- click
+            here for how to remove a user's license. The number of times you can
+            transfer a license is subject to your company’s agreement with
+            Pluralsight. If you have questions about this, please contact your
+            Sales rep and refer to our Terms of Use. Accounts are personal to
+            the learner using them and cannot be shared or re-used. A learner
+            who has an account can be invited to your business plan, and bring
+            their viewing history to the plan.
+          </p>
+        </div>
+
+        <button type="button" class="collapsible">
+          Do you offer volume pricing?
+        </button>
+        <div class="content">
+          <p>
+            Yes, we offer discounts to Pluralsight Skills business plans
+            depending on the amount of licenses purchased. To learn more about
+            volume pricing, please contact Sales.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="endPage">
+      <div>
+        <h1>Power the people who power your product</h1>
+        <button class="endPageButtons" onclick="locateTo('free-trial')">
+          TRY FOR FREE
+        </button>
+      </div>
+      <div>
+        <h1>Are you an individual looking for Skills?</h1>
+        <button class="skillsForIndividualBtn">SKILLS FOR INDIVIDUAL</button>
+      </div>
+    </div>
+
+    <div id="footer"></div>
+
+    <script type="module" src="../scripts/skills.js"></script>
+    <script type="module" src="../scripts/navbar.js"></script>
+    <script type="module" src="../scripts/locate-to.js"></script>
+    <script type="module" src="../scripts/search.js"></script>
+  </body>
 </html>
