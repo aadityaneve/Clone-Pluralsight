@@ -22,7 +22,9 @@ function Navbar() {
                 <div>
                     <a href="./free-trial.html"><button>TRY FOR FREE</button></a>
                 </div>
-            </div>
+                    </div>
+
+      
         `;
 }
 

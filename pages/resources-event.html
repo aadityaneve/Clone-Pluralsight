@@ -1,107 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    <link rel="stylesheet" href="../styles/resources-event.css">
-    <link rel="stylesheet" href="../styles/index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/resources-event.css" />
+    <link rel="stylesheet" href="../styles/index.css" />
     <title>Event | Pluralsight | Pluralsight</title>
-    <link rel="shortcut icon" type="image" href="https://images-eu.ssl-images-amazon.com/images/I/51-Hci2bYjL.png">
-</head>
+    <link
+      rel="shortcut icon"
+      type="image"
+      href="https://images-eu.ssl-images-amazon.com/images/I/51-Hci2bYjL.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
 
-<body>
+  <body>
     <div id="navItems"></div>
     <div id="nav"></div>
+    <div id="searchBar"></div>
+
     <div id="topHeadng">Pluralsight Events</div>
     <div id="topIMgDiv">
-        <div id="topImgInnrDiv">
-            <p>PLURALSIGHT LIVE</p>
-            <p>Missed us at LIVE 2021?</p>
-            <p>Catch up on must-see keynotes from Pluralsight co-founder and CEO, Aaron <br>Skonnard, and other product
-                leaders; Global Chief Technology Officer of Walgreens <br>Boots Alliance, Mike Maresca; Chief Product
-                and Technology Officer of Khoros, Sejal <br> Amin, and many more.</p>
-            <button id="imgBtn">WATCH-ON-DEMAND</button>
-        </div>
+      <div id="topImgInnrDiv">
+        <p>PLURALSIGHT LIVE</p>
+        <p>Missed us at LIVE 2021?</p>
+        <p>
+          Catch up on must-see keynotes from Pluralsight co-founder and CEO,
+          Aaron <br />Skonnard, and other product leaders; Global Chief
+          Technology Officer of Walgreens <br />Boots Alliance, Mike Maresca;
+          Chief Product and Technology Officer of Khoros, Sejal <br />
+          Amin, and many more.
+        </p>
+        <button id="imgBtn">WATCH-ON-DEMAND</button>
+      </div>
     </div>
 
     <div class="UpcEvnt">
-        <div class="UpEvFilDiv">
-            <p>Upcoming <br>Events</p>
-            <p>Filter events</p>
-            <div id="optionSel1Id" class="optionSelClsCmn">Event type
-                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; ></div>
-            <div id="optionSel1InnerId" class="optionSelCmn">
-                <ul class="optionSel2Ul">
-                    <li onclick="OpSelected(1,1,'b&w')">Briefings & Workshops</li>
-                    <li onclick="OpSelected(1,1,'p&c')">In Platform Conferences</li>
-                    <li onclick="OpSelected(1,1,'p&t')">Product & Tech Demo</li>
-                    <li onclick="OpSelected(1,1,'UG')">User Groups</li>
-                    <li onclick="OpSelected(1,1,'webn')">Webinars</li>
-                </ul>
-            </div>
-
-            <div id="optionSel2Id" class="optionSelClsCmn">Region
-                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp&nbsp ></div>
-            <div id="optionSel2InnerId" class="optionSelCmn">
-                <ul class="optionSel2Ul">
-                    <li onclick="OpSelected(1,2,'AR')">All Regions</li>
-                    <li onclick="OpSelected(1,2,'AM')">Americas</li>
-                    <li onclick="OpSelected(1,2,'APAC')">APAC</li>
-                    <li onclick="OpSelected(1,2,'EMEA')">EMEA</li>
-                </ul>
-            </div>
+      <div class="UpEvFilDiv">
+        <p>Upcoming <br />Events</p>
+        <p>Filter events</p>
+        <div id="optionSel1Id" class="optionSelClsCmn">
+          Event type
+          &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; >
+        </div>
+        <div id="optionSel1InnerId" class="optionSelCmn">
+          <ul class="optionSel2Ul">
+            <li onclick="OpSelected(1,1,'b&w')">Briefings & Workshops</li>
+            <li onclick="OpSelected(1,1,'p&c')">In Platform Conferences</li>
+            <li onclick="OpSelected(1,1,'p&t')">Product & Tech Demo</li>
+            <li onclick="OpSelected(1,1,'UG')">User Groups</li>
+            <li onclick="OpSelected(1,1,'webn')">Webinars</li>
+          </ul>
         </div>
 
-        <div>
-            <div id="UpEvInfoDiv" class="UpEvInfoDivCmn">
-            </div>
+        <div id="optionSel2Id" class="optionSelClsCmn">
+          Region
+          &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp&nbsp
+          >
         </div>
+        <div id="optionSel2InnerId" class="optionSelCmn">
+          <ul class="optionSel2Ul">
+            <li onclick="OpSelected(1,2,'AR')">All Regions</li>
+            <li onclick="OpSelected(1,2,'AM')">Americas</li>
+            <li onclick="OpSelected(1,2,'APAC')">APAC</li>
+            <li onclick="OpSelected(1,2,'EMEA')">EMEA</li>
+          </ul>
+        </div>
+      </div>
+
+      <div>
+        <div id="UpEvInfoDiv" class="UpEvInfoDivCmn"></div>
+      </div>
     </div>
 
     <div id="UpcEvntID" class="UpcEvnt">
-        <div class="UpEvFilDiv">
-            <p>On-Demand<br>Events</p>
-            <p>Filter events</p>
-            <div id="optionSel1Id2" class="optionSelClsCmn">Event type
-                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; ></div>
-            <div id="optionSel1InnerId2" class="optionSelCmn">
-                <ul class="optionSel2Ul">
-                    <li onclick="OpSelected(2,1,'b&w')">Briefings & Workshops</li>
-                    <li onclick="OpSelected(2,1,'p&c')">In Platform Conferences</li>
-                    <li onclick="OpSelected(2,1,'p&t')">Product & Tech Demo</li>
-                    <li onclick="OpSelected(2,1,'UG')">User Groups</li>
-                    <li onclick="OpSelected(2,1,'webn')">Webinars</li>
-                </ul>
-            </div>
-
-            <div id="optionSel2Id2" class="optionSelClsCmn">Region
-                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp&nbsp ></div>
-            <div id="optionSel2InnerId2" class="optionSelCmn">
-                <ul class="optionSel2Ul">
-                    <li onclick="OpSelected(2,2,'AR')">All Regions</li>
-                    <li onclick="OpSelected(2,2,'AM')">Americas</li>
-                    <li onclick="OpSelected(2,2,'APAC')">APAC</li>
-                    <li onclick="OpSelected(2,2,'EMEA')">EMEA</li>
-                </ul>
-            </div>
-
+      <div class="UpEvFilDiv">
+        <p>On-Demand<br />Events</p>
+        <p>Filter events</p>
+        <div id="optionSel1Id2" class="optionSelClsCmn">
+          Event type
+          &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; >
+        </div>
+        <div id="optionSel1InnerId2" class="optionSelCmn">
+          <ul class="optionSel2Ul">
+            <li onclick="OpSelected(2,1,'b&w')">Briefings & Workshops</li>
+            <li onclick="OpSelected(2,1,'p&c')">In Platform Conferences</li>
+            <li onclick="OpSelected(2,1,'p&t')">Product & Tech Demo</li>
+            <li onclick="OpSelected(2,1,'UG')">User Groups</li>
+            <li onclick="OpSelected(2,1,'webn')">Webinars</li>
+          </ul>
         </div>
 
-        <div id="eventSpc">
-            <div id="UpEv2InfoDiv" class="UpEvInfoDivCmn"></div>
+        <div id="optionSel2Id2" class="optionSelClsCmn">
+          Region
+          &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp&nbsp
+          >
         </div>
+        <div id="optionSel2InnerId2" class="optionSelCmn">
+          <ul class="optionSel2Ul">
+            <li onclick="OpSelected(2,2,'AR')">All Regions</li>
+            <li onclick="OpSelected(2,2,'AM')">Americas</li>
+            <li onclick="OpSelected(2,2,'APAC')">APAC</li>
+            <li onclick="OpSelected(2,2,'EMEA')">EMEA</li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="eventSpc">
+        <div id="UpEv2InfoDiv" class="UpEvInfoDivCmn"></div>
+      </div>
     </div>
-    <div id="footer" style="color: white;"></div>
-
-</body>
-
+    <div id="footer" style="color: white"></div>
+  </body>
 </html>
 
 <script type="module" src="../scripts/subscription.js"></script>
 <script src="../scripts/resources-event.js"></script>
-<script type="module" src="../scripts/import-nav-footer.js"></script>  
+<script type="module" src="../scripts/import-nav-footer.js"></script>
 <script type="module" src="../scripts/navbar.js"></script>
 <script type="module" src="../scripts/locate-to.js"></script>
+<script type="module" src="../scripts/search.js"></script>
