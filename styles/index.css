@@ -134,23 +134,20 @@ a {
 
 /* header */
 #image {
-  background: url("https://www.pluralsight.com/content/pluralsight/en/jcr:content/main/generic_block_copy_c_1058486430/image-res.img.493fb6af-a344-4666-a2a0-6a96a118facd.jpg")
+  background: url("https://www.pluralsight.com/content/dam/pluralsight2/homepage/2022/hero-illustration.png")
     center center/cover;
   height: 500px;
   position: relative;
+  background-color: black;
 }
 
 #image > div {
   width: 45%;
   position: absolute;
-  left: 65%;
-  top: 45%;
-  transform: translate(-50%, -50%)
-    width: 50%;
-    position: absolute;
-    left: 65%;
-    top: 45%;
-    transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  
 }
 
 #image h1 {
@@ -172,12 +169,14 @@ a {
 }
 
 #image > div > button:nth-child(3) {
-  background-color: rgba(0, 0, 0, 1);
+  /* background-color: rgb(194, 133, 133); */
+  background-image: linear-gradient(-45deg,#ff0052,#ff4b2b);
+  /* background-size: 200% 200%; */
   border: 1px solid rgb(0, 0, 0);
 }
 
 #image > div > button:nth-child(4) {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 1);
   border: 1px solid white;
   margin-left: 1%;
 }
